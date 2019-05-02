@@ -1,0 +1,30 @@
+stages:
+  - build
+  - deploy
+
+build:
+  image: ubuntu:xenial
+  stage: build
+  before_script:
+    - apt-get update && apt-get -qq -y install wget
+    - wget "https://github.com/gohugoio/hugo/releases/download/v0.55.4/hugo_0.55.4_Linux-64bit.deb"
+    - dpkg -i hugo_0.55.4_Linux-64bit.deb
+  script:
+    - hugo
+  artifacts:
+    paths:
+      - public/
+
+deploy:
+  image: devillex/docker-firebase:slim
+  stage: deploy
+  only:
+    - master
+  script:
+    - firebase use personal-page-cf8ad --token $FIREBASE_TOKEN
+    - firebase deploy --only hosting -m "Pipe $CI_PIPELINE_ID Build $CI_BUILD_ID" --token $FIREBASE_TOKEN
+  environment:
+    name: production
+    url: https://www.fabiangruber.de
+  dependencies:
+    - build
