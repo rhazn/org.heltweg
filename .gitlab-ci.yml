@@ -3,7 +3,7 @@ stages:
   - deploy
 
 build:
-  image: monachus/hugo:v0.55.3
+  image: monachus/hugo:v0.54.0-3
   stage: build
   script:
     - hugo
