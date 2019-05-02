@@ -1,8 +1,8 @@
-baseURL = "https://personal-page-cf8ad.firebaseapp.com"
+baseURL = "https://rhazn.com"
 languageCode = "en-us"
-title = "Philip Heltweg"
+title = "rhazn.com"
 theme = "minimal"
-googleAnalytics = ""
+googleAnalytics = "UA-109574740-3"
 
 [params]
     author = "Philip Heltweg"

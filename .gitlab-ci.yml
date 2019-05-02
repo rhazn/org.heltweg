@@ -21,6 +21,6 @@ deploy:
     - firebase deploy --only hosting -m "Pipe $CI_PIPELINE_ID Build $CI_BUILD_ID" --token $FIREBASE_TOKEN
   environment:
     name: production
-    url: https://personal-page-cf8ad.firebaseapp.com
+    url: https://rhazn.com
   dependencies:
     - build
