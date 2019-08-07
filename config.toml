@@ -1,60 +1,39 @@
 baseURL = "https://rhazn.com"
 languageCode = "en-us"
 title = "rhazn.com"
-theme = "minimal"
 googleAnalytics = "UA-109574740-3"
+theme = "pulp"
+canonifyurls = true
 
 [params]
     author = "Philip Heltweg"
-    description = "a personal blog"
-    accent = "green"
-    showBorder = true
-    backgroundColor = "white"
-    font = "Raleway" # should match the name on Google Fonts!
-    highlight = true
-    highlightStyle = "solarized-dark"
-    highlightLanguages = ["javascript", "html", "css"]
+    avatar = "avatar.jpg"
+    favicon = "favicon.ico"
+    description = """
+        not all those who wander are lost
+    """
+    publicationYear = "2019"
+
+[outputs]
+    section = ["JSON", "HTML"]
 
 [[menu.main]]
-    url = "/"
-    name = "Home"
-    weight = 1
-
-[[menu.main]]
+    identifier = "blog"
+    # name = "Blog" #If display text link, cancel comment out
+    pre = "<i class='fa fa-book-open fa-lg'></i>" #Choose your favorite font from Font Awesome
     url = "/posts/"
-    name = "Posts"
-    weight = 2
+    weight = 10
 
-#[[menu.main]]
-#    url = "/projects/"
-#    name = "Projects"
-#    weight = 3
+[[menu.main]]
+    identifier = "twitter"
+    # name = "Twitter"
+    pre = "<i class='fab fa-twitter fa-lg'></i>"
+    url = "https://twitter.com/rhanarion"
+    weight = 20
 
-# Social icons to be shown on the right-hand side of the navigation bar
-# The "name" field should match the name of the icon to be used
-# The list of available icons can be found at http://fontawesome.io/icons/
-
-[[menu.icon]]
+[[menu.main]]
+    identifier = "email"
+    # name = "Email"
+    pre = "<i class='fa fa-envelope fa-lg'></i>"
     url = "mailto:pheltweg@gmail.com"
-    name = "envelope-o"
-    weight = 1
-
-#[[menu.icon]]
-#    url = "https://github.com/username/"
-#    name = "github"
-#    weight = 2
-
-[[menu.icon]]
-    url = "https://twitter.com/rhanarion/"
-    name = "twitter"
-    weight = 3
-
-[[menu.icon]]
-    url = "https://www.linkedin.com/in/rhazn/"
-    name = "linkedin"
-    weight = 4
-
-#[[menu.icon]]
-#    url = "https://www.stackoverflow.com/username/"
-#    name = "stack-overflow"
-#    weight = 5
+    weight = 40
