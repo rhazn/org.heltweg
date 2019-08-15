@@ -4,7 +4,7 @@ date: 2019-05-03
 draft: false
 description: "Deploy a personal blog with Hugo, Firebase and Gitlab"
 tags:
-    - hugo
+    - gohugo
     - firebase
     - gitlab
     - continuous-deployment
@@ -20,7 +20,7 @@ I recently evaluated what how writing content and carving out a little personal 
 
 All these requirements are solved by using a static site generator and keeping the original files versioned in git. When setting up some for of continuous integration (for example with gitlab) it should be reasonably easy to maintaining for a long time.
 
-I chose gohugo.io as a site generator due to the excellent setup article written by Fabian Gruber here: https://www.fabiangruber.de/posts/setup-and-deployment
+I chose gohugo as a site generator due to the excellent setup article written by Fabian Gruber here: https://www.fabiangruber.de/posts/setup-and-deployment
 
 {{< mailinglist >}}
 
