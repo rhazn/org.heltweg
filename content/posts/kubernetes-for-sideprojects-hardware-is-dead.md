@@ -70,5 +70,5 @@ For my personal cloud I chose:
 {{< mailinglist >}}
 
 # Further reading
-- I will explain my current setup and learnings in further posts on this blog so make sure to check back in the future
+- Read my blog post about the actual setup of this cloud: [/posts/run-a-personal-cloud-with-traefik-lets-encrypt-and-zookeeper](/posts/run-a-personal-cloud-with-traefik-lets-encrypt-and-zookeeper).
 - in the mean time read up on a possible setup in this helpful article: [Traefik on a Google Kubernetes Engine Cluster managed by Terraform by Manuel Zapf](https://medium.com/google-cloud/traefik-on-a-google-kubernetes-engine-cluster-managed-by-terraform-ad871be8ee26)
