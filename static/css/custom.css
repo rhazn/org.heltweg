@@ -5,3 +5,7 @@ html {
   --theme-color-accent2: #faf9fa;
   --theme-color-accent3: #7d7261;
 }
+
+body {
+    font-family: 'Overpass', sans-serif !important;
+}

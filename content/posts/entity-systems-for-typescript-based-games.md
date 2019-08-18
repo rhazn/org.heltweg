@@ -15,7 +15,7 @@ tags:
 
 For my latest game project [Frozzen](https://frozzen-client.appspot.com/) I want to explore how an external UI, build with Angular, would work for a browser based game. Since Angular is written in Typescript that means ideally the game should also use the same.
 
-{{< figure src="/img/frozzencode.png" caption="Code of a typical data only component in Frozzen">}}
+{{< figure src="/img/posts/entity-systems-for-typescript-based-games/frozzencode.png" caption="Code of a typical data only component in Frozzen">}}
 
 I have used [Artemis ODB](https://github.com/junkdog/artemis-odb) as framework for a Java based game in the past and liked it a lot. Entity-Systems are much better introduced by any of the huge amount of articles out there (for example the classic on [T=Machine](http://t-machine.org/index.php/2007/09/03/entity-systems-are-the-future-of-mmog-development-part-1/) but I feel they are especially well suited to Javascript/Typescript development.
 
@@ -23,7 +23,7 @@ If you work with a strict separation of logic into systems and data only into co
 
 {{< freelance >}}
 
-{{< figure src="/img/frozzenscreen.png" caption="Frozzen is a turn based strategy game written in Typescript and artemists">}}
+{{< figure src="/img/posts/entity-systems-for-typescript-based-games/frozzenscreen.png" caption="Frozzen is a turn based strategy game written in Typescript and artemists">}}
 
 I started my development with artemists, a Typescript port of artemis by darkoverlordofdata. Unfortunately the code is a bit outdated and does not use import/export and can not be directly imported for newer Typescript versions (since it extends the built-in Array).
 
