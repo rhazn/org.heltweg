@@ -30,3 +30,5 @@ I started my development with artemists, a Typescript port of artemis by darkove
 With darkoverlordofdata’s permission I did a quick update to the Typescript parts of the code only, adding import/export support and fixing the build for newer Typescript versions. [You can find the updated version here](https://github.com/rhazn/artemis-ts). If you are looking for an example of that framework in action you can play an example level of Frozzen [here](https://frozzen-client.appspot.com/).
 
 {{< mailinglist >}}
+
+{{< aboutme >}}

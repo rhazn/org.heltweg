@@ -318,3 +318,5 @@ The final workloads with traefik and zookeeper
 And the kubernetes ingresses (ignore the app I used as demo for this)
 
 {{< figure src="/img/posts/run-a-personal-cloud-with-traefik-lets-encrypt-and-zookeeper/ingress.png" caption="Kubernetes ingresses">}}
+
+{{< aboutme >}}

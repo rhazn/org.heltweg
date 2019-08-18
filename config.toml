@@ -11,7 +11,8 @@ enableRobotsTXT = true
     avatar = "avatar.jpg"
     favicon = "favicon.ico"
     description = """
-        not all those who wander are lost
+        I am a full stack developer and digital product enthusiast. I am available for freelance work and always looking for the
+next exciting project :)
     """
     publicationYear = "2019"
     # listPageDateFormat = "January, 2006" # See https://gohugo.io/functions/format/
