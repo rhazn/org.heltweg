@@ -277,13 +277,12 @@ spec:
             name: traefik-config
       containers:
       - name: traefik
-        image: "traefik:1.7.13"
+        image: "traefik:1.7.14"
         volumeMounts:
           - mountPath: "/etc/traefik/config"
             name: config
         args:
         - --configfile=/etc/traefik/config/traefik.toml
-        - --api
         - --kubernetes
         - --logLevel=INFO
 {{< / highlight >}}
@@ -301,8 +300,6 @@ spec:
   ports:
     - port: 80
       name: http
-    - port: 8080
-      name: admin
     - port: 443
       name: tls
   type: LoadBalancer
@@ -315,7 +312,7 @@ The final workloads with traefik and zookeeper
 
 {{< figure src="/img/posts/run-a-personal-cloud-with-traefik-lets-encrypt-and-zookeeper/workloads.png" caption="Traefik and Zookeeper workloads">}}
 
-And the kubernetes ingresses (ignore the app I used as demo for this)
+And the kubernetes ingresses (ignore the app I used as demo for this).
 
 {{< figure src="/img/posts/run-a-personal-cloud-with-traefik-lets-encrypt-and-zookeeper/ingress.png" caption="Kubernetes ingresses">}}
 
