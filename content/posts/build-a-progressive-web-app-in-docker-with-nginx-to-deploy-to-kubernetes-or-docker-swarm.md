@@ -14,6 +14,7 @@ tags:
     - webworker
     - single page application
     - progressive web app
+    - personal-cloud
 ---
 
 With my personal cloud setup based on kubernetes done (you can read about it here: [https://rhazn.com/posts/run-a-personal-cloud-with-traefik-lets-encrypt-and-zookeeper/](https://rhazn.com/posts/run-a-personal-cloud-with-traefik-lets-encrypt-and-zookeeper/)) it is time to actually deploy the first project into it. 

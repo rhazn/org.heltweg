@@ -15,6 +15,7 @@ tags:
     - infrastructure
     - infrastructure in code
     - container
+    - personal-cloud
 ---
 
 # Why invest in a personal cloud

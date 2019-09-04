@@ -1,6 +1,6 @@
 ---
 title: "Deploy to google kubernetes engine using gitlab ci"
-date: 2019-09-04
+date: 2019-09-03
 draft: false
 description: "Deploy to google kubernetes engine using gitlab ci"
 tags:
@@ -13,6 +13,7 @@ tags:
     - continuous deployment
     - kubernetes
     - devops
+    - personal-cloud
 ---
 
 In a previous blogpost I showed how I build and publish docker images on gitlab ci ([Build a docker image on gitlab ci](https://rhazn.com/posts/build-a-docker-image-on-gitlab-ci-and-publish-it-to-google-container-registry/))

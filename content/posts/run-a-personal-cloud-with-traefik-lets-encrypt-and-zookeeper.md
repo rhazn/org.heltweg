@@ -11,6 +11,7 @@ tags:
     - gitlab
     - google cloud
     - devops
+    - personal-cloud
 ---
 # Kubernetes ingress with Traefik
 As mentioned in my [last blog post](/posts/kubernetes-for-sideprojects-hardware-is-dead) I want to focus on a provider neutral setup for my own cloud, using technology that is not bound to any cloud offering whenever possible.
