@@ -1,8 +1,8 @@
 ---
-title: "Run a personal Cloud with Traefik, Let's encrypt and Zookeeper"
+title: "Run a personal Cloud with Traefik, Lets encrypt and Zookeeper"
 date: 2019-08-16
 draft: false
-description: "Run a personal Cloud with Traefik, Let's encrypt and Zookeeper"
+description: "Run a personal Cloud with Traefik, Lets encrypt and Zookeeper"
 tags:
     - kubernetes
     - docker
