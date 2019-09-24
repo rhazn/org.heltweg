@@ -11,11 +11,13 @@ tags:
     - firestore
 ---
 
-{{< figure src="/img/projects/mealpreplist-dot-com-your-weekly-mealprep-made-easy/landing.png" caption="mealpreplist.com Landingpage">}}
+{{< load-photoswipe >}}
+
+{{< figure src="/img/projects/mealpreplist-dot-com-your-weekly-mealprep-made-easy/landing.png" caption="mealpreplist.com Landingpage" width="400px" caption-position="bottom">}}
 
 Meal prepping is the practice of preparing multiple meals at once and either freezing them or keeping them in the fridge to eat over the upcoming days. There is an active community on reddit ([r/MealPrepSunday/](https://www.reddit.com/r/MealPrepSunday/)) and various blogs online.
 
-{{< figure src="/img/projects/mealpreplist-dot-com-your-weekly-mealprep-made-easy/choose-recipe.png" caption="Combining three base recipes into one meal">}}
+{{< figure src="/img/projects/mealpreplist-dot-com-your-weekly-mealprep-made-easy/choose-recipe.png" caption="Combining three base recipes into one meal" width="400px" caption-position="bottom">}}
 
 Often mealprep containers are separated in three sections for a carb source, a protein source and vegetables. 
 
@@ -23,7 +25,7 @@ With mealpreplist I wanted to save my own, simple meal components for each of th
 
 Because I felt easy filtering of recipes and various other functions might have worth for other people to I decided to built the product with user accounts and the ability to pay for a premium account with additional features.
 
-{{< figure src="/img/projects/mealpreplist-dot-com-your-weekly-mealprep-made-easy/filter-macros.png" caption="Premium users can filter recipes by tags and see combined macros">}}
+{{< figure src="/img/projects/mealpreplist-dot-com-your-weekly-mealprep-made-easy/filter-macros.png" caption="Premium users can filter recipes by tags and see combined macros" width="400px" caption-position="bottom">}}
 
 You can see the project for yourself at [https://www.mealpreplist.com/](https://www.mealpreplist.com/) it is however no longer actively maintained.
   
@@ -32,25 +34,25 @@ You can see the project for yourself at [https://www.mealpreplist.com/](https://
 ## Google Firebase
 With mealpreplist I wanted to allow users to submit their own recipes, rate and comment on them as well as buy premium accounts for additional functionality with Stripe. All of this would normally mean a fairly complex backend but by relying on Google's firebase I was able to implement everything without my own servers.
 
-{{< figure src="/img/projects/mealpreplist-dot-com-your-weekly-mealprep-made-easy/login.png" caption="Login with social providers using Firebase">}}
+{{< figure src="/img/projects/mealpreplist-dot-com-your-weekly-mealprep-made-easy/login.png" caption="Login with social providers using Firebase" width="400px" caption-position="bottom">}}
 
 - I used Firestore to store recipe and ingredient data as well as user comments
 - Firebase Storage allowed me to let users upload pictures of their recipes
 - Firebase User Accounts/Login was used for user management
 - Firebase Cloud Functions handle the interaction with Stripe and update user's premium status
 
-{{< figure src="/img/projects/mealpreplist-dot-com-your-weekly-mealprep-made-easy/premium.png" caption="Firebase Cloud Functions and Stripe allow for premium accounts without ever handling passwords or CC data">}}
+{{< figure src="/img/projects/mealpreplist-dot-com-your-weekly-mealprep-made-easy/premium.png" caption="Firebase Cloud Functions and Stripe allow for premium accounts without ever handling passwords or CC data" width="400px" caption-position="bottom">}}
 
 ## Frontend
 Mealpreplist was my personal project to get experience in React development so the frontend is written in React using Typescript. During development I built the UI with react material ui though I later switched to some custom built components.
 
-{{< figure src="/img/projects/mealpreplist-dot-com-your-weekly-mealprep-made-easy/add-recipe.png" caption="Users can add their own recipe and upload images">}}
+{{< figure src="/img/projects/mealpreplist-dot-com-your-weekly-mealprep-made-easy/add-recipe.png" caption="Users can add their own recipe and upload images" width="400px" caption-position="bottom">}}
 
 The data flow is based on redux using react-redux and redux-saga for data loading and other side effects like analytics tracking.
 
 I made sure to make the app mobile friendly from the start, relying on flexbox to shrink and expand the display depending on screen size and media queries to hide not needed information on smaller screens.
 
-{{< figure src="/img/projects/mealpreplist-dot-com-your-weekly-mealprep-made-easy/recipe-display.png" caption="Displaying all selected recipes in one overview">}}
+{{< figure src="/img/projects/mealpreplist-dot-com-your-weekly-mealprep-made-easy/recipe-display.png" caption="Displaying all selected recipes in one overview" width="400px" caption-position="bottom">}}
 
 ## CI
 CI runs on gitlab, building every commit and allowing me to have an automated deploy to Firebase hosting.
@@ -58,11 +60,11 @@ CI runs on gitlab, building every commit and allowing me to have an automated de
 # Marketing
 For marketing I relied on building an email list using mailchimp and posting to the appropriate subreddit. The feedback was very good and the spike in visitors allowed me to gather a lot of email list subscribers but converted incredibly poorly (only one subscription from 6000 visitors).
 
-{{< figure src="/img/projects/mealpreplist-dot-com-your-weekly-mealprep-made-easy/reddit.png" caption="Frontpage reddit post on r/Mealprepsunday">}}
+{{< figure src="/img/projects/mealpreplist-dot-com-your-weekly-mealprep-made-easy/reddit.png" caption="Frontpage reddit post on r/Mealprepsunday" width="400px" caption-position="bottom">}}
 
 I kept up sending out regular email updates about development (mostly regarding feature requests from the reddit feedback) during the time spend on the project but never saw any improvement in subscriptions or visitor numbers.
 
-{{< figure src="/img/projects/mealpreplist-dot-com-your-weekly-mealprep-made-easy/analytics.png" caption="Analytics from 2018">}}
+{{< figure src="/img/projects/mealpreplist-dot-com-your-weekly-mealprep-made-easy/analytics.png" caption="Analytics from 2018" width="400px" caption-position="bottom">}}
 
 Without any continued marketing mealpreplist still gets a low number of regular visitors that use it for the recipes.
 
