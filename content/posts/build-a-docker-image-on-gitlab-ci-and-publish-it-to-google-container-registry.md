@@ -4,17 +4,17 @@ date: 2019-09-03
 draft: false
 description: "Build a docker image on gitlab ci and publish it to google container registry"
 tags:
-    - docker
-    - gitlab
-    - gitlab ci
-    - gcr
-    - google container registry
-    - ci
-    - continuous integration
-    - continuous deployment
-    - kubernetes
-    - devops
-    - personal-cloud
+  - docker
+  - gitlab
+  - gitlab ci
+  - gcr
+  - google container registry
+  - ci
+  - continuous integration
+  - continuous deployment
+  - kubernetes
+  - devops
+  - personal-cloud
 ---
 
 In previous blogposts I explained my concept of a personal cloud for my own projects ([Kubernetes for Sideprojects](https://rhazn.com/posts/kubernetes-for-sideprojects-hardware-is-dead/)) and how I set it up ([Run a personal cloud with Traefik, Let's encrypt and Zookeeper](https://rhazn.com/posts/run-a-personal-cloud-with-traefik-lets-encrypt-and-zookeeper/)). I also showed how I packaged a PWA project with docker ([Build a PWA in docker](https://rhazn.com/posts/build-a-progressive-web-app-in-docker-with-nginx-to-deploy-to-kubernetes-or-docker-swarm/)).
@@ -52,20 +52,15 @@ I use the following gitlab ci stage to build and publish a project. Note that it
 
 {{< highlight yml >}}
 publish:
-  stage: publish
-  image: docker:19.03.1
-  services:
-    - docker:dind
-  variables:
-    DOCKER_DRIVER: overlay
-  script:
-    - echo $GCLOUD_SERVICE_KEY | base64 -d > ${HOME}/gcloud-service-key.json
-    - docker login -u _json_key --password-stdin https://eu.gcr.io < ${HOME}/gcloud-service-key.json
-    - docker build -t eu.gcr.io/projectid/app:${CI_COMMIT_SHA} .
-    - docker push "eu.gcr.io/projectid/app:${CI_COMMIT_SHA}"
-  only:
-    - master
-  when: manual
+stage: publish
+image: docker:19.03.1
+services: - docker:dind
+variables:
+DOCKER_DRIVER: overlay
+script: - echo $GCLOUD_SERVICE_KEY | base64 -d > ${HOME}/gcloud-service-key.json - docker login -u \_json_key --password-stdin https://eu.gcr.io < ${HOME}/gcloud-service-key.json
+    - docker build -t eu.gcr.io/projectid/app:${CI_COMMIT_SHA} . - docker push "eu.gcr.io/projectid/app:\${CI_COMMIT_SHA}"
+only: - master
+when: manual
 {{< / highlight >}}
 
 {{< figure src="/img/posts/build-a-docker-image-on-gitlab-ci-and-publish-it-to-google-container-registry/tagged-images.png" caption="The resulting tagged images in gcr">}}

@@ -11,7 +11,7 @@
   <!-- tags -->
   <div id="tags">
     <ul>
-      {{ range .Site.Taxonomies.tags.ByCount }}
+      {{ range first 15 .Site.Taxonomies.tags.ByCount }}
         <li><a href="{{ .Page.Permalink }}">{{ .Page.Title }} ({{ .Count }})</a></li>
       {{ end }}
     </ul>
