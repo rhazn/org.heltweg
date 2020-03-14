@@ -40,6 +40,8 @@ You can create these service accounts in the "IAM & admin" -> "Service accounts"
 
 We will also need to allow the personal cloud project to pull the docker image from the container registry that is in a different project. For that I followed this excellent blogpost by Alexey Timanovskiy ([Using single Docker repository with multiple GKE projects](https://medium.com/google-cloud/using-single-docker-repository-with-multiple-gke-projects-1672689f780c)).
 
+In general the permissions needed to interact with docker images in the container registry are related to only "Storage" so for pulling docker images the account will need "Storage Object Viewer" permissions only. For adding images to the registry "Storage Admin".
+
 # Publish a docker image with gitlab ci
 
 {{< freelance >}}
