@@ -9,6 +9,7 @@ enableRobotsTXT = true
 [params]
     author = "Philip Heltweg"
     avatar = "avatar.jpg"
+    # not used, see custom partial head
     favicon = "favicon.ico"
     description = """
         I am a full stack developer and digital product enthusiast. I am available for freelance work and always looking for the
