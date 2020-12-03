@@ -12,8 +12,8 @@ enableRobotsTXT = true
     # not used, see custom partial head
     favicon = "favicon.ico"
     description = """
-        I am a full stack developer and digital product enthusiast. I am available for freelance work and always looking for the
-next exciting project :)
+        work in progress person
+
     """
     publicationYear = "2020"
     # listPageDateFormat = "January, 2006" # See https://gohugo.io/functions/format/
@@ -48,8 +48,8 @@ next exciting project :)
     weight = 30
 
 [[menu.main]]
-    identifier = "twitter"
-    name = "Twitter"
-    pre = "<i class='fab fa-twitter fa-lg'></i>"
-    url = "https://twitter.com/rhanarion"
+    identifier = "cv"
+    name = "CV"
+    pre = "<i class='fa fa-file-download fa-lg'></i>"
+    url = "/files/cv_philip_heltweg.pdf"
     weight = 40
