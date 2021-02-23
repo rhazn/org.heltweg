@@ -6,7 +6,7 @@ build:
   image: klakegg/hugo:0.79.1-alpine-ci
   stage: build
   script:
-    - hugo
+    - hugo --ignoreCache --minify --verbose --debug
   artifacts:
     paths:
       - public/
