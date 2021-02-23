@@ -1,20 +1,27 @@
 ---
 title: "Build a docker image on gitlab ci and publish it to google container registry"
-date: 2019-09-03
+date: 2019-09-03T11:30:03+00:00
+# weight: 1
+# aliases: ["/first"]
+tags: ["docker", "gitlab", "gcr", "ci", "continuous integration", "continuous deployment", "kubernetes", "devops", "personal-cloud"]
+author: "Philip Heltweg"
+# author: ["Me", "You"] # multiple authors
+showToc: true
+TocOpen: true
 draft: false
+hidemeta: false
+comments: false
 description: "Build a docker image on gitlab ci and publish it to google container registry"
-tags:
-  - docker
-  - gitlab
-  - gitlab ci
-  - gcr
-  - google container registry
-  - ci
-  - continuous integration
-  - continuous deployment
-  - kubernetes
-  - devops
-  - personal-cloud
+disableHLJS: false # to disable highlightjs
+disableShare: false
+searchHidden: true
+cover:
+    image: "" # image path/url
+    alt: "tagged images" # alt text
+    caption: "tagged images" # display caption under cover
+    relative: false # when using page bundles set this to true
+    hidden: true # only hide on current single page
+
 ---
 
 In previous blogposts I explained my concept of a personal cloud for my own projects ([Kubernetes for Sideprojects](https://rhazn.com/posts/kubernetes-for-sideprojects-hardware-is-dead/)) and how I set it up ([Run a personal cloud with Traefik, Let's encrypt and Zookeeper](https://rhazn.com/posts/run-a-personal-cloud-with-traefik-lets-encrypt-and-zookeeper/)). I also showed how I packaged a PWA project with docker ([Build a PWA in docker](https://rhazn.com/posts/build-a-progressive-web-app-in-docker-with-nginx-to-deploy-to-kubernetes-or-docker-swarm/)).
@@ -48,11 +55,11 @@ In general the permissions needed to interact with docker images in the containe
 
 To allow gitlab ci to use your service account you need to save the content of the json files as a base64 encoded variable in the backend. You can find the setting under "Settings" -> "CI /CD" -> "Variables". Be careful with this data since it is security relevant. The variables here will be available as environment variables during your jobs.
 
-{{< figure src="/img/posts/build-a-docker-image-on-gitlab-ci-and-publish-it-to-google-container-registry/gitlab-ci-variables.png" caption="The service account variables">}}
+![The service account variables](/img/posts/build-a-docker-image-on-gitlab-ci-and-publish-it-to-google-container-registry/gitlab-ci-variables.png#center)
 
 I use the following gitlab ci stage to build and publish a project. Note that it only runs manually and for master. In this case it uses the service account saved in GCLOUD_SERVICE_KEY:
 
-{{< highlight yml >}}
+```yml
 publish:
 stage: publish
 image: docker:19.03.1
@@ -63,10 +70,8 @@ script: - echo $GCLOUD_SERVICE_KEY | base64 -d > ${HOME}/gcloud-service-key.json
     - docker build -t eu.gcr.io/projectid/app:${CI_COMMIT_SHA} . - docker push "eu.gcr.io/projectid/app:\${CI_COMMIT_SHA}"
 only: - master
 when: manual
-{{< / highlight >}}
+```
 
-{{< figure src="/img/posts/build-a-docker-image-on-gitlab-ci-and-publish-it-to-google-container-registry/tagged-images.png" caption="The resulting tagged images in gcr">}}
-
-{{< mailinglist >}}
+![The resulting tagged images in gcr](/img/posts/build-a-docker-image-on-gitlab-ci-and-publish-it-to-google-container-registry/tagged-images.png#center)
 
 {{< aboutme >}}

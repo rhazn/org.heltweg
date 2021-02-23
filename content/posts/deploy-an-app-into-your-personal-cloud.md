@@ -3,6 +3,8 @@ title: "Deploy an app into your personal cloud"
 date: 2019-09-04
 draft: false
 description: "Deploy an app into your personal cloud"
+showToc: true
+TocOpen: true
 tags:
     - docker
     - gitlab
@@ -29,7 +31,7 @@ The deployment runs the docker container. If you follow my personal cloud setup 
 
 Note that the image will be set and updated by gitlab ci as described here: ([Deploy to google kubernetes engine using gitlab ci](https://rhazn.com/posts/deploy-to-google-kubernetes-engine-using-gitlab-ci/)).
 
-{{< highlight yml >}}
+```yml
 kind: Deployment
 apiVersion: extensions/v1beta1
 metadata:
@@ -45,10 +47,10 @@ spec:
       containers:
       - name: ???-app
         image: "eu.gcr.io/???/app:latest"
-{{< / highlight >}}
+```
 
 # The service and traefik ingress
-{{< highlight yml >}}
+```yml
 apiVersion: v1
 kind: Service
 metadata:
@@ -78,23 +80,23 @@ rules:
         backend:
         serviceName: ???-app
         servicePort: web
-{{< / highlight >}}
+```
 
 {{< freelance >}}
 
 # Updating the traefik config
 Updating the traefik config is important so traefik requests a new HTTPS certificate for the app from Let's encrypt. You will need to add this line to the traefik toml file that is described here ([Run a personal cloud with Traefik, Let's encrypt and Zookeeper](https://rhazn.com/posts/run-a-personal-cloud-with-traefik-lets-encrypt-and-zookeeper/)):
 
-{{< highlight yml >}}
+```yml
 [[acme.domains]]
     main = "app.???.com"
-{{< / highlight >}}
+```
 
 # DNS
 Now you can just point the A record of your domain to the traefik external IP and the rest will automatically be handled by your personal cloud :).
 
-{{< figure src="/img/posts/deploy-an-app-into-your-personal-cloud/final-result.png" caption="The final result: The app runs in your personal cloud <3">}}
+![The final result: The app runs in your personal cloud <3](/img/posts/deploy-an-app-into-your-personal-cloud/final-result.png#center)
 
-{{< mailinglist >}}
+
 
 {{< aboutme >}}

@@ -1,13 +1,28 @@
 ---
 title: "Whatchr.com - a better youtube playlist experience"
-date: 2016-10-04
+date: 2016-10-04T11:30:03+00:00
+# weight: 1
+# aliases: ["/first"]
+tags: ["spa", "youtube", "angular"]
+author: "Philip Heltweg"
+# author: ["Me", "You"] # multiple authors
+showToc: true
+TocOpen: true
 draft: false
+hidemeta: false
+comments: false
 description: "Whatchr.com - a better youtube playlist experience"
-tags:
-    - spa
-    - youtube
+disableHLJS: false # to disable highlightjs
+disableShare: false
+searchHidden: true
+cover:
+    image: "" # image path/url
+    alt: "" # alt text
+    caption: "" # display caption under cover
+    relative: false # when using page bundles set this to true
+    hidden: true # only hide on current single page
+
 ---
-{{< load-photoswipe >}}
 
 Whatchr was born of a personal problem. I regularly watch let's play content on youtube (following a group of content creators with their series), mainly following the channels of [The Yogscast](http://yogscast.com/).
 
@@ -15,7 +30,7 @@ Youtube's focus is on either suggesting content it thinks you find interesting o
 
 I set out to change that for myself, building a small "Netflix for Youtube".
 
-{{< figure src="/img/projects/whatchr-dot-com-a-better-youtube-playlist-experience/landingpage.png" caption="Whatchr's landingpage - I did not want to use a gaming looking product, looking for a clean look instead" width="400px" caption-position="bottom">}}
+![Whatchr's landingpage - I did not want to use a gaming looking product, looking for a clean look instead](/img/projects/whatchr-dot-com-a-better-youtube-playlist-experience/landingpage.png#center)
 
 Originally I had also planned to tag videos with the content creator appearing in them so you can follow your favorite content creator over multiple channels.
 
@@ -27,7 +42,7 @@ Watchr would need to solve a few typical web app problems: Managing and displayi
 
 At the time of creation Angular was releasing Beta versions. Since I had previous experience with AngularJS and Typescript I chose Watchr as personal learning project for the new stack of Angular and Observables with RXJS. 
 
-{{< figure src="/img/projects/whatchr-dot-com-a-better-youtube-playlist-experience/search.png" caption="I implemented a series search to play around with observables and debouncing" width="400px" caption-position="bottom">}}
+![I implemented a series search to play around with observables and debouncing](/img/projects/whatchr-dot-com-a-better-youtube-playlist-experience/search.png#center)
 
 While I build all features and a basic material design the talented [Simon Brix](https://simonbrix.dk/) helped me with the final design and did most of the implementation of it in SCSS/HTML. Thanks!
 
@@ -43,7 +58,7 @@ For user accounts I decided to implement Google login using Passport. That allow
 
 Importing new data would need to happen regularly to keep the database up to date. While the youtube API is very good I needed to focus on a manually curated set of channels to import. I therefor decided on writing a small script that could be called by a cronjob and import all playlists and videos of a specific channel.
 
-{{< figure src="/img/projects/whatchr-dot-com-a-better-youtube-playlist-experience/explore.png" caption="The explore page showed all recently updated content, new content etc" width="400px" caption-position="bottom">}}
+![The explore page showed all recently updated content, new content etc](/img/projects/whatchr-dot-com-a-better-youtube-playlist-experience/explore.png#center)
 
 The script was written in Typescript (again, keeping the same techstack) and used the same database as the API to save JSON objects directly from the youtube API. I used a combination of observables (with RXJS) and functional programming to make the import code easily manageable while being very efficient,
 
@@ -52,7 +67,7 @@ The script was written in Typescript (again, keeping the same techstack) and use
 When everything was done I implemented deployment on a digital ocean droplet using gitlab CI. 
 I disabled any log in on the droplet but public key authentication, configured a private key as CI variable in gitlab and set it up during the build job. After the project was build gitlab rsynced the files to the droplet and restarted the node process.
 
-{{< figure src="/img/projects/whatchr-dot-com-a-better-youtube-playlist-experience/seriesdetail.png" caption="A series detail screen" width="400px" caption-position="bottom">}}
+![A series detail screen](/img/projects/whatchr-dot-com-a-better-youtube-playlist-experience/seriesdetail.png#center)
 
 I configured the import cronjobs manually with a channel id for each job. The database was hosted on the same droplet and the whole server backed up automatically with daily snapshots.
 
@@ -68,7 +83,7 @@ Not surprisingly I was the only active user for the time Whatchr was alive.
 
 Whatchr was a fun project and allowed me to learn a big set of technologies while scratching my own itch. I learned a lot about the youtube API and the internal organisation of their data.
 
-{{< figure src="/img/projects/whatchr-dot-com-a-better-youtube-playlist-experience/dashboard.png" caption="The dashboard shows all the series you are currently watching" width="400px" caption-position="bottom">}}
+![The dashboard shows all the series you are currently watching](/img/projects/whatchr-dot-com-a-better-youtube-playlist-experience/dashboard.png#center)
 
 Overall the project gave me an appreciation for better planning of a value proposition beforehand (because I regularly had problems articulating what problem it solves) and marketing.
 

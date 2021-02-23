@@ -3,6 +3,8 @@ title: "Deploy to google kubernetes engine using gitlab ci"
 date: 2019-09-03
 draft: false
 description: "Deploy to google kubernetes engine using gitlab ci"
+showToc: true
+TocOpen: true
 tags:
     - gitlab
     - gitlab ci
@@ -28,7 +30,7 @@ You can easily set up a deploy step using google's own cloud SDK docker images. 
 
 This job changes the image of my deployment for the app. You will need to change the last line in the script to whatever change you want to make to your kubernetes setup on deploy.
 
-{{< highlight yml >}}
+```yml
 deploy:
   stage: deploy
   image: google/cloud-sdk:257.0.0
@@ -42,8 +44,8 @@ deploy:
   only:
     - master
   when: manual
-{{< / highlight >}}
+```
 
-{{< mailinglist >}}
+
 
 {{< aboutme >}}

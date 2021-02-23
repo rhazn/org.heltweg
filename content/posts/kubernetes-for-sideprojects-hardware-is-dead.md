@@ -3,6 +3,8 @@ title: "Kubernetes for sideprojects: Hardware is dead"
 date: 2019-08-15
 draft: false
 description: "Kubernetes for sideprojects: Hardware is dead"
+showToc: true
+TocOpen: true
 tags:
     - kubernetes
     - docker
@@ -23,7 +25,7 @@ It has never been easier to host your personal side projects. Tools like surge.s
 
 My goal for technology is typically to find a setup that gets boring to work with because I know it well and can focus on delivering new functionality. For that a setup needs to be future proof (so it continues to work for a long time), generic (so I can use it for a wide range of applications and do not need to switch for every project) and not bound to any company or product.
 
-{{< figure src="/img/posts/kubernetes-for-sideprojects-hardware-is-dead/taylor-vick-M5tzZtFCOfs-unsplash.jpg" caption="Photo by Taylor Vick on Unsplash">}}
+![Photo by Taylor Vick on Unsplash](/img/posts/kubernetes-for-sideprojects-hardware-is-dead/taylor-vick-M5tzZtFCOfs-unsplash.jpg#center)
 
 # Docker & kubernetes
 Docker and Kubernetes check most of these boxes. Kubernetes has de-facto won the orchestration war for containerized applications and managed kubernetes offerings from all major cloud providers means there is no provider lock-in. As an open source project that is not bound to individual company or setup you retain flexibility. Lastly learning more about it is useful in any case - if you stop developing your side projects the devops knowledge you gained still looks good on a CV.
@@ -55,7 +57,7 @@ By choosing kubernetes you also commit to keeping your infrastructure in code wh
 - all your infrastructure is in one place so you don't need to think about how each project solved a problem
 
 # Organizing your projects
-{{< figure src="/img/posts/kubernetes-for-sideprojects-hardware-is-dead/google-cloud-setup.svg" caption="Google Cloud setup for personal cloud">}}
+![Google Cloud setup for personal cloud](/img/posts/kubernetes-for-sideprojects-hardware-is-dead/google-cloud-setup.svg#center)
 
 For my personal cloud I chose:
 
@@ -68,7 +70,7 @@ For my personal cloud I chose:
 - Infrastructure descriptions for the generic GKE setup and services is in one place, infrastructure descriptions for the individual projects is in their respective code
 - Deployment is handled with gitlab
 
-{{< mailinglist >}}
+
 
 # Further reading
 - Read my blog post about the actual setup of this cloud: [/posts/run-a-personal-cloud-with-traefik-lets-encrypt-and-zookeeper](/posts/run-a-personal-cloud-with-traefik-lets-encrypt-and-zookeeper).

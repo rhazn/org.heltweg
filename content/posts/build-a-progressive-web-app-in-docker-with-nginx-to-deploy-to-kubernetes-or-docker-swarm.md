@@ -3,6 +3,8 @@ title: "Build a progressive web app in docker with nginx to deploy to kubernetes
 date: 2019-08-24
 draft: false
 description: "Build a progressive web app delivered by nginx with docker to deploy it to docker swarm or kubernetes."
+showToc: true
+TocOpen: true
 tags:
     - spa
     - pwa
@@ -23,7 +25,7 @@ The easiest application to deploy is a pure client side single page application,
 
 Setting up and configuring our own HTTP server also allows for fine tuning of caching to achieve good lighthouse scores:
 
-{{< figure src="/img/posts/build-a-progressive-web-app-in-docker-with-nginx-to-deploy-to-kubernetes-or-docker-swarm/scores.png" caption="Lighthouse scores, don't let the bugged checkmark fool you it passes the PWA tests ;)">}}
+![Lighthouse scores, don't let the bugged checkmark fool you it passes the PWA tests ;)](/img/posts/build-a-progressive-web-app-in-docker-with-nginx-to-deploy-to-kubernetes-or-docker-swarm/scores.png#center)
 
 # Building in docker
 For this setup we build the app using docker. That way the app is always built with the same node version and can be consistently reproduced, regardless of installed software on the local computer.
@@ -32,7 +34,7 @@ For this setup we build the app using docker. That way the app is always built w
 
 The project here is a react application based on create-react-app but it works similarly with any frontend framework:
 
-{{< highlight docker >}}
+```docker
 FROM node:12.6.0 AS build
 
 WORKDIR /
@@ -45,7 +47,7 @@ COPY ./src ./src
 COPY ./public ./public
 
 RUN npm run build --prod
-{{< / highlight >}}
+```
 
 # Configuring nginx
 For the nginx config I placed a config file into the project and checked it in. This config file is later on copied into the container that serves the SPA. To achieve good performance we
@@ -56,7 +58,7 @@ For the nginx config I placed a config file into the project and checked it in. 
 - Redirect any request to index.html so the SPA router can handle them
 
 You can see the complete config file here:
-{{< highlight conf >}}
+```conf
 server {
     listen 80;
     server_name _;
@@ -81,16 +83,16 @@ server {
         add_header Cache-Control "public";
     }
 }
-{{< / highlight >}}
+```
 
 # Building the final container
 The end result will be a combination of a) building the SPA in  docker in the "build" step and then setting up a container from the nginx image and copying the JS from the build step as well as the checked in nginx config described above.
 
-{{< mailinglist >}}
+
 
 Finally we expose port 80 and start nginx to serve the files.
 
-{{< highlight docker >}}
+```docker
 FROM node:12.6.0 AS build
 
 WORKDIR /
@@ -110,6 +112,6 @@ COPY --from=build /build /var/www/
 COPY ./k8s/config/nginx.conf /etc/nginx/conf.d/default.conf
 EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]
-{{< / highlight >}}
+```
 
 {{< aboutme >}}

@@ -3,6 +3,8 @@ title: "Analyzing twitter: Import tweets with NodeJS and the twitter API"
 date: 2019-10-25
 draft: false
 description: "Work with the twitter api and nodejs, importing tweets for later use"
+showToc: true
+TocOpen: true
 tags:
     - nodejs
     - twitter
@@ -23,7 +25,7 @@ So regardless of the final goal in this blog we'll explore importing tweets from
 
 Once you authenticate with the API and pull in the first tweets (for example using [the twitter module on npm](https://www.npmjs.com/package/twitter)) you will notice tweets contain ids as numbers and "id_str" which is the same id just as string:
 
-{{< highlight json >}}
+```json
 {
  "created_at": "Wed Oct 10 20:19:24 +0000 2018",
  "id": 1050118621198921728,
@@ -32,7 +34,7 @@ Once you authenticate with the API and pull in the first tweets (for example usi
  "user": {},  
  "entities": {}
 }
-{{< / highlight >}}
+```
 
 The reason for this is that some languages (Javascript being one of them) can not work with big numbers. For example JS numbers are internally 64-bit floats and only use the first 53 bits for the integer value. Javascript provides the static property Number.MAX_SAFE_INTEGER as 9007199254740991 which is smaller than the id in the example tweet already.
 
@@ -44,7 +46,7 @@ To work with tweet ids we need a way to handle bigger numbers and use the "id_st
 
 Saving tweets in MongoDB is easy. Since we are using typescript we can rely on the excellent (Typegoose library)[https://github.com/typegoose/typegoose] to create models for tweets and interact with MongoDB:
 
-{{< highlight typescript >}}
+```typescript
 import { prop, Typegoose, index } from "@hasezoey/typegoose";
 
 @index({ "entities.user_mentions.screen_name": 1 })
@@ -63,7 +65,7 @@ export class TwitterStatus extends Typegoose {
 }
 
 export const TwitterStatusModel = new TwitterStatus().getModelForClass(TwitterStatus, { schemaOptions: { strict: false } });
-{{< / highlight >}}
+```
 
 Notice I only defined some properties I wanted to use in this model & the index is also related to my use case. You might need to change those depending on the project.
 
@@ -79,10 +81,10 @@ In summary this means:
 * import tweets while setting max_id to the lowest id in the returned list until no new ones are returned, moving the upper bound closer to the lower bound
 * once no new tweets are returned set max_id to undefined to remove the upper bound for future imports
 
-{{< mailinglist >}}
+
 
 If you want to crawl all mentions for an account you can keep track of your crawl status with this model:
-{{< highlight typescript >}}
+```typescript
 import { prop, Typegoose } from "@hasezoey/typegoose";
 
 export class TwitterCrawlStatus extends Typegoose {
@@ -100,11 +102,11 @@ export class TwitterCrawlStatus extends Typegoose {
 }
 
 export const TwitterCrawlStatusModel = new TwitterCrawlStatus().getModelForClas(TwitterCrawlStatus);
-{{< / highlight >}}
+```
 
 A basic algorithm without any safeguards against failing that uses that logic and imports all mentions for a specific account follows:
 
-{{< highlight typescript >}}
+```typescript
     while(true) {
         const twitterCrawlStatus = await TwitterCrawlStatusModel.findOne({ account: account };
 
@@ -149,7 +151,7 @@ A basic algorithm without any safeguards against failing that uses that logic an
             break;
         }
     }
-{{< / highlight >}}
+```
 
 # The twitter service
 
@@ -157,7 +159,7 @@ A basic algorithm without any safeguards against failing that uses that logic an
 
 The twitter service itself is just a minimalist wrapper around the twitter npm module:
 
-{{< highlight typescript >}}
+```typescript
 import * as Twitter from "twitter";
 import { Status } from "twitter-d";
 import Big from "big.js";
@@ -195,6 +197,6 @@ export class TwitterService {
         });
     }
 }
-{{< / highlight >}}
+```
 
 {{< aboutme >}}

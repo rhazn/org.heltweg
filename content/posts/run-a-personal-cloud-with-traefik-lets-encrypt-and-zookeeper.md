@@ -3,6 +3,8 @@ title: "Run a personal Cloud with Traefik, Lets encrypt and Zookeeper"
 date: 2019-08-16
 draft: false
 description: "Run a personal Cloud with Traefik, Lets encrypt and Zookeeper"
+showToc: true
+TocOpen: true
 tags:
     - kubernetes
     - docker
@@ -37,13 +39,13 @@ Enter a shared Key/Value store for Traefik. Using one is required if you want to
 
 Since I have previous experience with Zookeeper and the setup was relatively painless I went with it.
 
-{{< mailinglist >}}
+
 
 # All Kubernetes yaml files for the setup
 Finally the meat of the blog post, my complete setup as yaml files you can directly deploy into your GKE cluster:
 ## Set up Zookeeper first
 From this excellent ressource: [https://github.com/kow3ns/kubernetes-zookeeper/blob/master/manifests/README.md](https://github.com/kow3ns/kubernetes-zookeeper/blob/master/manifests/README.md)
-{{< highlight yml >}}
+```yml
 apiVersion: v1
 kind: Service
 metadata:
@@ -164,10 +166,10 @@ spec:
       resources:
         requests:
           storage: 5Gi
-{{< / highlight >}}
+```
 
 ## Permissions for Traefik
-{{< highlight yml >}}
+```yml
 # create Traefik cluster role
 kind: ClusterRole
 apiVersion: rbac.authorization.k8s.io/v1beta1
@@ -213,11 +215,11 @@ subjects:
 - kind: ServiceAccount
   name: traefik-ingress-controller
   namespace: default
-{{< / highlight >}}
+```
 
 ## Traefik config
 Note the configuration of zookeeper using the service address for the "client service" (cs) as well as the Let's encrypt config here.
-{{< highlight yml >}}
+```yml
 # define Traefik configuration
 kind: ConfigMap
 apiVersion: v1
@@ -253,11 +255,11 @@ data:
 
       [[acme.domains]]
         main = "your.domain.com"
-{{< / highlight >}}
+```
 
 ## Deployment for Traefik
 I run just one replica in here to save costs in my dev setup but I've also scaled it up to three to test if it would stay up 100% of the time even with random nodes going down and everything works fine :).
-{{< highlight yml >}}
+```yml
 # declare Traefik deployment
 kind: Deployment
 apiVersion: extensions/v1beta1
@@ -286,10 +288,10 @@ spec:
         - --configfile=/etc/traefik/config/traefik.toml
         - --kubernetes
         - --logLevel=INFO
-{{< / highlight >}}
+```
 
 ## Traefik service
-{{< highlight yml >}}
+```yml
 # Declare Traefik ingress service
 kind: Service
 apiVersion: v1
@@ -304,17 +306,17 @@ spec:
     - port: 443
       name: tls
   type: LoadBalancer
-{{< / highlight >}}
+```
 
 {{< freelance >}}
 
 # Final result
 The final workloads with traefik and zookeeper
 
-{{< figure src="/img/posts/run-a-personal-cloud-with-traefik-lets-encrypt-and-zookeeper/workloads.png" caption="Traefik and Zookeeper workloads">}}
+![Traefik and Zookeeper workloads](/img/posts/run-a-personal-cloud-with-traefik-lets-encrypt-and-zookeeper/workloads.png#center)
 
 And the kubernetes ingresses (ignore the app I used as demo for this).
 
-{{< figure src="/img/posts/run-a-personal-cloud-with-traefik-lets-encrypt-and-zookeeper/ingress.png" caption="Kubernetes ingresses">}}
+![Kubernetes ingresses](/img/posts/run-a-personal-cloud-with-traefik-lets-encrypt-and-zookeeper/ingress.png#center)
 
 {{< aboutme >}}

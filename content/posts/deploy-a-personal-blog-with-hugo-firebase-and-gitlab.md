@@ -3,6 +3,8 @@ title: "Deploy a personal blog with Hugo, Firebase and Gitlab"
 date: 2019-05-03
 draft: false
 description: "Deploy a personal blog with Hugo, Firebase and Gitlab"
+showToc: true
+TocOpen: true
 tags:
     - gohugo
     - firebase
@@ -22,13 +24,13 @@ All these requirements are solved by using a static site generator and keeping t
 
 I chose gohugo as a site generator due to the excellent setup article written by Fabian Gruber here: https://www.fabiangruber.de/posts/setup-and-deployment
 
-{{< mailinglist >}}
+
 
 # Automated builds
 
 I set up an automated build using gitlab using the following gitlab-ci.yml:
 
-{{< highlight yml >}}
+```yml
 stages:
   - build
 
@@ -40,7 +42,7 @@ build:
   artifacts:
     paths:
       - public/
-{{< / highlight >}}
+```
 
 This uses a docker image for Hugo and builds the static page from the sources provided.
 
@@ -50,23 +52,23 @@ I chose firebase to host the website because I have previous experience with it.
 
 After creating a new project in firebase you'll need to get a token that allows gitlab to make deployments on your behalf:
 
-{{< highlight bash >}}
+```bash
 firebase login:ci
-{{< / highlight >}}
+```
 
 Set it up as a secret variable in gitlab called "FIREBASE_TOKEN".
 
 To add firebase to the gohugo project navigate to the directory in the CLI can call:
-{{< highlight bash >}}
+```bash
 firebase init
-{{< / highlight >}}
+```
 
 Armed with the token that allows gitlab to deploy in your name as well as a configured firebase project we can add the last step to the gitlab-ci file - deployment.
 
 {{< freelance >}}
 
 You can see the full gitlab-ci.yml file here:
-{{< highlight yml >}}
+```yml
 stages:
   - build
   - deploy
@@ -93,6 +95,6 @@ deploy:
     url: https://<project-name>.firebaseapp.com
   dependencies:
     - build
-{{< / highlight >}}
+```
 
 {{< aboutme >}}

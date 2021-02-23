@@ -3,6 +3,8 @@ title: "Wisdom from the Internet, content that influenced how I think about soft
 date: 2020-12-03
 draft: false
 description: "A list of various content I found and gathered over the years that influenced me at the time or gave me new ideas. Mainly focused on software engineering and generic life advice."
+showToc: true
+TocOpen: true
 tags:
   - software engineering
   - blogs
@@ -55,6 +57,6 @@ For software engineers just starting a career I think these blogs are an absolut
 
 [Don't Call Yourself A Programmer, And Other Career Advice](https://www.kalzumeus.com/2011/10/28/dont-call-yourself-a-programmer/)
 
-{{< mailinglist >}}
+
 
 {{< aboutme >}}

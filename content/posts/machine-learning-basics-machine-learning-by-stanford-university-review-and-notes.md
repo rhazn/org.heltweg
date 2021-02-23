@@ -3,6 +3,8 @@ title: "Machine learning basics: Machine Learning by Stanford University (Course
 date: 2020-03-14
 draft: false
 description: "Review of the Machine Learning by Stanford University course on Coursera as well as notes"
+showToc: true
+TocOpen: true
 tags:
   - machine-learning
   - coursera
@@ -40,6 +42,6 @@ Solving programming assignments in Octave: Probably due to the age of the course
 I took a lot of notes during the course (more than 120 pages to be exact). They are mostly very close to the course material provided but sometimes rephrased and annotated with additional comments from me. In case they help anyone you can:
 [Download them here](https://drive.google.com/open?id=177-viQ2qr4dU7sBheXPzbM3DPZX-eXti)
 
-{{< mailinglist >}}
+
 
 {{< aboutme >}}
