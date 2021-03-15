@@ -2,6 +2,7 @@
 title: "Analyzing twitter: Import tweets with NodeJS and the twitter API"
 date: 2019-10-25
 draft: false
+slug: "import-tweets-with-nodejs-and-the-twitter-api"
 description: "Work with the twitter api and nodejs, importing tweets for later use"
 showToc: true
 TocOpen: true

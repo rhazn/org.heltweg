@@ -4,6 +4,7 @@ date: 2016-10-04T11:30:03+00:00
 # weight: 1
 # aliases: ["/first"]
 tags: ["spa", "youtube", "angular"]
+slug: "whatchr-dot-com-a-better-youtube-playlist-experience"
 author: "Philip Heltweg"
 # author: ["Me", "You"] # multiple authors
 showToc: true

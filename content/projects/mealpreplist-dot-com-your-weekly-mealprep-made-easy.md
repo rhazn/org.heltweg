@@ -4,6 +4,7 @@ date: 2017-09-27T11:30:03+00:00
 # weight: 1
 # aliases: ["/first"]
 tags: ["spa","mealprep", "react", "firebase"]
+slug: "mealpreplist-dot-com-your-weekly-mealprep-made-easy"
 author: "Philip Heltweg"
 # author: ["Me", "You"] # multiple authors
 showToc: true

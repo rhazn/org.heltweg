@@ -1,6 +1,7 @@
 ---
 title: "Build a docker image on gitlab ci and publish it to google container registry"
 date: 2019-09-03T11:30:03+00:00
+slug: "build-a-docker-image-on-gitlab-ci-and-publish-it-to-google-container-registry"
 # weight: 1
 # aliases: ["/first"]
 tags: ["docker", "gitlab", "gcr", "ci", "continuous integration", "continuous deployment", "kubernetes", "devops", "personal-cloud"]

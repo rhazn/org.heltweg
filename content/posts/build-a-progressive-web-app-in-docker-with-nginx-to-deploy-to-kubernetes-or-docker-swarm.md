@@ -2,6 +2,7 @@
 title: "Build a progressive web app in docker with nginx to deploy to kubernetes or docker swarm"
 date: 2019-08-24
 draft: false
+slug: "build-a-progressive-web-app-in-docker-with-nginx-to-deploy-to-kubernetes-or-docker-swarm"
 description: "Build a progressive web app delivered by nginx with docker to deploy it to docker swarm or kubernetes."
 showToc: true
 TocOpen: true

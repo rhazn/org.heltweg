@@ -2,6 +2,7 @@
 title: "Machine learning basics: Machine Learning by Stanford University (Coursera) review and notes"
 date: 2020-03-14
 draft: false
+slug: "machine-learning-basics-machine-learning-by-stanford-university-review-and-notes"
 description: "Review of the Machine Learning by Stanford University course on Coursera as well as notes"
 showToc: true
 TocOpen: true

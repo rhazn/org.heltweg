@@ -8,7 +8,9 @@ buildDrafts: false
 buildFuture: false
 buildExpired: false
 
-googleAnalytics: UA-109574740-3
+permalinks:
+  posts: /posts/:slug
+  projects: /projects/:slug
 
 minify:
     disableXML: true
