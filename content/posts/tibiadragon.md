@@ -14,7 +14,7 @@ comments: false
 description: "How to slay a dragon."
 disableHLJS: false # to disable highlightjs
 disableShare: false
-searchHidden: true
+searchHidden: false
 cover:
     image: "img/posts/tibiadragon/dragon.png" # image path/url
     alt: "Dead dragon" # alt text
