@@ -28,4 +28,6 @@ The slides are from my final presentation of the topic (and might be more or les
 
 [Presentation Slides](/files/of-judges-aliens-and-total-preorders_presentation.pdf)
 
+[Source Code](https://github.com/rhazn/master-seminar)
+
 {{< aboutme >}}
