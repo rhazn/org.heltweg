@@ -28,13 +28,13 @@ cover:
 <video controls src="/img/projects/frozzen/gameplay.mp4"></video>
 
 # Screenshots
-![Login](/img/projects/frozzen/login.png#center)
-![Menu](/img/projects/frozzen/menu.png#center)
-![Select Level](/img/projects/frozzen/select-level.png#center)
-![Select Party](/img/projects/frozzen/select-party.png#center)
-![Manage Party](/img/projects/frozzen/manage-party.png#center)
-![Testlevel](/img/projects/frozzen/testlevel.png#center)
-![Gameplay PNG](/img/projects/frozzen/gameplay.png#center)
+{{< figure src="/img/projects/frozzen/login.png" title="Login" >}}
+{{< figure src="/img/projects/frozzen/menu.png" title="Menu" >}}
+{{< figure src="/img/projects/frozzen/select-level.png" title="Select a scenario" >}}
+{{< figure src="/img/projects/frozzen/select-party.png" title="Select a party" >}}
+{{< figure src="/img/projects/frozzen/manage-party.png" title="Manage your party" >}}
+{{< figure src="/img/projects/frozzen/testlevel.png" title="Manage party member and test level" >}}
+{{< figure src="/img/projects/frozzen/gameplay.png" title="Gameplay" >}}
 
 # Old History
 {{< youtube 7pboe89tI_4 >}}

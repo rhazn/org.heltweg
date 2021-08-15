@@ -26,12 +26,12 @@ cover:
 ---
 A social media analytics tool, powered by a Java/PostgreSQL/Kubernetes backend and a React frontend.
 
-![spaeher.app Landingpage](/img/projects/app.spaeher/marketing.png#center)
-![spaeher.app Case Study](/img/projects/app.spaeher/case_study.png#center)
-![spaeher.app Index](/img/projects/app.spaeher/index.png#center)
-![spaeher.app New Report](/img/projects/app.spaeher/new_report.png#center)
-![spaeher.app Report Example](/img/projects/app.spaeher/report.png#center)
-![spaeher.app Report Example](/img/projects/app.spaeher/report2.png#center)
-![spaeher.app Report Example](/img/projects/app.spaeher/report3.png#center)
-![spaeher.app Comments by Word](/img/projects/app.spaeher/comments.png#center)
-![spaeher.app Comments by Sentiment](/img/projects/app.spaeher/comments2.png#center)
+{{< figure src="/img/projects/app.spaeher/marketing.png" title="Landingpage" >}}
+{{< figure src="/img/projects/app.spaeher/case_study.png" title="Case Study" >}}
+{{< figure src="/img/projects/app.spaeher/index.png" title="Index" >}}
+{{< figure src="/img/projects/app.spaeher/new_report.png" title="New Report" >}}
+{{< figure src="/img/projects/app.spaeher/report.png" title="Report Example" >}}
+{{< figure src="/img/projects/app.spaeher/report2.png" title="Report Example" >}}
+{{< figure src="/img/projects/app.spaeher/report3.png" title="Report Example" >}}
+{{< figure src="/img/projects/app.spaeher/comments.png" title="Comments by Word" >}}
+{{< figure src="/img/projects/app.spaeher/comments2.png" title="Comments by Sentiment" >}}
