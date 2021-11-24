@@ -26,6 +26,7 @@
 {{- if .Site.Params.analytics.bing.SiteVerificationTag }}
 <meta name="msvalidate.01" content="{{ .Site.Params.analytics.bing.SiteVerificationTag }}" />
 {{- end}}
+<script defer data-domain="rhazn.com" src="https://plausible.io/js/plausible.js"></script>
 <!-- Styles -->
 {{- $common := (resources.Match "css/*.css") | resources.Concat "assets/css/common.css" }}
 {{- $extended := (resources.Match "css/extended/*.css") | resources.Concat "assets/css/extended.css" }}
