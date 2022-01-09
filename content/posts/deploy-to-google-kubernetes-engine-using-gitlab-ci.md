@@ -19,7 +19,7 @@ tags:
     - personal-cloud
 ---
 
-In a previous blogpost I showed how I build and publish docker images on gitlab ci ([Build a docker image on gitlab ci](https://rhazn.com/posts/build-a-docker-image-on-gitlab-ci-and-publish-it-to-google-container-registry/))
+In a previous blogpost I showed how I build and publish docker images on gitlab ci ([Build a docker image on gitlab ci](https://heltweg.org/posts/build-a-docker-image-on-gitlab-ci-and-publish-it-to-google-container-registry/))
 
 Make sure to read that post first for an overview and permission setup.
 

@@ -20,7 +20,7 @@ tags:
     - personal-cloud
 ---
 
-With my personal cloud setup based on kubernetes done (you can read about it here: [https://rhazn.com/posts/run-a-personal-cloud-with-traefik-lets-encrypt-and-zookeeper/](https://rhazn.com/posts/run-a-personal-cloud-with-traefik-lets-encrypt-and-zookeeper/)) it is time to actually deploy the first project into it. 
+With my personal cloud setup based on kubernetes done (you can read about it here: [https://heltweg.org/posts/run-a-personal-cloud-with-traefik-lets-encrypt-and-zookeeper/](https://heltweg.org/posts/run-a-personal-cloud-with-traefik-lets-encrypt-and-zookeeper/)) it is time to actually deploy the first project into it. 
 
 The easiest application to deploy is a pure client side single page application, packaged in a docker container with a webserver like nginx to deliver the files. Packaging the application into it's own container allows us to build a standardized container that can be run locally for testing or deployed to docker swarm and kubernetes.
 

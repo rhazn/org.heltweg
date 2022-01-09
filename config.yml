@@ -1,11 +1,11 @@
-baseURL: "https://rhazn.com"
+baseURL: "https://heltweg.org"
 title: Philip Heltweg
 paginate: 10
 theme: PaperMod
 markup:
-  goldmark:
-    renderer:
-      unsafe: true
+    goldmark:
+        renderer:
+            unsafe: true
 
 enableRobotsTXT: true
 buildDrafts: false
@@ -13,8 +13,8 @@ buildFuture: false
 buildExpired: false
 
 permalinks:
-  posts: /posts/:slug
-  projects: /projects/:slug
+    posts: /posts/:slug
+    projects: /projects/:slug
 
 minify:
     disableXML: true
@@ -100,7 +100,6 @@ params:
         threshold: 0.4
         minMatchCharLength: 0
         keys: ["title", "permalink", "summary", "content"]
-
 #menu:
 #    main:
 #        - identifier: categories

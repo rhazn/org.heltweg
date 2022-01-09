@@ -22,15 +22,15 @@ tags:
     - personal-cloud
 ---
 
-As the final step in this long series of blogposts we are going to deploy a simple webapp in a docker container to my personal cloud. For context here is the personal cloud setup with Traefik/Let's Encrypt ([Run a personal cloud with Traefik, Let's encrypt and Zookeeper](https://rhazn.com/posts/run-a-personal-cloud-with-traefik-lets-encrypt-and-zookeeper/)).
+As the final step in this long series of blogposts we are going to deploy a simple webapp in a docker container to my personal cloud. For context here is the personal cloud setup with Traefik/Let's Encrypt ([Run a personal cloud with Traefik, Let's encrypt and Zookeeper](https://heltweg.org/posts/run-a-personal-cloud-with-traefik-lets-encrypt-and-zookeeper/)).
 
-In previous blogposts I also described how I built the app ([Build a PWA in docker](https://rhazn.com/posts/build-a-progressive-web-app-in-docker-with-nginx-to-deploy-to-kubernetes-or-docker-swarm/)).
+In previous blogposts I also described how I built the app ([Build a PWA in docker](https://heltweg.org/posts/build-a-progressive-web-app-in-docker-with-nginx-to-deploy-to-kubernetes-or-docker-swarm/)).
 
 # App deployment
 
 The deployment runs the docker container. If you follow my personal cloud setup make sure to use more than one replica as the nature of preemtive VMs means one replica might randomly get shut down.
 
-Note that the image will be set and updated by gitlab ci as described here: ([Deploy to google kubernetes engine using gitlab ci](https://rhazn.com/posts/deploy-to-google-kubernetes-engine-using-gitlab-ci/)).
+Note that the image will be set and updated by gitlab ci as described here: ([Deploy to google kubernetes engine using gitlab ci](https://heltweg.org/posts/deploy-to-google-kubernetes-engine-using-gitlab-ci/)).
 
 ```yml
 kind: Deployment
@@ -86,7 +86,7 @@ rules:
 {{< freelance >}}
 
 # Updating the traefik config
-Updating the traefik config is important so traefik requests a new HTTPS certificate for the app from Let's encrypt. You will need to add this line to the traefik toml file that is described here ([Run a personal cloud with Traefik, Let's encrypt and Zookeeper](https://rhazn.com/posts/run-a-personal-cloud-with-traefik-lets-encrypt-and-zookeeper/)):
+Updating the traefik config is important so traefik requests a new HTTPS certificate for the app from Let's encrypt. You will need to add this line to the traefik toml file that is described here ([Run a personal cloud with Traefik, Let's encrypt and Zookeeper](https://heltweg.org/posts/run-a-personal-cloud-with-traefik-lets-encrypt-and-zookeeper/)):
 
 ```yml
 [[acme.domains]]

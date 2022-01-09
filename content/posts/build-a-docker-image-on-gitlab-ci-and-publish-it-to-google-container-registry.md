@@ -25,7 +25,7 @@ cover:
 
 ---
 
-In previous blogposts I explained my concept of a personal cloud for my own projects ([Kubernetes for Sideprojects](https://rhazn.com/posts/kubernetes-for-sideprojects-hardware-is-dead/)) and how I set it up ([Run a personal cloud with Traefik, Let's encrypt and Zookeeper](https://rhazn.com/posts/run-a-personal-cloud-with-traefik-lets-encrypt-and-zookeeper/)). I also showed how I packaged a PWA project with docker ([Build a PWA in docker](https://rhazn.com/posts/build-a-progressive-web-app-in-docker-with-nginx-to-deploy-to-kubernetes-or-docker-swarm/)).
+In previous blogposts I explained my concept of a personal cloud for my own projects ([Kubernetes for Sideprojects](https://heltweg.org/posts/kubernetes-for-sideprojects-hardware-is-dead/)) and how I set it up ([Run a personal cloud with Traefik, Let's encrypt and Zookeeper](https://heltweg.org/posts/run-a-personal-cloud-with-traefik-lets-encrypt-and-zookeeper/)). I also showed how I packaged a PWA project with docker ([Build a PWA in docker](https://heltweg.org/posts/build-a-progressive-web-app-in-docker-with-nginx-to-deploy-to-kubernetes-or-docker-swarm/)).
 
 With all those ingredients ready to go the last hurdle to solve is building the docker image automatically as well as publishing it to a private container registry so I can deploy it to my cloud from there.
 
