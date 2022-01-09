@@ -14,7 +14,7 @@ Their transformation to a full team member is complete. They have become one of 
 
 I was once that bright-eyed junior developer. Many encounters with PHP4 later could no longer look forward to creating new features. Instead, I looked back and complained about old ones. Trashing legacy software is fun. It creates camaraderie. Who wrote this? What were they thinking? Looking at the commit log showed names that meant nothing to me. Ghosts that moved on long ago, leaving nothing but their shit code.
 
-One day, I was pair programming with my friend Torben. Torben was a senior developer that had introduced me to the team months earlier. When I found some weird code, I followed the tradition. Who was dumb enough to write this? I opened the commit log and for the first time I recognized a name: "Torben".
+One day, I was pair programming with my friend Torben. Torben was a senior developer who introduced me to the team months earlier. When I found some weird code, I followed the tradition. Who was dumb enough to write this? I opened the commit log, and for the first time, I recognized a name: "Torben."
 
 Since then, I remind myself that legacy software is written by people like me. Torben had constraints I knew nothing about. He worried about deadlines long past. Torben had learned a lot since then. Development workflows had evolved, infrastructure had gotten better.
 
