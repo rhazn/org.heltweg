@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>blogs on Philip Heltweg</title>
+    <link>https://rhazn.com/tags/blogs/</link>
+    <description>Recent content in blogs on Philip Heltweg</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 03 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://rhazn.com/tags/blogs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Wisdom from the Internet, content that influenced how I think about software (and life).</title>
+      <link>https://rhazn.com/posts/wisdom-from-the-internet/</link>
+      <pubDate>Thu, 03 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://rhazn.com/posts/wisdom-from-the-internet/</guid>
+      <description>Finding needles There has never been as much information easily accessible to anyone as right now. The ease of publishing your own writing leads to new problems: The question is no longer where do you find content about a topic but what content is good and worth your time?
+To help you find the needle in the biggest haystack ever, here is my personal list of good content that influenced me.</description>
+    </item>
+    
+  </channel>
+</rss>

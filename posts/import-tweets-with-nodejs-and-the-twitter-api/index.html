@@ -1,0 +1,280 @@
+<!doctype html><html lang=en dir=auto>
+<head><meta charset=utf-8>
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
+<meta name=robots content="index, follow">
+<title>Analyzing twitter: Import tweets with NodeJS and the twitter API | Philip Heltweg</title>
+<meta name=keywords content="nodejs,twitter,api,typescript,javascript,mongodb,import">
+<meta name=description content="Work with the twitter api and nodejs, importing tweets for later use">
+<meta name=author content="Philip Heltweg">
+<link rel=canonical href=https://rhazn.com/posts/import-tweets-with-nodejs-and-the-twitter-api/>
+<script defer data-domain=rhazn.com src=https://plausible.io/js/plausible.js></script>
+<link href=/assets/css/stylesheet.min.0009c85d6853c106e67556d2d8267107aa5a5adabd44b73921b9a91ce1f099e5.css integrity="sha256-AAnIXWhTwQbmdVbS2CZxB6paWtq9RLc5IbmpHOHwmeU=" rel="preload stylesheet" as=style>
+<link rel=icon href=https://rhazn.com/img/favicon/favicon.ico>
+<link rel=icon type=image/png sizes=16x16 href=https://rhazn.com/img/favicon/favicon-16x16.png>
+<link rel=icon type=image/png sizes=32x32 href=https://rhazn.com/img/favicon/favicon-32x32.png>
+<link rel=apple-touch-icon href=https://rhazn.com/img/favicon/apple-touch-icon.png>
+<link rel=mask-icon href=https://rhazn.com/img/favicon/safari-pinned-tab.svg>
+<meta name=theme-color content="#2e2e33">
+<meta name=msapplication-TileColor content="#2e2e33">
+<meta name=generator content="Hugo 0.88.0">
+<meta property="og:title" content="Analyzing twitter: Import tweets with NodeJS and the twitter API">
+<meta property="og:description" content="Work with the twitter api and nodejs, importing tweets for later use">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://rhazn.com/posts/import-tweets-with-nodejs-and-the-twitter-api/">
+<meta property="og:image" content="https://rhazn.com/img/avatar.jpg">
+<meta property="article:published_time" content="2019-10-25T00:00:00+00:00">
+<meta property="article:modified_time" content="2019-10-25T00:00:00+00:00"><meta property="og:site_name" content="Philip Heltweg">
+<meta name=twitter:card content="summary_large_image">
+<meta name=twitter:image content="https://rhazn.com/img/avatar.jpg">
+<meta name=twitter:title content="Analyzing twitter: Import tweets with NodeJS and the twitter API">
+<meta name=twitter:description content="Work with the twitter api and nodejs, importing tweets for later use">
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":2,"name":"Posts","item":"https://rhazn.com/posts/"},{"@type":"ListItem","position":3,"name":"Analyzing twitter: Import tweets with NodeJS and the twitter API","item":"https://rhazn.com/posts/import-tweets-with-nodejs-and-the-twitter-api/"}]}</script>
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Analyzing twitter: Import tweets with NodeJS and the twitter API","name":"Analyzing twitter: Import tweets with NodeJS and the twitter API","description":"A tweet in the database is worth two in the API Working with tweets from the twitter API probably means importing data into your own database - the standard API does not provide …","keywords":["nodejs","twitter","api","typescript","javascript","mongodb","import"],"articleBody":"A tweet in the database is worth two in the API Working with tweets from the twitter API probably means importing data into your own database - the standard API does not provide historical data (only the last seven days) and has various rate limits.\nSo regardless of the final goal in this blog we’ll explore importing tweets from the API into a database for future use. All done with NodeJS, written in Typescript and utilizing MongoDB as data store.\nBig numbers, big problems Once you authenticate with the API and pull in the first tweets (for example using the twitter module on npm) you will notice tweets contain ids as numbers and “id_str” which is the same id just as string:\n{ \"created_at\": \"Wed Oct 10 20:19:24 +0000 2018\", \"id\": 1050118621198921728, \"id_str\": \"1050118621198921728\", \"text\": \"To make room for more expression, we will now count all emojis as equal—including those with gender‍‍‍ ‍‍and skin t… https://t.co/MkGjXf9aXm\", \"user\": {}, \"entities\": {} } The reason for this is that some languages (Javascript being one of them) can not work with big numbers. For example JS numbers are internally 64-bit floats and only use the first 53 bits for the integer value. Javascript provides the static property Number.MAX_SAFE_INTEGER as 9007199254740991 which is smaller than the id in the example tweet already.\nTo work with tweet ids we need a way to handle bigger numbers and use the “id_str”. big.js provides that functionality and is used in all following code examples.\n.freelance { border: 1px var(--theme-color-foreground) solid; padding: 24px; margin: 24px; display: flex; flex-direction: column; align-items: center; } .freelance__button { background-color: var(--theme-color-background) !important; color: var(--theme-color-foreground) !important; background-color: red; padding: 1em 1.5em; text-decoration: none !important; display: block; max-width: 50%; text-align: center; margin: 1em; }  I am a freelancer and would love to help you! EMAIL ME 👋  Saving tweets Saving tweets in MongoDB is easy. Since we are using typescript we can rely on the excellent (Typegoose library)[https://github.com/typegoose/typegoose] to create models for tweets and interact with MongoDB:\nimport { prop, Typegoose, index } from \"@hasezoey/typegoose\"; @index({ \"entities.user_mentions.screen_name\": 1 }) export class TwitterStatus extends Typegoose { @prop({ required: true, unique: true, index: true }) id_str!: string; @prop({ required: true }) full_text!: string; @prop({ required: true }) entities!: { user_mentions: { screen_name: string }[] } @prop({ required: true }) created_at!: string; } export const TwitterStatusModel = new TwitterStatus().getModelForClass(TwitterStatus, { schemaOptions: { strict: false } }); Notice I only defined some properties I wanted to use in this model \u0026 the index is also related to my use case. You might need to change those depending on the project.\nIf schemaOptions define strict as false (see the last line) typegoose saves the whole JSON of the tweet in MongoDB, not just defined fields.\nImport logic To optimize the amount of tweets you can crawl from the API in the limits twitter provides an excellent resource on using the since_id and max_id parameters correctly here: https://developer.twitter.com/en/docs/tweets/timelines/guides/working-with-timelines.\nIn summary this means:\n set the since_id to the highest tweet id your application has already imported defining a lower bound for the imported tweets set the max_id to the max_id from the last import and subtract 1 defining the upper bound import tweets while setting max_id to the lowest id in the returned list until no new ones are returned, moving the upper bound closer to the lower bound once no new tweets are returned set max_id to undefined to remove the upper bound for future imports  If you want to crawl all mentions for an account you can keep track of your crawl status with this model:\nimport { prop, Typegoose } from \"@hasezoey/typegoose\"; export class TwitterCrawlStatus extends Typegoose { @prop({ required: true, unique: true, lowercase: true, trim: true }) account!: string; @prop({ trim: true }) sinceId?: string; @prop({ trim: true }) maxId?: string; @prop({ trim: true }) overallMaxId?: string; } export const TwitterCrawlStatusModel = new TwitterCrawlStatus().getModelForClas(TwitterCrawlStatus); A basic algorithm without any safeguards against failing that uses that logic and imports all mentions for a specific account follows:\nwhile(true) { const twitterCrawlStatus = await TwitterCrawlStatusModel.findOne({ account: account }; if (!twitterCrawlStatus) { twitterCrawlStatus = await TwitterCrawlStatusModel.create({ account: account }); await twitterCrawlStatus.save(); } const tweets = await twitterService.getMentions( account, twitterCrawlStatus.sinceId ? Big(twitterCrawlStatus.sinceId) : undefined, twitterCrawlStatus.maxId ? Big(twitterCrawlStatus.maxId).minus(1) : undefined, ); if (tweets.length  0) { await TwitterStatusModel.bulkWrite(tweets.map(tweet = { return { updateOne: { filter: { id_str: tweet.id_str }, update: { $set: tweet }, upsert: true } } })); const lowestId = (getLowestId(tweets) as Big); const highestId = (getHighestId(tweets) as Big); twitterCrawlStatus.maxId = lowestId.toFixed(); if (!twitterCrawlStatus.overallMaxId || Big(twitterCrawlStatus.overallMaxId).lt(highestId)) { twitterCrawlStatus.overallMaxId = highestId.toFixed(); } } else { twitterCrawlStatus.sinceId = twitterCrawlStatus.overallMaxId; twitterCrawlStatus.maxId = undefined; } await twitterCrawlStatus.save(); if (tweets.length === 0) { break; } } The twitter service .freelance { border: 1px var(--theme-color-foreground) solid; padding: 24px; margin: 24px; display: flex; flex-direction: column; align-items: center; } .freelance__button { background-color: var(--theme-color-background) !important; color: var(--theme-color-foreground) !important; background-color: red; padding: 1em 1.5em; text-decoration: none !important; display: block; max-width: 50%; text-align: center; margin: 1em; }  I am a freelancer and would love to help you! EMAIL ME 👋  The twitter service itself is just a minimalist wrapper around the twitter npm module:\nimport * as Twitter from \"twitter\"; import { Status } from \"twitter-d\"; import Big from \"big.js\"; export class TwitterService { private client: Twitter; constructor( consumerKey: string, consumerSecret: string, bearerToken: string ) { this.client = new Twitter({ consumer_key: consumerKey, consumer_secret: consumerSecret, bearer_token: bearerToken }); } public async getMentions( account: string, sinceId?: Big | undefined, maxId?: Big | undefined ): PromiseStatus[] { return await this.client.get(\"search/tweets\", { q: `@${account}-filter:retweets`, result_type: \"recent\", count: 100, include_entities: true, tweet_mode: \"extended\", since_id: sinceId ? sinceId.toFixed(0) : undefined, max_id: maxId ? maxId.toFixed(0) : undefined }).then(response = { return response.statuses; }); } } About Me Find me either by email (pheltweg@gmail.com) or on twitter https://twitter.com/rhanarion. ","wordCount":"957","inLanguage":"en","datePublished":"2019-10-25T00:00:00Z","dateModified":"2019-10-25T00:00:00Z","author":{"@type":"Person","name":"Philip Heltweg"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://rhazn.com/posts/import-tweets-with-nodejs-and-the-twitter-api/"},"publisher":{"@type":"Organization","name":"Philip Heltweg","logo":{"@type":"ImageObject","url":"https://rhazn.com/img/favicon/favicon.ico"}}}</script>
+</head>
+<body id=top>
+<script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add('dark'):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove('dark'):window.matchMedia('(prefers-color-scheme: dark)').matches&&document.body.classList.add('dark')</script>
+<noscript>
+<style type=text/css>#theme-toggle,.top-link{display:none}</style>
+</noscript>
+<header class=header>
+<nav class=nav>
+<div class=logo>
+<a href=https://rhazn.com accesskey=h title="Home (Alt + H)">
+<img src=/img/favicon/apple-touch-icon.png alt=logo aria-label=logo height=35>Home</a>
+<span class=logo-switches>
+<button id=theme-toggle accesskey=t title="(Alt + T)"><svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+</button>
+</span>
+</div>
+<ul id=menu onscroll=menu_on_scroll()></ul>
+</nav>
+</header>
+<main class=main>
+<article class=post-single>
+<header class=post-header>
+<h1 class=post-title>
+Analyzing twitter: Import tweets with NodeJS and the twitter API
+</h1>
+<div class=post-description>
+Work with the twitter api and nodejs, importing tweets for later use
+</div>
+<div class=post-meta>
+October 25, 2019&nbsp;·&nbsp;5 min&nbsp;·&nbsp;Philip Heltweg
+</div>
+</header>
+<div class=toc>
+<details open>
+<summary accesskey=c title="(Alt + C)">
+<div class=details>Table of Contents</div>
+</summary>
+<div class=inner><ul><li>
+<a href=#a-tweet-in-the-database-is-worth-two-in-the-api aria-label="A tweet in the database is worth two in the API">A tweet in the database is worth two in the API</a></li><li>
+<a href=#big-numbers-big-problems aria-label="Big numbers, big problems">Big numbers, big problems</a></li><li>
+<a href=#saving-tweets aria-label="Saving tweets">Saving tweets</a></li><li>
+<a href=#import-logic aria-label="Import logic">Import logic</a></li><li>
+<a href=#the-twitter-service aria-label="The twitter service">The twitter service</a></li><li>
+<a href=# aria-label="About Me">About Me</a></li></ul>
+</div>
+</details>
+</div>
+<div class=post-content>
+<h1 id=a-tweet-in-the-database-is-worth-two-in-the-api>A tweet in the database is worth two in the API<a hidden class=anchor aria-hidden=true href=#a-tweet-in-the-database-is-worth-two-in-the-api>#</a></h1>
+<p>Working with tweets from the twitter API probably means importing data into your own database - the standard API does not provide historical data (only the last seven days) and has various rate limits.</p>
+<p>So regardless of the final goal in this blog we&rsquo;ll explore importing tweets from the API into a database for future use. All done with NodeJS, written in Typescript and utilizing MongoDB as data store.</p>
+<h1 id=big-numbers-big-problems>Big numbers, big problems<a hidden class=anchor aria-hidden=true href=#big-numbers-big-problems>#</a></h1>
+<p>Once you authenticate with the API and pull in the first tweets (for example using <a href=https://www.npmjs.com/package/twitter>the twitter module on npm</a>) you will notice tweets contain ids as numbers and &ldquo;id_str&rdquo; which is the same id just as string:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-json data-lang=json>{
+ <span style=color:#f92672>&#34;created_at&#34;</span>: <span style=color:#e6db74>&#34;Wed Oct 10 20:19:24 +0000 2018&#34;</span>,
+ <span style=color:#f92672>&#34;id&#34;</span>: <span style=color:#ae81ff>1050118621198921728</span>,
+ <span style=color:#f92672>&#34;id_str&#34;</span>: <span style=color:#e6db74>&#34;1050118621198921728&#34;</span>,
+ <span style=color:#f92672>&#34;text&#34;</span>: <span style=color:#e6db74>&#34;To make room for more expression, we will now count all emojis as equal—including those with gender‍‍‍ ‍‍and skin t… https://t.co/MkGjXf9aXm&#34;</span>,
+ <span style=color:#f92672>&#34;user&#34;</span>: {},  
+ <span style=color:#f92672>&#34;entities&#34;</span>: {}
+}
+</code></pre></div><p>The reason for this is that some languages (Javascript being one of them) can not work with big numbers. For example JS numbers are internally 64-bit floats and only use the first 53 bits for the integer value. Javascript provides the static property Number.MAX_SAFE_INTEGER as 9007199254740991 which is smaller than the id in the example tweet already.</p>
+<p>To work with tweet ids we need a way to handle bigger numbers and use the &ldquo;id_str&rdquo;. <a href=https://www.npmjs.com/package/big-js>big.js</a> provides that functionality and is used in all following code examples.</p>
+<style type=text/css>.freelance{border:1px var(--theme-color-foreground)solid;padding:24px;margin:24px;display:flex;flex-direction:column;align-items:center}.freelance__button{background-color:var(--theme-color-background)!important;color:var(--theme-color-foreground)!important;background-color:red;padding:1em 1.5em;text-decoration:none!important;display:block;max-width:50%;text-align:center;margin:1em}</style>
+<div class=freelance>
+<div>I am a freelancer and would love to help you!</div>
+<a href=mailto:pheltweg@gmail.com class=freelance__button>EMAIL ME 👋</a>
+</div>
+<h1 id=saving-tweets>Saving tweets<a hidden class=anchor aria-hidden=true href=#saving-tweets>#</a></h1>
+<p>Saving tweets in MongoDB is easy. Since we are using typescript we can rely on the excellent (Typegoose library)[https://github.com/typegoose/typegoose] to create models for tweets and interact with MongoDB:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-typescript data-lang=typescript><span style=color:#66d9ef>import</span> { <span style=color:#a6e22e>prop</span>, <span style=color:#a6e22e>Typegoose</span>, <span style=color:#a6e22e>index</span> } <span style=color:#66d9ef>from</span> <span style=color:#e6db74>&#34;@hasezoey/typegoose&#34;</span>;
+
+<span style=color:#66d9ef>@index</span>({ <span style=color:#e6db74>&#34;entities.user_mentions.screen_name&#34;</span><span style=color:#f92672>:</span> <span style=color:#ae81ff>1</span> })
+<span style=color:#66d9ef>export</span> <span style=color:#66d9ef>class</span> <span style=color:#a6e22e>TwitterStatus</span> <span style=color:#66d9ef>extends</span> <span style=color:#a6e22e>Typegoose</span> {
+    <span style=color:#66d9ef>@prop</span>({ <span style=color:#a6e22e>required</span>: <span style=color:#66d9ef>true</span>, <span style=color:#66d9ef>unique</span><span style=color:#f92672>:</span> <span style=color:#66d9ef>true</span>, <span style=color:#a6e22e>index</span>: <span style=color:#66d9ef>true</span> })
+    <span style=color:#a6e22e>id_str</span><span style=color:#f92672>!:</span> <span style=color:#66d9ef>string</span>;
+
+    <span style=color:#66d9ef>@prop</span>({ <span style=color:#a6e22e>required</span>: <span style=color:#66d9ef>true</span> })
+    <span style=color:#a6e22e>full_text</span><span style=color:#f92672>!:</span> <span style=color:#66d9ef>string</span>;
+
+    <span style=color:#66d9ef>@prop</span>({ <span style=color:#a6e22e>required</span>: <span style=color:#66d9ef>true</span> })
+    <span style=color:#a6e22e>entities</span><span style=color:#f92672>!:</span> { <span style=color:#a6e22e>user_mentions</span><span style=color:#f92672>:</span> { <span style=color:#a6e22e>screen_name</span>: <span style=color:#66d9ef>string</span> }[] }
+
+    <span style=color:#66d9ef>@prop</span>({ <span style=color:#a6e22e>required</span>: <span style=color:#66d9ef>true</span> })
+    <span style=color:#a6e22e>created_at</span><span style=color:#f92672>!:</span> <span style=color:#66d9ef>string</span>;
+}
+
+<span style=color:#66d9ef>export</span> <span style=color:#66d9ef>const</span> <span style=color:#a6e22e>TwitterStatusModel</span> <span style=color:#f92672>=</span> <span style=color:#66d9ef>new</span> <span style=color:#a6e22e>TwitterStatus</span>().<span style=color:#a6e22e>getModelForClass</span>(<span style=color:#a6e22e>TwitterStatus</span>, { <span style=color:#a6e22e>schemaOptions</span><span style=color:#f92672>:</span> { <span style=color:#a6e22e>strict</span>: <span style=color:#66d9ef>false</span> } });
+</code></pre></div><p>Notice I only defined some properties I wanted to use in this model & the index is also related to my use case. You might need to change those depending on the project.</p>
+<p>If schemaOptions define strict as false (see the last line) typegoose saves the whole JSON of the tweet in MongoDB, not just defined fields.</p>
+<h1 id=import-logic>Import logic<a hidden class=anchor aria-hidden=true href=#import-logic>#</a></h1>
+<p>To optimize the amount of tweets you can crawl from the API in the limits twitter provides an excellent resource on using the since_id and max_id parameters correctly here: <a href=https://developer.twitter.com/en/docs/tweets/timelines/guides/working-with-timelines>https://developer.twitter.com/en/docs/tweets/timelines/guides/working-with-timelines</a>.</p>
+<p>In summary this means:</p>
+<ul>
+<li>set the since_id to the highest tweet id your application has already imported defining a lower bound for the imported tweets</li>
+<li>set the max_id to the max_id from the last import and subtract 1 defining the upper bound</li>
+<li>import tweets while setting max_id to the lowest id in the returned list until no new ones are returned, moving the upper bound closer to the lower bound</li>
+<li>once no new tweets are returned set max_id to undefined to remove the upper bound for future imports</li>
+</ul>
+<p>If you want to crawl all mentions for an account you can keep track of your crawl status with this model:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-typescript data-lang=typescript><span style=color:#66d9ef>import</span> { <span style=color:#a6e22e>prop</span>, <span style=color:#a6e22e>Typegoose</span> } <span style=color:#66d9ef>from</span> <span style=color:#e6db74>&#34;@hasezoey/typegoose&#34;</span>;
+
+<span style=color:#66d9ef>export</span> <span style=color:#66d9ef>class</span> <span style=color:#a6e22e>TwitterCrawlStatus</span> <span style=color:#66d9ef>extends</span> <span style=color:#a6e22e>Typegoose</span> {
+    <span style=color:#66d9ef>@prop</span>({ <span style=color:#a6e22e>required</span>: <span style=color:#66d9ef>true</span>, <span style=color:#66d9ef>unique</span><span style=color:#f92672>:</span> <span style=color:#66d9ef>true</span>, <span style=color:#a6e22e>lowercase</span>: <span style=color:#66d9ef>true</span>, <span style=color:#a6e22e>trim</span>: <span style=color:#66d9ef>true</span> })
+    <span style=color:#a6e22e>account</span><span style=color:#f92672>!:</span> <span style=color:#66d9ef>string</span>;
+
+    <span style=color:#66d9ef>@prop</span>({ <span style=color:#a6e22e>trim</span>: <span style=color:#66d9ef>true</span> })
+    <span style=color:#a6e22e>sinceId?</span>: <span style=color:#66d9ef>string</span>;
+
+    <span style=color:#66d9ef>@prop</span>({ <span style=color:#a6e22e>trim</span>: <span style=color:#66d9ef>true</span> })
+    <span style=color:#a6e22e>maxId?</span>: <span style=color:#66d9ef>string</span>;
+
+    <span style=color:#66d9ef>@prop</span>({ <span style=color:#a6e22e>trim</span>: <span style=color:#66d9ef>true</span> })
+    <span style=color:#a6e22e>overallMaxId?</span>: <span style=color:#66d9ef>string</span>;
+}
+
+<span style=color:#66d9ef>export</span> <span style=color:#66d9ef>const</span> <span style=color:#a6e22e>TwitterCrawlStatusModel</span> <span style=color:#f92672>=</span> <span style=color:#66d9ef>new</span> <span style=color:#a6e22e>TwitterCrawlStatus</span>().<span style=color:#a6e22e>getModelForClas</span>(<span style=color:#a6e22e>TwitterCrawlStatus</span>);
+</code></pre></div><p>A basic algorithm without any safeguards against failing that uses that logic and imports all mentions for a specific account follows:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-typescript data-lang=typescript>    <span style=color:#66d9ef>while</span>(<span style=color:#66d9ef>true</span>) {
+        <span style=color:#66d9ef>const</span> <span style=color:#a6e22e>twitterCrawlStatus</span> <span style=color:#f92672>=</span> <span style=color:#66d9ef>await</span> <span style=color:#a6e22e>TwitterCrawlStatusModel</span>.<span style=color:#a6e22e>findOne</span>({ <span style=color:#a6e22e>account</span>: <span style=color:#66d9ef>account</span> };
+
+        <span style=color:#66d9ef>if</span> (<span style=color:#f92672>!</span><span style=color:#a6e22e>twitterCrawlStatus</span>) {
+            <span style=color:#a6e22e>twitterCrawlStatus</span> <span style=color:#f92672>=</span> <span style=color:#66d9ef>await</span> <span style=color:#a6e22e>TwitterCrawlStatusModel</span>.<span style=color:#a6e22e>create</span>({ <span style=color:#a6e22e>account</span>: <span style=color:#66d9ef>account</span> });
+            <span style=color:#66d9ef>await</span> <span style=color:#a6e22e>twitterCrawlStatus</span>.<span style=color:#a6e22e>save</span>();
+        }
+
+        <span style=color:#66d9ef>const</span> <span style=color:#a6e22e>tweets</span> <span style=color:#f92672>=</span> <span style=color:#66d9ef>await</span> <span style=color:#a6e22e>twitterService</span>.<span style=color:#a6e22e>getMentions</span>(
+            <span style=color:#a6e22e>account</span>,
+            <span style=color:#a6e22e>twitterCrawlStatus</span>.<span style=color:#a6e22e>sinceId</span> <span style=color:#f92672>?</span> <span style=color:#a6e22e>Big</span>(<span style=color:#a6e22e>twitterCrawlStatus</span>.<span style=color:#a6e22e>sinceId</span>) <span style=color:#f92672>:</span> <span style=color:#66d9ef>undefined</span>,
+            <span style=color:#a6e22e>twitterCrawlStatus</span>.<span style=color:#a6e22e>maxId</span> <span style=color:#f92672>?</span> <span style=color:#a6e22e>Big</span>(<span style=color:#a6e22e>twitterCrawlStatus</span>.<span style=color:#a6e22e>maxId</span>).<span style=color:#a6e22e>minus</span>(<span style=color:#ae81ff>1</span>) <span style=color:#f92672>:</span> <span style=color:#66d9ef>undefined</span>,
+        );
+
+        <span style=color:#66d9ef>if</span> (<span style=color:#a6e22e>tweets</span>.<span style=color:#a6e22e>length</span> <span style=color:#f92672>&gt;</span> <span style=color:#ae81ff>0</span>) {
+            <span style=color:#66d9ef>await</span> <span style=color:#a6e22e>TwitterStatusModel</span>.<span style=color:#a6e22e>bulkWrite</span>(<span style=color:#a6e22e>tweets</span>.<span style=color:#a6e22e>map</span>(<span style=color:#a6e22e>tweet</span> <span style=color:#f92672>=&gt;</span> {
+                <span style=color:#66d9ef>return</span> {
+                    <span style=color:#a6e22e>updateOne</span><span style=color:#f92672>:</span> {
+                        <span style=color:#a6e22e>filter</span><span style=color:#f92672>:</span> { <span style=color:#a6e22e>id_str</span>: <span style=color:#66d9ef>tweet.id_str</span> },
+                        <span style=color:#a6e22e>update</span><span style=color:#f92672>:</span> { <span style=color:#a6e22e>$set</span>: <span style=color:#66d9ef>tweet</span> },
+                        <span style=color:#a6e22e>upsert</span>: <span style=color:#66d9ef>true</span>
+                    }
+                }
+            }));
+
+            <span style=color:#66d9ef>const</span> <span style=color:#a6e22e>lowestId</span> <span style=color:#f92672>=</span> (<span style=color:#a6e22e>getLowestId</span>(<span style=color:#a6e22e>tweets</span>) <span style=color:#66d9ef>as</span> <span style=color:#a6e22e>Big</span>);
+            <span style=color:#66d9ef>const</span> <span style=color:#a6e22e>highestId</span> <span style=color:#f92672>=</span> (<span style=color:#a6e22e>getHighestId</span>(<span style=color:#a6e22e>tweets</span>) <span style=color:#66d9ef>as</span> <span style=color:#a6e22e>Big</span>);
+
+            <span style=color:#a6e22e>twitterCrawlStatus</span>.<span style=color:#a6e22e>maxId</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>lowestId</span>.<span style=color:#a6e22e>toFixed</span>();
+
+            <span style=color:#66d9ef>if</span> (<span style=color:#f92672>!</span><span style=color:#a6e22e>twitterCrawlStatus</span>.<span style=color:#a6e22e>overallMaxId</span> <span style=color:#f92672>||</span> <span style=color:#a6e22e>Big</span>(<span style=color:#a6e22e>twitterCrawlStatus</span>.<span style=color:#a6e22e>overallMaxId</span>).<span style=color:#a6e22e>lt</span>(<span style=color:#a6e22e>highestId</span>)) {
+                <span style=color:#a6e22e>twitterCrawlStatus</span>.<span style=color:#a6e22e>overallMaxId</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>highestId</span>.<span style=color:#a6e22e>toFixed</span>();
+            }
+        } <span style=color:#66d9ef>else</span> {
+            <span style=color:#a6e22e>twitterCrawlStatus</span>.<span style=color:#a6e22e>sinceId</span> <span style=color:#f92672>=</span> <span style=color:#a6e22e>twitterCrawlStatus</span>.<span style=color:#a6e22e>overallMaxId</span>;
+            <span style=color:#a6e22e>twitterCrawlStatus</span>.<span style=color:#a6e22e>maxId</span> <span style=color:#f92672>=</span> <span style=color:#66d9ef>undefined</span>;
+        }
+
+        <span style=color:#66d9ef>await</span> <span style=color:#a6e22e>twitterCrawlStatus</span>.<span style=color:#a6e22e>save</span>();
+
+        <span style=color:#66d9ef>if</span> (<span style=color:#a6e22e>tweets</span>.<span style=color:#a6e22e>length</span> <span style=color:#f92672>===</span> <span style=color:#ae81ff>0</span>) {
+            <span style=color:#66d9ef>break</span>;
+        }
+    }
+</code></pre></div><h1 id=the-twitter-service>The twitter service<a hidden class=anchor aria-hidden=true href=#the-twitter-service>#</a></h1>
+<style type=text/css>.freelance{border:1px var(--theme-color-foreground)solid;padding:24px;margin:24px;display:flex;flex-direction:column;align-items:center}.freelance__button{background-color:var(--theme-color-background)!important;color:var(--theme-color-foreground)!important;background-color:red;padding:1em 1.5em;text-decoration:none!important;display:block;max-width:50%;text-align:center;margin:1em}</style>
+<div class=freelance>
+<div>I am a freelancer and would love to help you!</div>
+<a href=mailto:pheltweg@gmail.com class=freelance__button>EMAIL ME 👋</a>
+</div>
+<p>The twitter service itself is just a minimalist wrapper around the twitter npm module:</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-typescript data-lang=typescript><span style=color:#66d9ef>import</span> <span style=color:#f92672>*</span> <span style=color:#66d9ef>as</span> <span style=color:#a6e22e>Twitter</span> <span style=color:#66d9ef>from</span> <span style=color:#e6db74>&#34;twitter&#34;</span>;
+<span style=color:#66d9ef>import</span> { <span style=color:#a6e22e>Status</span> } <span style=color:#66d9ef>from</span> <span style=color:#e6db74>&#34;twitter-d&#34;</span>;
+<span style=color:#66d9ef>import</span> <span style=color:#a6e22e>Big</span> <span style=color:#66d9ef>from</span> <span style=color:#e6db74>&#34;big.js&#34;</span>;
+
+<span style=color:#66d9ef>export</span> <span style=color:#66d9ef>class</span> <span style=color:#a6e22e>TwitterService</span> {
+    <span style=color:#66d9ef>private</span> <span style=color:#a6e22e>client</span>: <span style=color:#66d9ef>Twitter</span>;
+
+    <span style=color:#66d9ef>constructor</span>(
+        <span style=color:#a6e22e>consumerKey</span>: <span style=color:#66d9ef>string</span>,
+        <span style=color:#a6e22e>consumerSecret</span>: <span style=color:#66d9ef>string</span>,
+        <span style=color:#a6e22e>bearerToken</span>: <span style=color:#66d9ef>string</span>
+    ) {
+        <span style=color:#66d9ef>this</span>.<span style=color:#a6e22e>client</span> <span style=color:#f92672>=</span> <span style=color:#66d9ef>new</span> <span style=color:#a6e22e>Twitter</span>({
+            <span style=color:#a6e22e>consumer_key</span>: <span style=color:#66d9ef>consumerKey</span>,
+            <span style=color:#a6e22e>consumer_secret</span>: <span style=color:#66d9ef>consumerSecret</span>,
+            <span style=color:#a6e22e>bearer_token</span>: <span style=color:#66d9ef>bearerToken</span>
+        });
+    }
+
+    <span style=color:#66d9ef>public</span> <span style=color:#66d9ef>async</span> <span style=color:#a6e22e>getMentions</span>(
+        <span style=color:#a6e22e>account</span>: <span style=color:#66d9ef>string</span>,
+        <span style=color:#a6e22e>sinceId?</span>: <span style=color:#66d9ef>Big</span> <span style=color:#f92672>|</span> <span style=color:#66d9ef>undefined</span>,
+        <span style=color:#a6e22e>maxId?</span>: <span style=color:#66d9ef>Big</span> <span style=color:#f92672>|</span> <span style=color:#66d9ef>undefined</span>
+    )<span style=color:#f92672>:</span> <span style=color:#a6e22e>Promise</span>&lt;<span style=color:#f92672>Status</span><span style=color:#960050;background-color:#1e0010>[]</span>&gt; {
+        <span style=color:#66d9ef>return</span> <span style=color:#66d9ef>await</span> <span style=color:#66d9ef>this</span>.<span style=color:#a6e22e>client</span>.<span style=color:#66d9ef>get</span>(<span style=color:#e6db74>&#34;search/tweets&#34;</span>, {
+            <span style=color:#a6e22e>q</span><span style=color:#f92672>:</span> <span style=color:#e6db74>`@</span><span style=color:#e6db74>${</span><span style=color:#a6e22e>account</span><span style=color:#e6db74>}</span><span style=color:#e6db74> -filter:retweets`</span>,
+            <span style=color:#a6e22e>result_type</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#34;recent&#34;</span>,
+            <span style=color:#a6e22e>count</span>: <span style=color:#66d9ef>100</span>,
+            <span style=color:#a6e22e>include_entities</span>: <span style=color:#66d9ef>true</span>,
+            <span style=color:#a6e22e>tweet_mode</span><span style=color:#f92672>:</span> <span style=color:#e6db74>&#34;extended&#34;</span>,
+            <span style=color:#a6e22e>since_id</span>: <span style=color:#66d9ef>sinceId</span> <span style=color:#f92672>?</span> <span style=color:#a6e22e>sinceId</span>.<span style=color:#a6e22e>toFixed</span>(<span style=color:#ae81ff>0</span>) <span style=color:#f92672>:</span> <span style=color:#66d9ef>undefined</span>,
+            <span style=color:#a6e22e>max_id</span>: <span style=color:#66d9ef>maxId</span> <span style=color:#f92672>?</span> <span style=color:#a6e22e>maxId</span>.<span style=color:#a6e22e>toFixed</span>(<span style=color:#ae81ff>0</span>) <span style=color:#f92672>:</span> <span style=color:#66d9ef>undefined</span>
+        }).<span style=color:#a6e22e>then</span>(<span style=color:#a6e22e>response</span> <span style=color:#f92672>=&gt;</span> {
+            <span style=color:#66d9ef>return</span> <span style=color:#a6e22e>response</span>.<span style=color:#a6e22e>statuses</span>;
+        });
+    }
+}
+</code></pre></div><h1>About Me</h1>
+<div>Find me either by <a href=mailto:pheltweg@gmail.com>email (pheltweg@gmail.com)</a> or on twitter <a href=https://twitter.com/rhanarion>https://twitter.com/rhanarion</a>.</div>
+</div>
+<footer class=post-footer>
+<ul class=post-tags>
+<li><a href=https://rhazn.com/tags/nodejs/>nodejs</a></li>
+<li><a href=https://rhazn.com/tags/twitter/>twitter</a></li>
+<li><a href=https://rhazn.com/tags/api/>api</a></li>
+<li><a href=https://rhazn.com/tags/typescript/>typescript</a></li>
+<li><a href=https://rhazn.com/tags/javascript/>javascript</a></li>
+<li><a href=https://rhazn.com/tags/mongodb/>mongodb</a></li>
+<li><a href=https://rhazn.com/tags/import/>import</a></li>
+</ul>
+<div class=share-buttons>
+<a target=_blank rel="noopener noreferrer" aria-label="share Analyzing twitter: Import tweets with NodeJS and the twitter API on twitter" href="https://twitter.com/intent/tweet/?text=Analyzing%20twitter%3a%20Import%20tweets%20with%20NodeJS%20and%20the%20twitter%20API&url=https%3a%2f%2frhazn.com%2fposts%2fimport-tweets-with-nodejs-and-the-twitter-api%2f&hashtags=nodejs%2ctwitter%2capi%2ctypescript%2cjavascript%2cmongodb%2cimport"><svg viewBox="0 0 512 512"><path d="M449.446.0C483.971.0 512 28.03 512 62.554v386.892C512 483.97 483.97 512 449.446 512H62.554c-34.524.0-62.554-28.03-62.554-62.554V62.554c0-34.524 28.029-62.554 62.554-62.554h386.892zM195.519 424.544c135.939.0 210.268-112.643 210.268-210.268.0-3.218.0-6.437-.153-9.502 14.406-10.421 26.973-23.448 36.935-38.314-13.18 5.824-27.433 9.809-42.452 11.648 15.326-9.196 26.973-23.602 32.49-40.92-14.252 8.429-30.038 14.56-46.896 17.931-13.487-14.406-32.644-23.295-53.946-23.295-40.767.0-73.87 33.104-73.87 73.87.0 5.824.613 11.494 1.992 16.858-61.456-3.065-115.862-32.49-152.337-77.241-6.284 10.881-9.962 23.601-9.962 37.088.0 25.594 13.027 48.276 32.95 61.456-12.107-.307-23.448-3.678-33.41-9.196v.92c0 35.862 25.441 65.594 59.311 72.49-6.13 1.686-12.72 2.606-19.464 2.606-4.751.0-9.348-.46-13.946-1.38 9.349 29.426 36.628 50.728 68.965 51.341-25.287 19.771-57.164 31.571-91.8 31.571-5.977.0-11.801-.306-17.625-1.073 32.337 21.15 71.264 33.41 112.95 33.41z"/></svg>
+</a>
+<a target=_blank rel="noopener noreferrer" aria-label="share Analyzing twitter: Import tweets with NodeJS and the twitter API on linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2frhazn.com%2fposts%2fimport-tweets-with-nodejs-and-the-twitter-api%2f&title=Analyzing%20twitter%3a%20Import%20tweets%20with%20NodeJS%20and%20the%20twitter%20API&summary=Analyzing%20twitter%3a%20Import%20tweets%20with%20NodeJS%20and%20the%20twitter%20API&source=https%3a%2f%2frhazn.com%2fposts%2fimport-tweets-with-nodejs-and-the-twitter-api%2f"><svg viewBox="0 0 512 512"><path d="M449.446.0C483.971.0 512 28.03 512 62.554v386.892C512 483.97 483.97 512 449.446 512H62.554c-34.524.0-62.554-28.03-62.554-62.554V62.554c0-34.524 28.029-62.554 62.554-62.554h386.892zM160.461 423.278V197.561h-75.04v225.717h75.04zm270.539.0V293.839c0-69.333-37.018-101.586-86.381-101.586-39.804.0-57.634 21.891-67.617 37.266v-31.958h-75.021c.995 21.181.0 225.717.0 225.717h75.02V297.222c0-6.748.486-13.492 2.474-18.315 5.414-13.475 17.767-27.434 38.494-27.434 27.135.0 38.007 20.707 38.007 51.037v120.768H431zM123.448 88.722C97.774 88.722 81 105.601 81 127.724c0 21.658 16.264 39.002 41.455 39.002h.484c26.165.0 42.452-17.344 42.452-39.002-.485-22.092-16.241-38.954-41.943-39.002z"/></svg>
+</a>
+<a target=_blank rel="noopener noreferrer" aria-label="share Analyzing twitter: Import tweets with NodeJS and the twitter API on reddit" href="https://reddit.com/submit?url=https%3a%2f%2frhazn.com%2fposts%2fimport-tweets-with-nodejs-and-the-twitter-api%2f&title=Analyzing%20twitter%3a%20Import%20tweets%20with%20NodeJS%20and%20the%20twitter%20API"><svg viewBox="0 0 512 512"><path d="M449.446.0C483.971.0 512 28.03 512 62.554v386.892C512 483.97 483.97 512 449.446 512H62.554c-34.524.0-62.554-28.03-62.554-62.554V62.554c0-34.524 28.029-62.554 62.554-62.554h386.892zM446 265.638c0-22.964-18.616-41.58-41.58-41.58-11.211.0-21.361 4.457-28.841 11.666-28.424-20.508-67.586-33.757-111.204-35.278l18.941-89.121 61.884 13.157c.756 15.734 13.642 28.29 29.56 28.29 16.407.0 29.706-13.299 29.706-29.701.0-16.403-13.299-29.702-29.706-29.702-11.666.0-21.657 6.792-26.515 16.578l-69.105-14.69c-1.922-.418-3.939-.042-5.585 1.036-1.658 1.073-2.811 2.761-3.224 4.686l-21.152 99.438c-44.258 1.228-84.046 14.494-112.837 35.232-7.468-7.164-17.589-11.591-28.757-11.591-22.965.0-41.585 18.616-41.585 41.58.0 16.896 10.095 31.41 24.568 37.918-.639 4.135-.99 8.328-.99 12.576.0 63.977 74.469 115.836 166.33 115.836s166.334-51.859 166.334-115.836c0-4.218-.347-8.387-.977-12.493 14.564-6.47 24.735-21.034 24.735-38.001zM326.526 373.831c-20.27 20.241-59.115 21.816-70.534 21.816-11.428.0-50.277-1.575-70.522-21.82-3.007-3.008-3.007-7.882.0-10.889 3.003-2.999 7.882-3.003 10.885.0 12.777 12.781 40.11 17.317 59.637 17.317 19.522.0 46.86-4.536 59.657-17.321 3.016-2.999 7.886-2.995 10.885.008 3.008 3.011 3.003 7.882-.008 10.889zm-5.23-48.781c-16.373.0-29.701-13.324-29.701-29.698.0-16.381 13.328-29.714 29.701-29.714 16.378.0 29.706 13.333 29.706 29.714.0 16.374-13.328 29.698-29.706 29.698zM160.91 295.348c0-16.381 13.328-29.71 29.714-29.71 16.369.0 29.689 13.329 29.689 29.71.0 16.373-13.32 29.693-29.689 29.693-16.386.0-29.714-13.32-29.714-29.693z"/></svg>
+</a>
+<a target=_blank rel="noopener noreferrer" aria-label="share Analyzing twitter: Import tweets with NodeJS and the twitter API on facebook" href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2frhazn.com%2fposts%2fimport-tweets-with-nodejs-and-the-twitter-api%2f"><svg viewBox="0 0 512 512"><path d="M449.446.0C483.971.0 512 28.03 512 62.554v386.892C512 483.97 483.97 512 449.446 512H342.978V319.085h66.6l12.672-82.621h-79.272v-53.617c0-22.603 11.073-44.636 46.58-44.636H425.6v-70.34s-32.71-5.582-63.982-5.582c-65.288.0-107.96 39.569-107.96 111.204v62.971h-72.573v82.621h72.573V512h-191.104c-34.524.0-62.554-28.03-62.554-62.554V62.554c0-34.524 28.029-62.554 62.554-62.554h386.892z"/></svg>
+</a>
+<a target=_blank rel="noopener noreferrer" aria-label="share Analyzing twitter: Import tweets with NodeJS and the twitter API on whatsapp" href="https://api.whatsapp.com/send?text=Analyzing%20twitter%3a%20Import%20tweets%20with%20NodeJS%20and%20the%20twitter%20API%20-%20https%3a%2f%2frhazn.com%2fposts%2fimport-tweets-with-nodejs-and-the-twitter-api%2f"><svg viewBox="0 0 512 512"><path d="M449.446.0C483.971.0 512 28.03 512 62.554v386.892C512 483.97 483.97 512 449.446 512H62.554c-34.524.0-62.554-28.03-62.554-62.554V62.554c0-34.524 28.029-62.554 62.554-62.554h386.892zm-58.673 127.703c-33.842-33.881-78.847-52.548-126.798-52.568-98.799.0-179.21 80.405-179.249 179.234-.013 31.593 8.241 62.428 23.927 89.612l-25.429 92.884 95.021-24.925c26.181 14.28 55.659 21.807 85.658 21.816h.074c98.789.0 179.206-80.413 179.247-179.243.018-47.895-18.61-92.93-52.451-126.81zM263.976 403.485h-.06c-26.734-.01-52.954-7.193-75.828-20.767l-5.441-3.229-56.386 14.792 15.05-54.977-3.542-5.637c-14.913-23.72-22.791-51.136-22.779-79.287.033-82.142 66.867-148.971 149.046-148.971 39.793.014 77.199 15.531 105.329 43.692 28.128 28.16 43.609 65.592 43.594 105.4-.034 82.149-66.866 148.983-148.983 148.984zm81.721-111.581c-4.479-2.242-26.499-13.075-30.604-14.571-4.105-1.495-7.091-2.241-10.077 2.241-2.986 4.483-11.569 14.572-14.182 17.562-2.612 2.988-5.225 3.364-9.703 1.12-4.479-2.241-18.91-6.97-36.017-22.23C231.8 264.15 222.81 249.484 220.198 245s-.279-6.908 1.963-9.14c2.016-2.007 4.48-5.232 6.719-7.847 2.24-2.615 2.986-4.484 4.479-7.472 1.493-2.99.747-5.604-.374-7.846-1.119-2.241-10.077-24.288-13.809-33.256-3.635-8.733-7.327-7.55-10.077-7.688-2.609-.13-5.598-.158-8.583-.158-2.986.0-7.839 1.121-11.944 5.604-4.105 4.484-15.675 15.32-15.675 37.364.0 22.046 16.048 43.342 18.287 46.332 2.24 2.99 31.582 48.227 76.511 67.627 10.685 4.615 19.028 7.371 25.533 9.434 10.728 3.41 20.492 2.929 28.209 1.775 8.605-1.285 26.499-10.833 30.231-21.295 3.732-10.464 3.732-19.431 2.612-21.298-1.119-1.869-4.105-2.99-8.583-5.232z"/></svg>
+</a>
+<a target=_blank rel="noopener noreferrer" aria-label="share Analyzing twitter: Import tweets with NodeJS and the twitter API on telegram" href="https://telegram.me/share/url?text=Analyzing%20twitter%3a%20Import%20tweets%20with%20NodeJS%20and%20the%20twitter%20API&url=https%3a%2f%2frhazn.com%2fposts%2fimport-tweets-with-nodejs-and-the-twitter-api%2f"><svg viewBox="2 2 28 28"><path d="M26.49 29.86H5.5a3.37 3.37.0 01-2.47-1 3.35 3.35.0 01-1-2.47V5.48A3.36 3.36.0 013 3 3.37 3.37.0 015.5 2h21A3.38 3.38.0 0129 3a3.36 3.36.0 011 2.46V26.37a3.35 3.35.0 01-1 2.47 3.38 3.38.0 01-2.51 1.02zm-5.38-6.71a.79.79.0 00.85-.66L24.73 9.24a.55.55.0 00-.18-.46.62.62.0 00-.41-.17q-.08.0-16.53 6.11a.59.59.0 00-.41.59.57.57.0 00.43.52l4 1.24 1.61 4.83a.62.62.0 00.63.43.56.56.0 00.4-.17L16.54 20l4.09 3A.9.9.0 0021.11 23.15zM13.8 20.71l-1.21-4q8.72-5.55 8.78-5.55c.15.0.23.0.23.16a.18.18.0 010 .06s-2.51 2.3-7.52 6.8z"/></svg>
+</a>
+</div>
+</footer>
+</article>
+</main><footer class=footer>
+<span>&copy; 2022 <a href=https://rhazn.com>Philip Heltweg</a></span>
+</footer>
+<a href=#top aria-label="go to top" title="Go to Top (Alt + G)">
+<button class=top-link id=top-link type=button accesskey=g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg>
+</button>
+</a>
+<script defer src=/assets/js/highlight.min.7680afc38aa6b15ddf158a4f3780b7b1f7dde7e91d26f073e6229bb7a0793c92.js integrity="sha256-doCvw4qmsV3fFYpPN4C3sffd5+kdJvBz5iKbt6B5PJI=" onload=hljs.initHighlightingOnLoad()></script>
+<script>window.onload=function(){localStorage.getItem("menu-scroll-position")&&(document.getElementById('menu').scrollLeft=localStorage.getItem("menu-scroll-position"))},document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener("click",function(b){b.preventDefault();var a=this.getAttribute("href").substr(1);window.matchMedia('(prefers-reduced-motion: reduce)').matches?document.querySelector(`[id='${decodeURIComponent(a)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(a)}']`).scrollIntoView({behavior:"smooth"}),a==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${a}`)})});var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")};function menu_on_scroll(){localStorage.setItem("menu-scroll-position",document.getElementById('menu').scrollLeft)}</script>
+<script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove('dark'),localStorage.setItem("pref-theme",'light')):(document.body.classList.add('dark'),localStorage.setItem("pref-theme",'dark'))})</script>
+</body>
+</html>

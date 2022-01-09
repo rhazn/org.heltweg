@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>app on Philip Heltweg</title>
+    <link>https://rhazn.com/tags/app/</link>
+    <description>Recent content in app on Philip Heltweg</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 30 Mar 2020 11:30:03 +0000</lastBuildDate><atom:link href="https://rhazn.com/tags/app/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>IYAGI - postcards from friends</title>
+      <link>https://rhazn.com/projects/iyagi/</link>
+      <pubDate>Mon, 30 Mar 2020 11:30:03 +0000</pubDate>
+      
+      <guid>https://rhazn.com/projects/iyagi/</guid>
+      <description>Screenshots   Login     Intro slides     Intro slides     Setting up the user language     Setting up the user language     Profile view     Write a letter     List of your letters     Letter feed     See your own letter     Comment on other letters   </description>
+    </item>
+    
+  </channel>
+</rss>

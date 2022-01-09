@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>gamedev on Philip Heltweg</title>
+    <link>https://rhazn.com/tags/gamedev/</link>
+    <description>Recent content in gamedev on Philip Heltweg</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 06 Jun 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://rhazn.com/tags/gamedev/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Entity-Systems for typescript based games</title>
+      <link>https://rhazn.com/posts/entity-systems-for-typescript-based-games/</link>
+      <pubDate>Thu, 06 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://rhazn.com/posts/entity-systems-for-typescript-based-games/</guid>
+      <description>Entity-Systems for typescript based games For my latest game project Frozzen I want to explore how an external UI, build with Angular, would work for a browser based game. Since Angular is written in Typescript that means ideally the game should also use the same.
+I have used Artemis ODB as framework for a Java based game in the past and liked it a lot. Entity-Systems are much better introduced by any of the huge amount of articles out there (for example the classic on T=Machine but I feel they are especially well suited to Javascript/Typescript development.</description>
+    </item>
+    
+    <item>
+      <title>Frozzen - a turn-based RPG</title>
+      <link>https://rhazn.com/projects/frozzen/</link>
+      <pubDate>Fri, 06 Sep 2013 11:30:03 +0000</pubDate>
+      
+      <guid>https://rhazn.com/projects/frozzen/</guid>
+      <description>Gameplay 
+Screenshots   Login     Menu     Select a scenario     Select a party     Manage your party     Manage party member and test level     Gameplay   Old History        </description>
+    </item>
+    
+  </channel>
+</rss>

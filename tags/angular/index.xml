@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>angular on Philip Heltweg</title>
+    <link>https://rhazn.com/tags/angular/</link>
+    <description>Recent content in angular on Philip Heltweg</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 04 Oct 2016 11:30:03 +0000</lastBuildDate><atom:link href="https://rhazn.com/tags/angular/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Whatchr.com - a better youtube playlist experience</title>
+      <link>https://rhazn.com/projects/whatchr-dot-com-a-better-youtube-playlist-experience/</link>
+      <pubDate>Tue, 04 Oct 2016 11:30:03 +0000</pubDate>
+      
+      <guid>https://rhazn.com/projects/whatchr-dot-com-a-better-youtube-playlist-experience/</guid>
+      <description>Whatchr was born of a personal problem. I regularly watch let&amp;rsquo;s play content on youtube (following a group of content creators with their series), mainly following the channels of The Yogscast.
+Youtube&amp;rsquo;s focus is on either suggesting content it thinks you find interesting on your &amp;ldquo;Suggestions&amp;rdquo; or content divided in daily chunks in your &amp;ldquo;Feed&amp;rdquo;. There is no nice way to watch multiple series other than bookmarking playlists with watch positions.</description>
+    </item>
+    
+    <item>
+      <title>Frozzen - a turn-based RPG</title>
+      <link>https://rhazn.com/projects/frozzen/</link>
+      <pubDate>Fri, 06 Sep 2013 11:30:03 +0000</pubDate>
+      
+      <guid>https://rhazn.com/projects/frozzen/</guid>
+      <description>Gameplay 
+Screenshots   Login     Menu     Select a scenario     Select a party     Manage your party     Manage party member and test level     Gameplay   Old History        </description>
+    </item>
+    
+  </channel>
+</rss>

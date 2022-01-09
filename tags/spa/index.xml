@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>spa on Philip Heltweg</title>
+    <link>https://rhazn.com/tags/spa/</link>
+    <description>Recent content in spa on Philip Heltweg</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 12 Dec 2020 11:30:03 +0000</lastBuildDate><atom:link href="https://rhazn.com/tags/spa/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>spaeher.app - sentiment analytics for youtube</title>
+      <link>https://rhazn.com/projects/spaeher/</link>
+      <pubDate>Sat, 12 Dec 2020 11:30:03 +0000</pubDate>
+      
+      <guid>https://rhazn.com/projects/spaeher/</guid>
+      <description>A social media analytics tool, powered by a Java/PostgreSQL/Kubernetes backend and a React frontend.
+  Landingpage     Case Study     Index     New Report     Report Example     Report Example     Report Example     Comments by Word     Comments by Sentiment   </description>
+    </item>
+    
+    <item>
+      <title>Build a progressive web app in docker with nginx to deploy to kubernetes or docker swarm</title>
+      <link>https://rhazn.com/posts/build-a-progressive-web-app-in-docker-with-nginx-to-deploy-to-kubernetes-or-docker-swarm/</link>
+      <pubDate>Sat, 24 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://rhazn.com/posts/build-a-progressive-web-app-in-docker-with-nginx-to-deploy-to-kubernetes-or-docker-swarm/</guid>
+      <description>With my personal cloud setup based on kubernetes done (you can read about it here: https://rhazn.com/posts/run-a-personal-cloud-with-traefik-lets-encrypt-and-zookeeper/) it is time to actually deploy the first project into it.
+The easiest application to deploy is a pure client side single page application, packaged in a docker container with a webserver like nginx to deliver the files. Packaging the application into it&amp;rsquo;s own container allows us to build a standardized container that can be run locally for testing or deployed to docker swarm and kubernetes.</description>
+    </item>
+    
+    <item>
+      <title>mealpreplist.com - Your weekly mealprep, made easy</title>
+      <link>https://rhazn.com/projects/mealpreplist-dot-com-your-weekly-mealprep-made-easy/</link>
+      <pubDate>Wed, 27 Sep 2017 11:30:03 +0000</pubDate>
+      
+      <guid>https://rhazn.com/projects/mealpreplist-dot-com-your-weekly-mealprep-made-easy/</guid>
+      <description>Meal prepping is the practice of preparing multiple meals at once and either freezing them or keeping them in the fridge to eat over the upcoming days. There is an active community on reddit (r/MealPrepSunday/) and various blogs online.
+Often mealprep containers are separated in three sections for a carb source, a protein source and vegetables.
+With mealpreplist I wanted to save my own, simple meal components for each of these sections and allow myself an easy way of combining them to a meal to prepare.</description>
+    </item>
+    
+    <item>
+      <title>Whatchr.com - a better youtube playlist experience</title>
+      <link>https://rhazn.com/projects/whatchr-dot-com-a-better-youtube-playlist-experience/</link>
+      <pubDate>Tue, 04 Oct 2016 11:30:03 +0000</pubDate>
+      
+      <guid>https://rhazn.com/projects/whatchr-dot-com-a-better-youtube-playlist-experience/</guid>
+      <description>Whatchr was born of a personal problem. I regularly watch let&amp;rsquo;s play content on youtube (following a group of content creators with their series), mainly following the channels of The Yogscast.
+Youtube&amp;rsquo;s focus is on either suggesting content it thinks you find interesting on your &amp;ldquo;Suggestions&amp;rdquo; or content divided in daily chunks in your &amp;ldquo;Feed&amp;rdquo;. There is no nice way to watch multiple series other than bookmarking playlists with watch positions.</description>
+    </item>
+    
+  </channel>
+</rss>

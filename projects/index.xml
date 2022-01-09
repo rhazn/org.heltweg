@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on Philip Heltweg</title>
+    <link>https://rhazn.com/projects/</link>
+    <description>Recent content in Projects on Philip Heltweg</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sat, 12 Dec 2020 11:30:03 +0000</lastBuildDate><atom:link href="https://rhazn.com/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>spaeher.app - sentiment analytics for youtube</title>
+      <link>https://rhazn.com/projects/spaeher/</link>
+      <pubDate>Sat, 12 Dec 2020 11:30:03 +0000</pubDate>
+      
+      <guid>https://rhazn.com/projects/spaeher/</guid>
+      <description>A social media analytics tool, powered by a Java/PostgreSQL/Kubernetes backend and a React frontend.
+  Landingpage     Case Study     Index     New Report     Report Example     Report Example     Report Example     Comments by Word     Comments by Sentiment   </description>
+    </item>
+    
+    <item>
+      <title>IYAGI - postcards from friends</title>
+      <link>https://rhazn.com/projects/iyagi/</link>
+      <pubDate>Mon, 30 Mar 2020 11:30:03 +0000</pubDate>
+      
+      <guid>https://rhazn.com/projects/iyagi/</guid>
+      <description>Screenshots   Login     Intro slides     Intro slides     Setting up the user language     Setting up the user language     Profile view     Write a letter     List of your letters     Letter feed     See your own letter     Comment on other letters   </description>
+    </item>
+    
+    <item>
+      <title>mealpreplist.com - Your weekly mealprep, made easy</title>
+      <link>https://rhazn.com/projects/mealpreplist-dot-com-your-weekly-mealprep-made-easy/</link>
+      <pubDate>Wed, 27 Sep 2017 11:30:03 +0000</pubDate>
+      
+      <guid>https://rhazn.com/projects/mealpreplist-dot-com-your-weekly-mealprep-made-easy/</guid>
+      <description>Meal prepping is the practice of preparing multiple meals at once and either freezing them or keeping them in the fridge to eat over the upcoming days. There is an active community on reddit (r/MealPrepSunday/) and various blogs online.
+Often mealprep containers are separated in three sections for a carb source, a protein source and vegetables.
+With mealpreplist I wanted to save my own, simple meal components for each of these sections and allow myself an easy way of combining them to a meal to prepare.</description>
+    </item>
+    
+    <item>
+      <title>Whatchr.com - a better youtube playlist experience</title>
+      <link>https://rhazn.com/projects/whatchr-dot-com-a-better-youtube-playlist-experience/</link>
+      <pubDate>Tue, 04 Oct 2016 11:30:03 +0000</pubDate>
+      
+      <guid>https://rhazn.com/projects/whatchr-dot-com-a-better-youtube-playlist-experience/</guid>
+      <description>Whatchr was born of a personal problem. I regularly watch let&amp;rsquo;s play content on youtube (following a group of content creators with their series), mainly following the channels of The Yogscast.
+Youtube&amp;rsquo;s focus is on either suggesting content it thinks you find interesting on your &amp;ldquo;Suggestions&amp;rdquo; or content divided in daily chunks in your &amp;ldquo;Feed&amp;rdquo;. There is no nice way to watch multiple series other than bookmarking playlists with watch positions.</description>
+    </item>
+    
+    <item>
+      <title>Frozzen - a turn-based RPG</title>
+      <link>https://rhazn.com/projects/frozzen/</link>
+      <pubDate>Fri, 06 Sep 2013 11:30:03 +0000</pubDate>
+      
+      <guid>https://rhazn.com/projects/frozzen/</guid>
+      <description>Gameplay 
+Screenshots   Login     Menu     Select a scenario     Select a party     Manage your party     Manage party member and test level     Gameplay   Old History        </description>
+    </item>
+    
+  </channel>
+</rss>
