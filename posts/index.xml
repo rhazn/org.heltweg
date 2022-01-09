@@ -2,55 +2,55 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Philip Heltweg</title>
-    <link>https://rhazn.com/posts/</link>
+    <link>https://heltweg.org/posts/</link>
     <description>Recent content in Posts on Philip Heltweg</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 09 Jan 2022 11:30:03 +0000</lastBuildDate><atom:link href="https://rhazn.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 09 Jan 2022 11:30:03 +0000</lastBuildDate><atom:link href="https://heltweg.org/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Who wrote this shit?</title>
-      <link>https://rhazn.com/posts/who-wrote-this-shit/</link>
+      <link>https://heltweg.org/posts/who-wrote-this-shit/</link>
       <pubDate>Sun, 09 Jan 2022 11:30:03 +0000</pubDate>
       
-      <guid>https://rhazn.com/posts/who-wrote-this-shit/</guid>
+      <guid>https://heltweg.org/posts/who-wrote-this-shit/</guid>
       <description>It is a beautiful right of passage for a bright-eyed junior developer to join a team, take some tasks full of enthusiasm, and have the life and joy sucked out of them one sprint at a time. Soon enough, they sit in planning meetings, miserably complaining, accusingly asking who wrote that shit. Their transformation to a full team member is complete. They have become one of us.
 I was once that bright-eyed junior developer.</description>
     </item>
     
     <item>
       <title>Master Thesis: Implementing a Structured Approach to Belief Revision by Deterministic Switching Between Total Preorders</title>
-      <link>https://rhazn.com/posts/master-thesis/</link>
+      <link>https://heltweg.org/posts/master-thesis/</link>
       <pubDate>Sun, 07 Nov 2021 11:30:03 +0000</pubDate>
       
-      <guid>https://rhazn.com/posts/master-thesis/</guid>
+      <guid>https://heltweg.org/posts/master-thesis/</guid>
       <description>Abstract Belief change research investigates how agents adapt their knowledge with potentially conflicting information. A common formalization is by epistemic states, abstract entities often represented by faithful preorders. Operators describe how epistemic states change with new evidence and are classified by which postulates they satisfy. Different approaches have been suggested for the problem of iterated belief change. Recent work introduces uniform revision that revises an agent&amp;rsquo;s beliefs based on one static total preorder, therefore lowering representational costs.</description>
     </item>
     
     <item>
       <title>Certification of Iterated Belief Changes via Model Checking and its Implementation</title>
-      <link>https://rhazn.com/posts/certification-of-iterated-belief-changes-via-model-checking-and-its-implementation/</link>
+      <link>https://heltweg.org/posts/certification-of-iterated-belief-changes-via-model-checking-and-its-implementation/</link>
       <pubDate>Wed, 27 Oct 2021 10:00:03 +0000</pubDate>
       
-      <guid>https://rhazn.com/posts/certification-of-iterated-belief-changes-via-model-checking-and-its-implementation/</guid>
+      <guid>https://heltweg.org/posts/certification-of-iterated-belief-changes-via-model-checking-and-its-implementation/</guid>
       <description>Note: An extended version of this paper has been published at the 7th Workshop on Formal and Cognitive Reasoning, you can find it here.
 Our paper &amp;ldquo;Certification of Iterated Belief Changes via Model Checking and its Implementation&amp;rdquo; got accepted to the 19th International Workshop on Non-Monotonic Reasoning (NMR-2021) at the 18th International Conference on Principles of Knowledge Representation and Reasoning (KR 2021). During the workshop I held a short presentation of the results.</description>
     </item>
     
     <item>
       <title>On Using Model Checking for the Certification of Iterated Belief Changes</title>
-      <link>https://rhazn.com/posts/on-using-model-checking-for-the-certification-of-iterated-belief-changes/</link>
+      <link>https://heltweg.org/posts/on-using-model-checking-for-the-certification-of-iterated-belief-changes/</link>
       <pubDate>Tue, 28 Sep 2021 11:30:03 +0000</pubDate>
       
-      <guid>https://rhazn.com/posts/on-using-model-checking-for-the-certification-of-iterated-belief-changes/</guid>
+      <guid>https://heltweg.org/posts/on-using-model-checking-for-the-certification-of-iterated-belief-changes/</guid>
       <description>Our paper &amp;ldquo;On Using Model Checking for the Certification of Iterated Belief Changes&amp;rdquo; got accepted to the 7th Workshop on Formal and Cognitive Reasoning (FCR-2021) at the 44th German Conference on Artificial Intelligence (KI-2021). During the workshop I held a short presentation of the results. You can find both the paper as well as the presentation slides here.
 Abstract The theory of iterated belief change investigates how epistemic states are changed according to new beliefs.</description>
     </item>
     
     <item>
       <title>Of judges, aliens and total preorders</title>
-      <link>https://rhazn.com/posts/judges-aliens-and-total-preorders/</link>
+      <link>https://heltweg.org/posts/judges-aliens-and-total-preorders/</link>
       <pubDate>Fri, 09 Apr 2021 11:30:03 +0000</pubDate>
       
-      <guid>https://rhazn.com/posts/judges-aliens-and-total-preorders/</guid>
+      <guid>https://heltweg.org/posts/judges-aliens-and-total-preorders/</guid>
       <description>I created this synopsis of some ideas from the paper &amp;ldquo;How to Revise a Total Preorder&amp;rdquo; by Booth and Meyer during the seminar on &amp;ldquo;Representation and processing of uncertain knowledge with logic-based methods&amp;rdquo; at the University of Hagen.
 The slides are from my final presentation of the topic (and might be more or less useless on their own).
 Abstract Adapting one’s world view in the light of new information is a central skill of intelligent agents.</description>
@@ -58,50 +58,50 @@ Abstract Adapting one’s world view in the light of new information is a centra
     
     <item>
       <title>How to kill a dragon</title>
-      <link>https://rhazn.com/posts/how-to-kill-a-dragon/</link>
+      <link>https://heltweg.org/posts/how-to-kill-a-dragon/</link>
       <pubDate>Mon, 15 Mar 2021 11:30:03 +0000</pubDate>
       
-      <guid>https://rhazn.com/posts/how-to-kill-a-dragon/</guid>
+      <guid>https://heltweg.org/posts/how-to-kill-a-dragon/</guid>
       <description>&amp;ldquo;You&amp;rsquo;ll never forget your first dragon&amp;rdquo; used to be the promise of Tibia, a free 2D-MMO I played as a young teenager. I spend day after day playing Tibia, training skills with friends and exploring the world and still&amp;hellip; never got to kill a dragon.
 Coming back With nostalgia rekindled by quickly burning out on WoW: Shadowlands I tried to check in my old account. Sadly, I did not only forget the password but also lost control of my email address.</description>
     </item>
     
     <item>
       <title>Wisdom from the Internet, content that influenced how I think about software (and life).</title>
-      <link>https://rhazn.com/posts/wisdom-from-the-internet/</link>
+      <link>https://heltweg.org/posts/wisdom-from-the-internet/</link>
       <pubDate>Thu, 03 Dec 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://rhazn.com/posts/wisdom-from-the-internet/</guid>
+      <guid>https://heltweg.org/posts/wisdom-from-the-internet/</guid>
       <description>Finding needles There has never been as much information easily accessible to anyone as right now. The ease of publishing your own writing leads to new problems: The question is no longer where do you find content about a topic but what content is good and worth your time?
 To help you find the needle in the biggest haystack ever, here is my personal list of good content that influenced me.</description>
     </item>
     
     <item>
       <title>Machine learning basics: Machine Learning by Stanford University (Coursera) review and notes</title>
-      <link>https://rhazn.com/posts/machine-learning-basics-machine-learning-by-stanford-university-review-and-notes/</link>
+      <link>https://heltweg.org/posts/machine-learning-basics-machine-learning-by-stanford-university-review-and-notes/</link>
       <pubDate>Sat, 14 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://rhazn.com/posts/machine-learning-basics-machine-learning-by-stanford-university-review-and-notes/</guid>
+      <guid>https://heltweg.org/posts/machine-learning-basics-machine-learning-by-stanford-university-review-and-notes/</guid>
       <description>The popularity of machine learning, data science and related disciplines is exploding and with it the amount of courses, books, block posts etc you are exposed to. I recently finished the relatively old but highly rated course Machine Learning by Stanford University on Coursera and wanted to take the chance to offer my review and notes I took.
 The course Although the course is old enough to be referred to as &amp;ldquo;classic&amp;rdquo; by quite a few descriptions I have read it is timeless in the sense that most good introductions are.</description>
     </item>
     
     <item>
       <title>Analyzing twitter: Import tweets with NodeJS and the twitter API</title>
-      <link>https://rhazn.com/posts/import-tweets-with-nodejs-and-the-twitter-api/</link>
+      <link>https://heltweg.org/posts/import-tweets-with-nodejs-and-the-twitter-api/</link>
       <pubDate>Fri, 25 Oct 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://rhazn.com/posts/import-tweets-with-nodejs-and-the-twitter-api/</guid>
+      <guid>https://heltweg.org/posts/import-tweets-with-nodejs-and-the-twitter-api/</guid>
       <description>A tweet in the database is worth two in the API Working with tweets from the twitter API probably means importing data into your own database - the standard API does not provide historical data (only the last seven days) and has various rate limits.
 So regardless of the final goal in this blog we&amp;rsquo;ll explore importing tweets from the API into a database for future use. All done with NodeJS, written in Typescript and utilizing MongoDB as data store.</description>
     </item>
     
     <item>
       <title>Deploy an app into your personal cloud</title>
-      <link>https://rhazn.com/posts/deploy-an-app-into-your-personal-cloud/</link>
+      <link>https://heltweg.org/posts/deploy-an-app-into-your-personal-cloud/</link>
       <pubDate>Wed, 04 Sep 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://rhazn.com/posts/deploy-an-app-into-your-personal-cloud/</guid>
+      <guid>https://heltweg.org/posts/deploy-an-app-into-your-personal-cloud/</guid>
       <description>As the final step in this long series of blogposts we are going to deploy a simple webapp in a docker container to my personal cloud. For context here is the personal cloud setup with Traefik/Let&amp;rsquo;s Encrypt (Run a personal cloud with Traefik, Let&amp;rsquo;s encrypt and Zookeeper).
 In previous blogposts I also described how I built the app (Build a PWA in docker).
 App deployment The deployment runs the docker container.</description>
@@ -109,20 +109,20 @@ App deployment The deployment runs the docker container.</description>
     
     <item>
       <title>Build a docker image on gitlab ci and publish it to google container registry</title>
-      <link>https://rhazn.com/posts/build-a-docker-image-on-gitlab-ci-and-publish-it-to-google-container-registry/</link>
+      <link>https://heltweg.org/posts/build-a-docker-image-on-gitlab-ci-and-publish-it-to-google-container-registry/</link>
       <pubDate>Tue, 03 Sep 2019 11:30:03 +0000</pubDate>
       
-      <guid>https://rhazn.com/posts/build-a-docker-image-on-gitlab-ci-and-publish-it-to-google-container-registry/</guid>
+      <guid>https://heltweg.org/posts/build-a-docker-image-on-gitlab-ci-and-publish-it-to-google-container-registry/</guid>
       <description>In previous blogposts I explained my concept of a personal cloud for my own projects (Kubernetes for Sideprojects) and how I set it up (Run a personal cloud with Traefik, Let&amp;rsquo;s encrypt and Zookeeper). I also showed how I packaged a PWA project with docker (Build a PWA in docker).
 With all those ingredients ready to go the last hurdle to solve is building the docker image automatically as well as publishing it to a private container registry so I can deploy it to my cloud from there.</description>
     </item>
     
     <item>
       <title>Deploy to google kubernetes engine using gitlab ci</title>
-      <link>https://rhazn.com/posts/deploy-to-google-kubernetes-engine-using-gitlab-ci/</link>
+      <link>https://heltweg.org/posts/deploy-to-google-kubernetes-engine-using-gitlab-ci/</link>
       <pubDate>Tue, 03 Sep 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://rhazn.com/posts/deploy-to-google-kubernetes-engine-using-gitlab-ci/</guid>
+      <guid>https://heltweg.org/posts/deploy-to-google-kubernetes-engine-using-gitlab-ci/</guid>
       <description>In a previous blogpost I showed how I build and publish docker images on gitlab ci (Build a docker image on gitlab ci)
 Make sure to read that post first for an overview and permission setup.
 Update the kubernetes service with the new docker image You can easily set up a deploy step using google&amp;rsquo;s own cloud SDK docker images. Note the service account with the permissions to change the kubernetes setup is saved as &amp;ldquo;GCLOUD_K8S_KEY&amp;rdquo; variable here.</description>
@@ -130,50 +130,50 @@ Update the kubernetes service with the new docker image You can easily set up a 
     
     <item>
       <title>Build a progressive web app in docker with nginx to deploy to kubernetes or docker swarm</title>
-      <link>https://rhazn.com/posts/build-a-progressive-web-app-in-docker-with-nginx-to-deploy-to-kubernetes-or-docker-swarm/</link>
+      <link>https://heltweg.org/posts/build-a-progressive-web-app-in-docker-with-nginx-to-deploy-to-kubernetes-or-docker-swarm/</link>
       <pubDate>Sat, 24 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://rhazn.com/posts/build-a-progressive-web-app-in-docker-with-nginx-to-deploy-to-kubernetes-or-docker-swarm/</guid>
-      <description>With my personal cloud setup based on kubernetes done (you can read about it here: https://rhazn.com/posts/run-a-personal-cloud-with-traefik-lets-encrypt-and-zookeeper/) it is time to actually deploy the first project into it.
+      <guid>https://heltweg.org/posts/build-a-progressive-web-app-in-docker-with-nginx-to-deploy-to-kubernetes-or-docker-swarm/</guid>
+      <description>With my personal cloud setup based on kubernetes done (you can read about it here: https://heltweg.org/posts/run-a-personal-cloud-with-traefik-lets-encrypt-and-zookeeper/) it is time to actually deploy the first project into it.
 The easiest application to deploy is a pure client side single page application, packaged in a docker container with a webserver like nginx to deliver the files. Packaging the application into it&amp;rsquo;s own container allows us to build a standardized container that can be run locally for testing or deployed to docker swarm and kubernetes.</description>
     </item>
     
     <item>
       <title>Run a personal Cloud with Traefik, Lets encrypt and Zookeeper</title>
-      <link>https://rhazn.com/posts/run-a-personal-cloud-with-traefik-lets-encrypt-and-zookeeper/</link>
+      <link>https://heltweg.org/posts/run-a-personal-cloud-with-traefik-lets-encrypt-and-zookeeper/</link>
       <pubDate>Fri, 16 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://rhazn.com/posts/run-a-personal-cloud-with-traefik-lets-encrypt-and-zookeeper/</guid>
+      <guid>https://heltweg.org/posts/run-a-personal-cloud-with-traefik-lets-encrypt-and-zookeeper/</guid>
       <description>Kubernetes ingress with Traefik As mentioned in my last blog post I want to focus on a provider neutral setup for my own cloud, using technology that is not bound to any cloud offering whenever possible.
 While google cloud offers load balanced HTTP ingress by default it is apparently very expensive in comparison to running small nodes and I have heard only good things about using Traefik for kubernetes ingress.</description>
     </item>
     
     <item>
       <title>Kubernetes for sideprojects: Hardware is dead</title>
-      <link>https://rhazn.com/posts/kubernetes-for-sideprojects-hardware-is-dead/</link>
+      <link>https://heltweg.org/posts/kubernetes-for-sideprojects-hardware-is-dead/</link>
       <pubDate>Thu, 15 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://rhazn.com/posts/kubernetes-for-sideprojects-hardware-is-dead/</guid>
+      <guid>https://heltweg.org/posts/kubernetes-for-sideprojects-hardware-is-dead/</guid>
       <description>Why invest in a personal cloud It has never been easier to host your personal side projects. Tools like surge.sh or Heroku make it painless to run your code. And if all else fails the old reliable &amp;ldquo;drag and drop files to a ftp&amp;rdquo; is always there - so why invest time into setting up your own personal cloud with kubernetes?
 My goal for technology is typically to find a setup that gets boring to work with because I know it well and can focus on delivering new functionality.</description>
     </item>
     
     <item>
       <title>Entity-Systems for typescript based games</title>
-      <link>https://rhazn.com/posts/entity-systems-for-typescript-based-games/</link>
+      <link>https://heltweg.org/posts/entity-systems-for-typescript-based-games/</link>
       <pubDate>Thu, 06 Jun 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://rhazn.com/posts/entity-systems-for-typescript-based-games/</guid>
+      <guid>https://heltweg.org/posts/entity-systems-for-typescript-based-games/</guid>
       <description>Entity-Systems for typescript based games For my latest game project Frozzen I want to explore how an external UI, build with Angular, would work for a browser based game. Since Angular is written in Typescript that means ideally the game should also use the same.
 I have used Artemis ODB as framework for a Java based game in the past and liked it a lot. Entity-Systems are much better introduced by any of the huge amount of articles out there (for example the classic on T=Machine but I feel they are especially well suited to Javascript/Typescript development.</description>
     </item>
     
     <item>
       <title>Deploy a personal blog with Hugo, Firebase and Gitlab</title>
-      <link>https://rhazn.com/posts/deploy-a-personal-blog-with-hugo-firebase-and-gitlab/</link>
+      <link>https://heltweg.org/posts/deploy-a-personal-blog-with-hugo-firebase-and-gitlab/</link>
       <pubDate>Fri, 03 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://rhazn.com/posts/deploy-a-personal-blog-with-hugo-firebase-and-gitlab/</guid>
+      <guid>https://heltweg.org/posts/deploy-a-personal-blog-with-hugo-firebase-and-gitlab/</guid>
       <description>Blog requirements I recently evaluated what how writing content and carving out a little personal space on the internet would look like for me and came up with a list of requirements:
  Own my content (No third party platforms as only distribution method. There was a time before medium and there will be a time after medium.) Easy to set up and maintain (I don&amp;rsquo;t want to set up and host databases or complicated CMS systems and when I come back to this in a month it should be easy to update.</description>
     </item>

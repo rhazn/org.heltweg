@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>infrastructure on Philip Heltweg</title>
-    <link>https://rhazn.com/tags/infrastructure/</link>
+    <link>https://heltweg.org/tags/infrastructure/</link>
     <description>Recent content in infrastructure on Philip Heltweg</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 15 Aug 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://rhazn.com/tags/infrastructure/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 15 Aug 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://heltweg.org/tags/infrastructure/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Kubernetes for sideprojects: Hardware is dead</title>
-      <link>https://rhazn.com/posts/kubernetes-for-sideprojects-hardware-is-dead/</link>
+      <link>https://heltweg.org/posts/kubernetes-for-sideprojects-hardware-is-dead/</link>
       <pubDate>Thu, 15 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://rhazn.com/posts/kubernetes-for-sideprojects-hardware-is-dead/</guid>
+      <guid>https://heltweg.org/posts/kubernetes-for-sideprojects-hardware-is-dead/</guid>
       <description>Why invest in a personal cloud It has never been easier to host your personal side projects. Tools like surge.sh or Heroku make it painless to run your code. And if all else fails the old reliable &amp;ldquo;drag and drop files to a ftp&amp;rdquo; is always there - so why invest time into setting up your own personal cloud with kubernetes?
 My goal for technology is typically to find a setup that gets boring to work with because I know it well and can focus on delivering new functionality.</description>
     </item>

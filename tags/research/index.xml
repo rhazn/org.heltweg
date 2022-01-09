@@ -2,45 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>research on Philip Heltweg</title>
-    <link>https://rhazn.com/tags/research/</link>
+    <link>https://heltweg.org/tags/research/</link>
     <description>Recent content in research on Philip Heltweg</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 07 Nov 2021 11:30:03 +0000</lastBuildDate><atom:link href="https://rhazn.com/tags/research/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 07 Nov 2021 11:30:03 +0000</lastBuildDate><atom:link href="https://heltweg.org/tags/research/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Master Thesis: Implementing a Structured Approach to Belief Revision by Deterministic Switching Between Total Preorders</title>
-      <link>https://rhazn.com/posts/master-thesis/</link>
+      <link>https://heltweg.org/posts/master-thesis/</link>
       <pubDate>Sun, 07 Nov 2021 11:30:03 +0000</pubDate>
       
-      <guid>https://rhazn.com/posts/master-thesis/</guid>
+      <guid>https://heltweg.org/posts/master-thesis/</guid>
       <description>Abstract Belief change research investigates how agents adapt their knowledge with potentially conflicting information. A common formalization is by epistemic states, abstract entities often represented by faithful preorders. Operators describe how epistemic states change with new evidence and are classified by which postulates they satisfy. Different approaches have been suggested for the problem of iterated belief change. Recent work introduces uniform revision that revises an agent&amp;rsquo;s beliefs based on one static total preorder, therefore lowering representational costs.</description>
     </item>
     
     <item>
       <title>Certification of Iterated Belief Changes via Model Checking and its Implementation</title>
-      <link>https://rhazn.com/posts/certification-of-iterated-belief-changes-via-model-checking-and-its-implementation/</link>
+      <link>https://heltweg.org/posts/certification-of-iterated-belief-changes-via-model-checking-and-its-implementation/</link>
       <pubDate>Wed, 27 Oct 2021 10:00:03 +0000</pubDate>
       
-      <guid>https://rhazn.com/posts/certification-of-iterated-belief-changes-via-model-checking-and-its-implementation/</guid>
+      <guid>https://heltweg.org/posts/certification-of-iterated-belief-changes-via-model-checking-and-its-implementation/</guid>
       <description>Note: An extended version of this paper has been published at the 7th Workshop on Formal and Cognitive Reasoning, you can find it here.
 Our paper &amp;ldquo;Certification of Iterated Belief Changes via Model Checking and its Implementation&amp;rdquo; got accepted to the 19th International Workshop on Non-Monotonic Reasoning (NMR-2021) at the 18th International Conference on Principles of Knowledge Representation and Reasoning (KR 2021). During the workshop I held a short presentation of the results.</description>
     </item>
     
     <item>
       <title>On Using Model Checking for the Certification of Iterated Belief Changes</title>
-      <link>https://rhazn.com/posts/on-using-model-checking-for-the-certification-of-iterated-belief-changes/</link>
+      <link>https://heltweg.org/posts/on-using-model-checking-for-the-certification-of-iterated-belief-changes/</link>
       <pubDate>Tue, 28 Sep 2021 11:30:03 +0000</pubDate>
       
-      <guid>https://rhazn.com/posts/on-using-model-checking-for-the-certification-of-iterated-belief-changes/</guid>
+      <guid>https://heltweg.org/posts/on-using-model-checking-for-the-certification-of-iterated-belief-changes/</guid>
       <description>Our paper &amp;ldquo;On Using Model Checking for the Certification of Iterated Belief Changes&amp;rdquo; got accepted to the 7th Workshop on Formal and Cognitive Reasoning (FCR-2021) at the 44th German Conference on Artificial Intelligence (KI-2021). During the workshop I held a short presentation of the results. You can find both the paper as well as the presentation slides here.
 Abstract The theory of iterated belief change investigates how epistemic states are changed according to new beliefs.</description>
     </item>
     
     <item>
       <title>Of judges, aliens and total preorders</title>
-      <link>https://rhazn.com/posts/judges-aliens-and-total-preorders/</link>
+      <link>https://heltweg.org/posts/judges-aliens-and-total-preorders/</link>
       <pubDate>Fri, 09 Apr 2021 11:30:03 +0000</pubDate>
       
-      <guid>https://rhazn.com/posts/judges-aliens-and-total-preorders/</guid>
+      <guid>https://heltweg.org/posts/judges-aliens-and-total-preorders/</guid>
       <description>I created this synopsis of some ideas from the paper &amp;ldquo;How to Revise a Total Preorder&amp;rdquo; by Booth and Meyer during the seminar on &amp;ldquo;Representation and processing of uncertain knowledge with logic-based methods&amp;rdquo; at the University of Hagen.
 The slides are from my final presentation of the topic (and might be more or less useless on their own).
 Abstract Adapting one’s world view in the light of new information is a central skill of intelligent agents.</description>

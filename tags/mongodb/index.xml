@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>mongodb on Philip Heltweg</title>
-    <link>https://rhazn.com/tags/mongodb/</link>
+    <link>https://heltweg.org/tags/mongodb/</link>
     <description>Recent content in mongodb on Philip Heltweg</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 25 Oct 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://rhazn.com/tags/mongodb/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 25 Oct 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://heltweg.org/tags/mongodb/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Analyzing twitter: Import tweets with NodeJS and the twitter API</title>
-      <link>https://rhazn.com/posts/import-tweets-with-nodejs-and-the-twitter-api/</link>
+      <link>https://heltweg.org/posts/import-tweets-with-nodejs-and-the-twitter-api/</link>
       <pubDate>Fri, 25 Oct 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://rhazn.com/posts/import-tweets-with-nodejs-and-the-twitter-api/</guid>
+      <guid>https://heltweg.org/posts/import-tweets-with-nodejs-and-the-twitter-api/</guid>
       <description>A tweet in the database is worth two in the API Working with tweets from the twitter API probably means importing data into your own database - the standard API does not provide historical data (only the last seven days) and has various rate limits.
 So regardless of the final goal in this blog we&amp;rsquo;ll explore importing tweets from the API into a database for future use. All done with NodeJS, written in Typescript and utilizing MongoDB as data store.</description>
     </item>

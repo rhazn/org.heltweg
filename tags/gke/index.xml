@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>gke on Philip Heltweg</title>
-    <link>https://rhazn.com/tags/gke/</link>
+    <link>https://heltweg.org/tags/gke/</link>
     <description>Recent content in gke on Philip Heltweg</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 04 Sep 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://rhazn.com/tags/gke/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 04 Sep 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://heltweg.org/tags/gke/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Deploy an app into your personal cloud</title>
-      <link>https://rhazn.com/posts/deploy-an-app-into-your-personal-cloud/</link>
+      <link>https://heltweg.org/posts/deploy-an-app-into-your-personal-cloud/</link>
       <pubDate>Wed, 04 Sep 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://rhazn.com/posts/deploy-an-app-into-your-personal-cloud/</guid>
+      <guid>https://heltweg.org/posts/deploy-an-app-into-your-personal-cloud/</guid>
       <description>As the final step in this long series of blogposts we are going to deploy a simple webapp in a docker container to my personal cloud. For context here is the personal cloud setup with Traefik/Let&amp;rsquo;s Encrypt (Run a personal cloud with Traefik, Let&amp;rsquo;s encrypt and Zookeeper).
 In previous blogposts I also described how I built the app (Build a PWA in docker).
 App deployment The deployment runs the docker container.</description>
@@ -19,10 +19,10 @@ App deployment The deployment runs the docker container.</description>
     
     <item>
       <title>Deploy to google kubernetes engine using gitlab ci</title>
-      <link>https://rhazn.com/posts/deploy-to-google-kubernetes-engine-using-gitlab-ci/</link>
+      <link>https://heltweg.org/posts/deploy-to-google-kubernetes-engine-using-gitlab-ci/</link>
       <pubDate>Tue, 03 Sep 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://rhazn.com/posts/deploy-to-google-kubernetes-engine-using-gitlab-ci/</guid>
+      <guid>https://heltweg.org/posts/deploy-to-google-kubernetes-engine-using-gitlab-ci/</guid>
       <description>In a previous blogpost I showed how I build and publish docker images on gitlab ci (Build a docker image on gitlab ci)
 Make sure to read that post first for an overview and permission setup.
 Update the kubernetes service with the new docker image You can easily set up a deploy step using google&amp;rsquo;s own cloud SDK docker images. Note the service account with the permissions to change the kubernetes setup is saved as &amp;ldquo;GCLOUD_K8S_KEY&amp;rdquo; variable here.</description>
@@ -30,20 +30,20 @@ Update the kubernetes service with the new docker image You can easily set up a 
     
     <item>
       <title>Run a personal Cloud with Traefik, Lets encrypt and Zookeeper</title>
-      <link>https://rhazn.com/posts/run-a-personal-cloud-with-traefik-lets-encrypt-and-zookeeper/</link>
+      <link>https://heltweg.org/posts/run-a-personal-cloud-with-traefik-lets-encrypt-and-zookeeper/</link>
       <pubDate>Fri, 16 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://rhazn.com/posts/run-a-personal-cloud-with-traefik-lets-encrypt-and-zookeeper/</guid>
+      <guid>https://heltweg.org/posts/run-a-personal-cloud-with-traefik-lets-encrypt-and-zookeeper/</guid>
       <description>Kubernetes ingress with Traefik As mentioned in my last blog post I want to focus on a provider neutral setup for my own cloud, using technology that is not bound to any cloud offering whenever possible.
 While google cloud offers load balanced HTTP ingress by default it is apparently very expensive in comparison to running small nodes and I have heard only good things about using Traefik for kubernetes ingress.</description>
     </item>
     
     <item>
       <title>Kubernetes for sideprojects: Hardware is dead</title>
-      <link>https://rhazn.com/posts/kubernetes-for-sideprojects-hardware-is-dead/</link>
+      <link>https://heltweg.org/posts/kubernetes-for-sideprojects-hardware-is-dead/</link>
       <pubDate>Thu, 15 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://rhazn.com/posts/kubernetes-for-sideprojects-hardware-is-dead/</guid>
+      <guid>https://heltweg.org/posts/kubernetes-for-sideprojects-hardware-is-dead/</guid>
       <description>Why invest in a personal cloud It has never been easier to host your personal side projects. Tools like surge.sh or Heroku make it painless to run your code. And if all else fails the old reliable &amp;ldquo;drag and drop files to a ftp&amp;rdquo; is always there - so why invest time into setting up your own personal cloud with kubernetes?
 My goal for technology is typically to find a setup that gets boring to work with because I know it well and can focus on delivering new functionality.</description>
     </item>

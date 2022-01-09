@@ -2,45 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>react on Philip Heltweg</title>
-    <link>https://rhazn.com/tags/react/</link>
+    <link>https://heltweg.org/tags/react/</link>
     <description>Recent content in react on Philip Heltweg</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 12 Dec 2020 11:30:03 +0000</lastBuildDate><atom:link href="https://rhazn.com/tags/react/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 12 Dec 2020 11:30:03 +0000</lastBuildDate><atom:link href="https://heltweg.org/tags/react/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>spaeher.app - sentiment analytics for youtube</title>
-      <link>https://rhazn.com/projects/spaeher/</link>
+      <link>https://heltweg.org/projects/spaeher/</link>
       <pubDate>Sat, 12 Dec 2020 11:30:03 +0000</pubDate>
       
-      <guid>https://rhazn.com/projects/spaeher/</guid>
+      <guid>https://heltweg.org/projects/spaeher/</guid>
       <description>A social media analytics tool, powered by a Java/PostgreSQL/Kubernetes backend and a React frontend.
   Landingpage     Case Study     Index     New Report     Report Example     Report Example     Report Example     Comments by Word     Comments by Sentiment   </description>
     </item>
     
     <item>
       <title>IYAGI - postcards from friends</title>
-      <link>https://rhazn.com/projects/iyagi/</link>
+      <link>https://heltweg.org/projects/iyagi/</link>
       <pubDate>Mon, 30 Mar 2020 11:30:03 +0000</pubDate>
       
-      <guid>https://rhazn.com/projects/iyagi/</guid>
+      <guid>https://heltweg.org/projects/iyagi/</guid>
       <description>Screenshots   Login     Intro slides     Intro slides     Setting up the user language     Setting up the user language     Profile view     Write a letter     List of your letters     Letter feed     See your own letter     Comment on other letters   </description>
     </item>
     
     <item>
       <title>Build a progressive web app in docker with nginx to deploy to kubernetes or docker swarm</title>
-      <link>https://rhazn.com/posts/build-a-progressive-web-app-in-docker-with-nginx-to-deploy-to-kubernetes-or-docker-swarm/</link>
+      <link>https://heltweg.org/posts/build-a-progressive-web-app-in-docker-with-nginx-to-deploy-to-kubernetes-or-docker-swarm/</link>
       <pubDate>Sat, 24 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://rhazn.com/posts/build-a-progressive-web-app-in-docker-with-nginx-to-deploy-to-kubernetes-or-docker-swarm/</guid>
-      <description>With my personal cloud setup based on kubernetes done (you can read about it here: https://rhazn.com/posts/run-a-personal-cloud-with-traefik-lets-encrypt-and-zookeeper/) it is time to actually deploy the first project into it.
+      <guid>https://heltweg.org/posts/build-a-progressive-web-app-in-docker-with-nginx-to-deploy-to-kubernetes-or-docker-swarm/</guid>
+      <description>With my personal cloud setup based on kubernetes done (you can read about it here: https://heltweg.org/posts/run-a-personal-cloud-with-traefik-lets-encrypt-and-zookeeper/) it is time to actually deploy the first project into it.
 The easiest application to deploy is a pure client side single page application, packaged in a docker container with a webserver like nginx to deliver the files. Packaging the application into it&amp;rsquo;s own container allows us to build a standardized container that can be run locally for testing or deployed to docker swarm and kubernetes.</description>
     </item>
     
     <item>
       <title>mealpreplist.com - Your weekly mealprep, made easy</title>
-      <link>https://rhazn.com/projects/mealpreplist-dot-com-your-weekly-mealprep-made-easy/</link>
+      <link>https://heltweg.org/projects/mealpreplist-dot-com-your-weekly-mealprep-made-easy/</link>
       <pubDate>Wed, 27 Sep 2017 11:30:03 +0000</pubDate>
       
-      <guid>https://rhazn.com/projects/mealpreplist-dot-com-your-weekly-mealprep-made-easy/</guid>
+      <guid>https://heltweg.org/projects/mealpreplist-dot-com-your-weekly-mealprep-made-easy/</guid>
       <description>Meal prepping is the practice of preparing multiple meals at once and either freezing them or keeping them in the fridge to eat over the upcoming days. There is an active community on reddit (r/MealPrepSunday/) and various blogs online.
 Often mealprep containers are separated in three sections for a carb source, a protein source and vegetables.
 With mealpreplist I wanted to save my own, simple meal components for each of these sections and allow myself an easy way of combining them to a meal to prepare.</description>

@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>coursera on Philip Heltweg</title>
-    <link>https://rhazn.com/tags/coursera/</link>
+    <link>https://heltweg.org/tags/coursera/</link>
     <description>Recent content in coursera on Philip Heltweg</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 14 Mar 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://rhazn.com/tags/coursera/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 14 Mar 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://heltweg.org/tags/coursera/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Machine learning basics: Machine Learning by Stanford University (Coursera) review and notes</title>
-      <link>https://rhazn.com/posts/machine-learning-basics-machine-learning-by-stanford-university-review-and-notes/</link>
+      <link>https://heltweg.org/posts/machine-learning-basics-machine-learning-by-stanford-university-review-and-notes/</link>
       <pubDate>Sat, 14 Mar 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://rhazn.com/posts/machine-learning-basics-machine-learning-by-stanford-university-review-and-notes/</guid>
+      <guid>https://heltweg.org/posts/machine-learning-basics-machine-learning-by-stanford-university-review-and-notes/</guid>
       <description>The popularity of machine learning, data science and related disciplines is exploding and with it the amount of courses, books, block posts etc you are exposed to. I recently finished the relatively old but highly rated course Machine Learning by Stanford University on Coursera and wanted to take the chance to offer my review and notes I took.
 The course Although the course is old enough to be referred to as &amp;ldquo;classic&amp;rdquo; by quite a few descriptions I have read it is timeless in the sense that most good introductions are.</description>
     </item>

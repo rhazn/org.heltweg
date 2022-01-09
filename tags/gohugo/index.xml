@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>gohugo on Philip Heltweg</title>
-    <link>https://rhazn.com/tags/gohugo/</link>
+    <link>https://heltweg.org/tags/gohugo/</link>
     <description>Recent content in gohugo on Philip Heltweg</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 03 May 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://rhazn.com/tags/gohugo/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 03 May 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://heltweg.org/tags/gohugo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Deploy a personal blog with Hugo, Firebase and Gitlab</title>
-      <link>https://rhazn.com/posts/deploy-a-personal-blog-with-hugo-firebase-and-gitlab/</link>
+      <link>https://heltweg.org/posts/deploy-a-personal-blog-with-hugo-firebase-and-gitlab/</link>
       <pubDate>Fri, 03 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://rhazn.com/posts/deploy-a-personal-blog-with-hugo-firebase-and-gitlab/</guid>
+      <guid>https://heltweg.org/posts/deploy-a-personal-blog-with-hugo-firebase-and-gitlab/</guid>
       <description>Blog requirements I recently evaluated what how writing content and carving out a little personal space on the internet would look like for me and came up with a list of requirements:
  Own my content (No third party platforms as only distribution method. There was a time before medium and there will be a time after medium.) Easy to set up and maintain (I don&amp;rsquo;t want to set up and host databases or complicated CMS systems and when I come back to this in a month it should be easy to update.</description>
     </item>
