@@ -9,7 +9,7 @@ TocOpen: false
 draft: false
 description: "Trashing legacy software is fun. It creates camaraderie."
 ---
-It is a beautiful right of passage for a bright-eyed junior developer to join a team, take some tasks full of enthusiasm, and have the life and joy sucked out of them one sprint at a time. Soon enough, they sit in planning meetings, miserably complaining, accusingly asking who wrote that shit. 
+It is a beautiful rite of passage for a bright-eyed junior developer to join a team, take some tasks full of enthusiasm, and have the life and joy sucked out of them one sprint at a time. Soon enough, they sit in planning meetings, miserably complaining, accusingly asking who wrote that shit. 
 Their transformation to a full team member is complete. They have become one of us.
 
 I was once that bright-eyed junior developer. Many encounters with PHP4 later could no longer look forward to creating new features. Instead, I looked back and complained about old ones. Trashing legacy software is fun. It creates camaraderie. Who wrote this? What were they thinking? Looking at the commit log showed names that meant nothing to me. Ghosts that moved on long ago, leaving nothing but their shit code.
