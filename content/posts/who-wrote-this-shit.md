@@ -19,3 +19,5 @@ One day, I was pair programming with my friend Torben. Torben was a senior devel
 Since then, I remind myself that legacy software is written by people like me. Torben had constraints I knew nothing about. He worried about deadlines long past. Torben had learned a lot since then. Development workflows had evolved, infrastructure had gotten better.
 
 And to all the junior developers who have complained to my face about my trash code: I forgive you, I understand.
+
+{{< aboutme >}}
