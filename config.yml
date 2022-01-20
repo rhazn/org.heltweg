@@ -57,7 +57,7 @@ params:
     profileMode:
         enabled: true # needs to be explicitly set
         title: Philip Heltweg
-        subtitle: "work in progress person"
+        subtitle: "work in progress person <br /> phd student at https://oss.cs.fau.de"
         imageUrl: "/img/avatar.jpg"
         imageWidth: 240
         imageHeight: 240
@@ -79,7 +79,7 @@ params:
         - name: twitter
           url: "https://twitter.com/rhanarion"
         - name: email
-          url: "mailto:pheltweg@gmail.com"
+          url: "mailto:philip@heltweg.org"
 
     #analytics:
     #    google:
