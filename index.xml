@@ -5,7 +5,19 @@
     <link>https://heltweg.org/</link>
     <description>Recent content on Philip Heltweg</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 09 Jan 2022 11:30:03 +0000</lastBuildDate><atom:link href="https://heltweg.org/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 22 Jan 2022 11:30:03 +0000</lastBuildDate><atom:link href="https://heltweg.org/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Choose names for Google, not people</title>
+      <link>https://heltweg.org/posts/chose-names-for-google-not-people/</link>
+      <pubDate>Sat, 22 Jan 2022 11:30:03 +0000</pubDate>
+      
+      <guid>https://heltweg.org/posts/chose-names-for-google-not-people/</guid>
+      <description>&amp;ldquo;There are only two hard things in Computer Science: cache invalidation and naming things.&amp;rdquo;
+ - Phil Karlton
+AngularJS was released in 2010 and revolutionized modern frontend development. In 2016, the AngularJS team published a new framework, written in TypeScript and incompatible with AngularJS. They also made the baffling choice to call this framework Angular 2.
+Mayhem ensued, confused developers talked to each other about incompatible frameworks. The excellent community documentation AngularJS had built in the form of blogs and StackOverflow answers became an active hindrance for people trying to learn Angular.</description>
+    </item>
+    
     <item>
       <title>Who wrote this shit?</title>
       <link>https://heltweg.org/posts/who-wrote-this-shit/</link>
