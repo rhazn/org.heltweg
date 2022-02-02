@@ -26,7 +26,7 @@ params:
     description: "work in progress person"
     author: Philip Heltweg
     # author: ["Me", "You"] # multiple authors
-    images: ["/img/avatar.jpg"]
+    images: ["/img/avatar2.jpeg"]
 
     defaultTheme: auto # dark, light
     disableThemeToggle: false
@@ -58,7 +58,7 @@ params:
         enabled: true # needs to be explicitly set
         title: Philip Heltweg
         subtitle: "work in progress person <br /> phd student at https://oss.cs.fau.de"
-        imageUrl: "/img/avatar.jpg"
+        imageUrl: "/img/avatar2.jpeg"
         imageWidth: 240
         imageHeight: 240
         imageTitle: Philip Heltweg
