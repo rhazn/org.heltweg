@@ -2,22 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://heltweg.org/</loc>
+    <lastmod>2022-08-22T11:30:03+00:00</lastmod>
+  </url><url>
+    <loc>https://heltweg.org/posts/</loc>
+    <lastmod>2022-08-22T11:30:03+00:00</lastmod>
+  </url><url>
+    <loc>https://heltweg.org/tags/research/</loc>
+    <lastmod>2022-08-22T11:30:03+00:00</lastmod>
+  </url><url>
+    <loc>https://heltweg.org/tags/softwarecampus/</loc>
+    <lastmod>2022-08-22T11:30:03+00:00</lastmod>
+  </url><url>
+    <loc>https://heltweg.org/posts/swc-kickoff/</loc>
+    <lastmod>2022-08-22T11:30:03+00:00</lastmod>
+  </url><url>
+    <loc>https://heltweg.org/tags/</loc>
+    <lastmod>2022-08-22T11:30:03+00:00</lastmod>
+  </url><url>
     <loc>https://heltweg.org/posts/chose-names-for-google-not-people/</loc>
     <lastmod>2022-01-22T11:30:03+00:00</lastmod>
   </url><url>
     <loc>https://heltweg.org/tags/communication/</loc>
     <lastmod>2022-01-22T11:30:03+00:00</lastmod>
   </url><url>
-    <loc>https://heltweg.org/</loc>
-    <lastmod>2022-01-22T11:30:03+00:00</lastmod>
-  </url><url>
-    <loc>https://heltweg.org/posts/</loc>
-    <lastmod>2022-01-22T11:30:03+00:00</lastmod>
-  </url><url>
     <loc>https://heltweg.org/tags/software-engineering/</loc>
-    <lastmod>2022-01-22T11:30:03+00:00</lastmod>
-  </url><url>
-    <loc>https://heltweg.org/tags/</loc>
     <lastmod>2022-01-22T11:30:03+00:00</lastmod>
   </url><url>
     <loc>https://heltweg.org/tags/legacy-software/</loc>
@@ -30,9 +39,6 @@
     <lastmod>2021-11-07T11:30:03+00:00</lastmod>
   </url><url>
     <loc>https://heltweg.org/posts/master-thesis/</loc>
-    <lastmod>2021-11-07T11:30:03+00:00</lastmod>
-  </url><url>
-    <loc>https://heltweg.org/tags/research/</loc>
     <lastmod>2021-11-07T11:30:03+00:00</lastmod>
   </url><url>
     <loc>https://heltweg.org/posts/certification-of-iterated-belief-changes-via-model-checking-and-its-implementation/</loc>
