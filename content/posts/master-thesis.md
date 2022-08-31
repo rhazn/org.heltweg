@@ -25,5 +25,6 @@ In this thesis, an extended epistemic state approach is introduced, based on an 
 
 # Download
 [Master thesis local](/files/ma_philip_heltweg.pdf)
+[Master thesis colloquium slides](/files/ma_colloquium.pdf)
 
 {{< aboutme >}}
