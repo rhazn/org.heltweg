@@ -77,7 +77,7 @@ params:
 
     socialIcons:
         - name: twitter
-          url: "https://twitter.com/rhanarion"
+          url: "https://twitter.com/pheltweg"
         - name: email
           url: "mailto:philip@heltweg.org"
 
