@@ -2,22 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://heltweg.org/posts/challenges-to-open-collaborative-data-engineering/</loc>
+    <lastmod>2022-10-06T08:30:03+00:00</lastmod>
+  </url><url>
     <loc>https://heltweg.org/</loc>
-    <lastmod>2022-08-22T11:30:03+00:00</lastmod>
+    <lastmod>2022-10-06T08:30:03+00:00</lastmod>
   </url><url>
     <loc>https://heltweg.org/posts/</loc>
-    <lastmod>2022-08-22T11:30:03+00:00</lastmod>
+    <lastmod>2022-10-06T08:30:03+00:00</lastmod>
   </url><url>
     <loc>https://heltweg.org/tags/research/</loc>
-    <lastmod>2022-08-22T11:30:03+00:00</lastmod>
+    <lastmod>2022-10-06T08:30:03+00:00</lastmod>
+  </url><url>
+    <loc>https://heltweg.org/tags/</loc>
+    <lastmod>2022-10-06T08:30:03+00:00</lastmod>
   </url><url>
     <loc>https://heltweg.org/tags/softwarecampus/</loc>
     <lastmod>2022-08-22T11:30:03+00:00</lastmod>
   </url><url>
     <loc>https://heltweg.org/posts/swc-kickoff/</loc>
-    <lastmod>2022-08-22T11:30:03+00:00</lastmod>
-  </url><url>
-    <loc>https://heltweg.org/tags/</loc>
     <lastmod>2022-08-22T11:30:03+00:00</lastmod>
   </url><url>
     <loc>https://heltweg.org/posts/chose-names-for-google-not-people/</loc>

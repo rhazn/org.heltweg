@@ -5,7 +5,17 @@
     <link>https://heltweg.org/</link>
     <description>Recent content on Philip Heltweg</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 22 Aug 2022 11:30:03 +0000</lastBuildDate><atom:link href="https://heltweg.org/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 06 Oct 2022 08:30:03 +0000</lastBuildDate><atom:link href="https://heltweg.org/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Challenges to Open Collaborative Data Engineering</title>
+      <link>https://heltweg.org/posts/challenges-to-open-collaborative-data-engineering/</link>
+      <pubDate>Thu, 06 Oct 2022 08:30:03 +0000</pubDate>
+      
+      <guid>https://heltweg.org/posts/challenges-to-open-collaborative-data-engineering/</guid>
+      <description>Our paper &amp;ldquo;Challenges to Open Collaborative Data Engineering&amp;rdquo; got accepted to the Hawaii International Conference on System Sciences 2023 (HICSS 56).
+Abstract Open data is data that can be used, modified, and passed on, for free, similar to open-source software. Unlike open-source, however, there is little collaboration in open data engineering. We perform a systematic literature review of collaboration systems in open data, specifically for data engineering by users, taking place after data has been made available as open data.</description>
+    </item>
+    
     <item>
       <title>Softwarecampus 2022 - How to run a kickoff event for nerds</title>
       <link>https://heltweg.org/posts/swc-kickoff/</link>
