@@ -1,6 +1,6 @@
 ---
 title: "Challenges to Open Collaborative Data Engineering"
-date: 2022-10-06T11:30:03+00:00
+date: 2022-10-06T08:30:03+00:00
 # weight: 1
 slug: "challenges-to-open-collaborative-data-engineering"
 tags: ["research"]
