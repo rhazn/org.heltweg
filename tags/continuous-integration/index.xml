@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>continuous integration on Philip Heltweg</title>
     <link>https://heltweg.org/tags/continuous-integration/</link>
     <description>Recent content in continuous integration on Philip Heltweg</description>
+    <image>
+      <url>https://heltweg.org/img/avatar2.jpeg</url>
+      <link>https://heltweg.org/img/avatar2.jpeg</link>
+    </image>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Wed, 04 Sep 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://heltweg.org/tags/continuous-integration/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -12,9 +16,7 @@
       <pubDate>Wed, 04 Sep 2019 00:00:00 +0000</pubDate>
       
       <guid>https://heltweg.org/posts/deploy-an-app-into-your-personal-cloud/</guid>
-      <description>As the final step in this long series of blogposts we are going to deploy a simple webapp in a docker container to my personal cloud. For context here is the personal cloud setup with Traefik/Let&amp;rsquo;s Encrypt (Run a personal cloud with Traefik, Let&amp;rsquo;s encrypt and Zookeeper).
-In previous blogposts I also described how I built the app (Build a PWA in docker).
-App deployment The deployment runs the docker container.</description>
+      <description>Deploy an app into your personal cloud</description>
     </item>
     
     <item>
@@ -23,8 +25,7 @@ App deployment The deployment runs the docker container.</description>
       <pubDate>Tue, 03 Sep 2019 11:30:03 +0000</pubDate>
       
       <guid>https://heltweg.org/posts/build-a-docker-image-on-gitlab-ci-and-publish-it-to-google-container-registry/</guid>
-      <description>In previous blogposts I explained my concept of a personal cloud for my own projects (Kubernetes for Sideprojects) and how I set it up (Run a personal cloud with Traefik, Let&amp;rsquo;s encrypt and Zookeeper). I also showed how I packaged a PWA project with docker (Build a PWA in docker).
-With all those ingredients ready to go the last hurdle to solve is building the docker image automatically as well as publishing it to a private container registry so I can deploy it to my cloud from there.</description>
+      <description>Build a docker image on gitlab ci and publish it to google container registry</description>
     </item>
     
     <item>
@@ -33,9 +34,7 @@ With all those ingredients ready to go the last hurdle to solve is building the 
       <pubDate>Tue, 03 Sep 2019 00:00:00 +0000</pubDate>
       
       <guid>https://heltweg.org/posts/deploy-to-google-kubernetes-engine-using-gitlab-ci/</guid>
-      <description>In a previous blogpost I showed how I build and publish docker images on gitlab ci (Build a docker image on gitlab ci)
-Make sure to read that post first for an overview and permission setup.
-Update the kubernetes service with the new docker image You can easily set up a deploy step using google&amp;rsquo;s own cloud SDK docker images. Note the service account with the permissions to change the kubernetes setup is saved as &amp;ldquo;GCLOUD_K8S_KEY&amp;rdquo; variable here.</description>
+      <description>Deploy to google kubernetes engine using gitlab ci</description>
     </item>
     
   </channel>

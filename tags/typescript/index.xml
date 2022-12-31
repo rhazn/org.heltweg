@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>typescript on Philip Heltweg</title>
     <link>https://heltweg.org/tags/typescript/</link>
     <description>Recent content in typescript on Philip Heltweg</description>
+    <image>
+      <url>https://heltweg.org/img/avatar2.jpeg</url>
+      <link>https://heltweg.org/img/avatar2.jpeg</link>
+    </image>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Fri, 25 Oct 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://heltweg.org/tags/typescript/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -12,8 +16,7 @@
       <pubDate>Fri, 25 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://heltweg.org/posts/import-tweets-with-nodejs-and-the-twitter-api/</guid>
-      <description>A tweet in the database is worth two in the API Working with tweets from the twitter API probably means importing data into your own database - the standard API does not provide historical data (only the last seven days) and has various rate limits.
-So regardless of the final goal in this blog we&amp;rsquo;ll explore importing tweets from the API into a database for future use. All done with NodeJS, written in Typescript and utilizing MongoDB as data store.</description>
+      <description>Work with the twitter api and nodejs, importing tweets for later use</description>
     </item>
     
     <item>
@@ -22,8 +25,7 @@ So regardless of the final goal in this blog we&amp;rsquo;ll explore importing t
       <pubDate>Thu, 06 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>https://heltweg.org/posts/entity-systems-for-typescript-based-games/</guid>
-      <description>Entity-Systems for typescript based games For my latest game project Frozzen I want to explore how an external UI, build with Angular, would work for a browser based game. Since Angular is written in Typescript that means ideally the game should also use the same.
-I have used Artemis ODB as framework for a Java based game in the past and liked it a lot. Entity-Systems are much better introduced by any of the huge amount of articles out there (for example the classic on T=Machine but I feel they are especially well suited to Javascript/Typescript development.</description>
+      <description>Entity-Systems for typescript based games</description>
     </item>
     
   </channel>

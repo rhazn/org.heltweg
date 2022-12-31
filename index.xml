@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Philip Heltweg</title>
     <link>https://heltweg.org/</link>
     <description>Recent content on Philip Heltweg</description>
+    <image>
+      <url>https://heltweg.org/img/avatar2.jpeg</url>
+      <link>https://heltweg.org/img/avatar2.jpeg</link>
+    </image>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Thu, 06 Oct 2022 08:30:03 +0000</lastBuildDate><atom:link href="https://heltweg.org/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -22,7 +26,7 @@ Abstract Open data is data that can be used, modified, and passed on, for free, 
       <pubDate>Mon, 22 Aug 2022 11:30:03 +0000</pubDate>
       
       <guid>https://heltweg.org/posts/swc-kickoff/</guid>
-      <description>At the start of July, I visited the Softwarecampus Kickoff Event. The Softwarecampus is a project targeting self-described &amp;ldquo;EntrepreNerds&amp;rdquo; and sponsoring research projects with an industry partner with up to 100k€. Having been to a few ice-breaker events with fellow nerds I anticipated an awkward day but I was pleasantly surprised. In the hope of being pleasantly surprised again in the future, I wanted to share some ways the Softwarecampus team made the event stand out to me.</description>
+      <description>How to run social events for nerds.</description>
     </item>
     
     <item>
@@ -43,8 +47,7 @@ Mayhem ensued, confused developers talked to each other about incompatible frame
       <pubDate>Sun, 09 Jan 2022 11:30:03 +0000</pubDate>
       
       <guid>https://heltweg.org/posts/who-wrote-this-shit/</guid>
-      <description>It is a beautiful rite of passage for a bright-eyed junior developer to join a team, take some tasks full of enthusiasm, and have the life and joy sucked out of them one sprint at a time. Soon enough, they sit in planning meetings, miserably complaining, accusingly asking who wrote that shit. Their transformation to a full team member is complete. They have become one of us.
-I was once that bright-eyed junior developer.</description>
+      <description>Trashing legacy software is fun. It creates camaraderie.</description>
     </item>
     
     <item>
@@ -82,9 +85,7 @@ Abstract The theory of iterated belief change investigates how epistemic states 
       <pubDate>Fri, 09 Apr 2021 11:30:03 +0000</pubDate>
       
       <guid>https://heltweg.org/posts/judges-aliens-and-total-preorders/</guid>
-      <description>I created this synopsis of some ideas from the paper &amp;ldquo;How to Revise a Total Preorder&amp;rdquo; by Booth and Meyer during the seminar on &amp;ldquo;Representation and processing of uncertain knowledge with logic-based methods&amp;rdquo; at the University of Hagen.
-The slides are from my final presentation of the topic (and might be more or less useless on their own).
-Abstract Adapting one’s world view in the light of new information is a central skill of intelligent agents.</description>
+      <description>Synopsis of some ideas from the paper &amp;#39;How to Revise a Total Preorder&amp;#39; by Booth and Meyer</description>
     </item>
     
     <item>
@@ -93,8 +94,7 @@ Abstract Adapting one’s world view in the light of new information is a centra
       <pubDate>Mon, 15 Mar 2021 11:30:03 +0000</pubDate>
       
       <guid>https://heltweg.org/posts/how-to-kill-a-dragon/</guid>
-      <description>&amp;ldquo;You&amp;rsquo;ll never forget your first dragon&amp;rdquo; used to be the promise of Tibia, a free 2D-MMO I played as a young teenager. I spend day after day playing Tibia, training skills with friends and exploring the world and still&amp;hellip; never got to kill a dragon.
-Coming back With nostalgia rekindled by quickly burning out on WoW: Shadowlands I tried to check in my old account. Sadly, I did not only forget the password but also lost control of my email address.</description>
+      <description>How to slay a dragon.</description>
     </item>
     
     <item>
@@ -103,8 +103,7 @@ Coming back With nostalgia rekindled by quickly burning out on WoW: Shadowlands 
       <pubDate>Sat, 12 Dec 2020 11:30:03 +0000</pubDate>
       
       <guid>https://heltweg.org/projects/spaeher/</guid>
-      <description>A social media analytics tool, powered by a Java/PostgreSQL/Kubernetes backend and a React frontend.
-  Landingpage     Case Study     Index     New Report     Report Example     Report Example     Report Example     Comments by Word     Comments by Sentiment   </description>
+      <description>spaeher.app - sentiment analytics for youtube</description>
     </item>
     
     <item>
@@ -113,8 +112,7 @@ Coming back With nostalgia rekindled by quickly burning out on WoW: Shadowlands 
       <pubDate>Thu, 03 Dec 2020 00:00:00 +0000</pubDate>
       
       <guid>https://heltweg.org/posts/wisdom-from-the-internet/</guid>
-      <description>Finding needles There has never been as much information easily accessible to anyone as right now. The ease of publishing your own writing leads to new problems: The question is no longer where do you find content about a topic but what content is good and worth your time?
-To help you find the needle in the biggest haystack ever, here is my personal list of good content that influenced me.</description>
+      <description>A list of various content I found and gathered over the years that influenced me at the time or gave me new ideas. Mainly focused on software engineering and generic life advice.</description>
     </item>
     
     <item>
@@ -123,7 +121,7 @@ To help you find the needle in the biggest haystack ever, here is my personal li
       <pubDate>Mon, 30 Mar 2020 11:30:03 +0000</pubDate>
       
       <guid>https://heltweg.org/projects/iyagi/</guid>
-      <description>Screenshots   Login     Intro slides     Intro slides     Setting up the user language     Setting up the user language     Profile view     Write a letter     List of your letters     Letter feed     See your own letter     Comment on other letters   </description>
+      <description>Iyagi - Write letters to penpals, practice a language and meet new people.</description>
     </item>
     
     <item>
@@ -132,8 +130,7 @@ To help you find the needle in the biggest haystack ever, here is my personal li
       <pubDate>Sat, 14 Mar 2020 00:00:00 +0000</pubDate>
       
       <guid>https://heltweg.org/posts/machine-learning-basics-machine-learning-by-stanford-university-review-and-notes/</guid>
-      <description>The popularity of machine learning, data science and related disciplines is exploding and with it the amount of courses, books, block posts etc you are exposed to. I recently finished the relatively old but highly rated course Machine Learning by Stanford University on Coursera and wanted to take the chance to offer my review and notes I took.
-The course Although the course is old enough to be referred to as &amp;ldquo;classic&amp;rdquo; by quite a few descriptions I have read it is timeless in the sense that most good introductions are.</description>
+      <description>Review of the Machine Learning by Stanford University course on Coursera as well as notes</description>
     </item>
     
     <item>
@@ -142,8 +139,7 @@ The course Although the course is old enough to be referred to as &amp;ldquo;cla
       <pubDate>Fri, 25 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://heltweg.org/posts/import-tweets-with-nodejs-and-the-twitter-api/</guid>
-      <description>A tweet in the database is worth two in the API Working with tweets from the twitter API probably means importing data into your own database - the standard API does not provide historical data (only the last seven days) and has various rate limits.
-So regardless of the final goal in this blog we&amp;rsquo;ll explore importing tweets from the API into a database for future use. All done with NodeJS, written in Typescript and utilizing MongoDB as data store.</description>
+      <description>Work with the twitter api and nodejs, importing tweets for later use</description>
     </item>
     
     <item>
@@ -152,9 +148,7 @@ So regardless of the final goal in this blog we&amp;rsquo;ll explore importing t
       <pubDate>Wed, 04 Sep 2019 00:00:00 +0000</pubDate>
       
       <guid>https://heltweg.org/posts/deploy-an-app-into-your-personal-cloud/</guid>
-      <description>As the final step in this long series of blogposts we are going to deploy a simple webapp in a docker container to my personal cloud. For context here is the personal cloud setup with Traefik/Let&amp;rsquo;s Encrypt (Run a personal cloud with Traefik, Let&amp;rsquo;s encrypt and Zookeeper).
-In previous blogposts I also described how I built the app (Build a PWA in docker).
-App deployment The deployment runs the docker container.</description>
+      <description>Deploy an app into your personal cloud</description>
     </item>
     
     <item>
@@ -163,8 +157,7 @@ App deployment The deployment runs the docker container.</description>
       <pubDate>Tue, 03 Sep 2019 11:30:03 +0000</pubDate>
       
       <guid>https://heltweg.org/posts/build-a-docker-image-on-gitlab-ci-and-publish-it-to-google-container-registry/</guid>
-      <description>In previous blogposts I explained my concept of a personal cloud for my own projects (Kubernetes for Sideprojects) and how I set it up (Run a personal cloud with Traefik, Let&amp;rsquo;s encrypt and Zookeeper). I also showed how I packaged a PWA project with docker (Build a PWA in docker).
-With all those ingredients ready to go the last hurdle to solve is building the docker image automatically as well as publishing it to a private container registry so I can deploy it to my cloud from there.</description>
+      <description>Build a docker image on gitlab ci and publish it to google container registry</description>
     </item>
     
     <item>
@@ -173,9 +166,7 @@ With all those ingredients ready to go the last hurdle to solve is building the 
       <pubDate>Tue, 03 Sep 2019 00:00:00 +0000</pubDate>
       
       <guid>https://heltweg.org/posts/deploy-to-google-kubernetes-engine-using-gitlab-ci/</guid>
-      <description>In a previous blogpost I showed how I build and publish docker images on gitlab ci (Build a docker image on gitlab ci)
-Make sure to read that post first for an overview and permission setup.
-Update the kubernetes service with the new docker image You can easily set up a deploy step using google&amp;rsquo;s own cloud SDK docker images. Note the service account with the permissions to change the kubernetes setup is saved as &amp;ldquo;GCLOUD_K8S_KEY&amp;rdquo; variable here.</description>
+      <description>Deploy to google kubernetes engine using gitlab ci</description>
     </item>
     
     <item>
@@ -184,8 +175,7 @@ Update the kubernetes service with the new docker image You can easily set up a 
       <pubDate>Sat, 24 Aug 2019 00:00:00 +0000</pubDate>
       
       <guid>https://heltweg.org/posts/build-a-progressive-web-app-in-docker-with-nginx-to-deploy-to-kubernetes-or-docker-swarm/</guid>
-      <description>With my personal cloud setup based on kubernetes done (you can read about it here: https://heltweg.org/posts/run-a-personal-cloud-with-traefik-lets-encrypt-and-zookeeper/) it is time to actually deploy the first project into it.
-The easiest application to deploy is a pure client side single page application, packaged in a docker container with a webserver like nginx to deliver the files. Packaging the application into it&amp;rsquo;s own container allows us to build a standardized container that can be run locally for testing or deployed to docker swarm and kubernetes.</description>
+      <description>Build a progressive web app delivered by nginx with docker to deploy it to docker swarm or kubernetes.</description>
     </item>
     
     <item>
@@ -194,8 +184,7 @@ The easiest application to deploy is a pure client side single page application,
       <pubDate>Fri, 16 Aug 2019 00:00:00 +0000</pubDate>
       
       <guid>https://heltweg.org/posts/run-a-personal-cloud-with-traefik-lets-encrypt-and-zookeeper/</guid>
-      <description>Kubernetes ingress with Traefik As mentioned in my last blog post I want to focus on a provider neutral setup for my own cloud, using technology that is not bound to any cloud offering whenever possible.
-While google cloud offers load balanced HTTP ingress by default it is apparently very expensive in comparison to running small nodes and I have heard only good things about using Traefik for kubernetes ingress.</description>
+      <description>Run a personal Cloud with Traefik, Lets encrypt and Zookeeper</description>
     </item>
     
     <item>
@@ -204,8 +193,7 @@ While google cloud offers load balanced HTTP ingress by default it is apparently
       <pubDate>Thu, 15 Aug 2019 00:00:00 +0000</pubDate>
       
       <guid>https://heltweg.org/posts/kubernetes-for-sideprojects-hardware-is-dead/</guid>
-      <description>Why invest in a personal cloud It has never been easier to host your personal side projects. Tools like surge.sh or Heroku make it painless to run your code. And if all else fails the old reliable &amp;ldquo;drag and drop files to a ftp&amp;rdquo; is always there - so why invest time into setting up your own personal cloud with kubernetes?
-My goal for technology is typically to find a setup that gets boring to work with because I know it well and can focus on delivering new functionality.</description>
+      <description>Kubernetes for sideprojects: Hardware is dead</description>
     </item>
     
     <item>
@@ -214,8 +202,7 @@ My goal for technology is typically to find a setup that gets boring to work wit
       <pubDate>Thu, 06 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>https://heltweg.org/posts/entity-systems-for-typescript-based-games/</guid>
-      <description>Entity-Systems for typescript based games For my latest game project Frozzen I want to explore how an external UI, build with Angular, would work for a browser based game. Since Angular is written in Typescript that means ideally the game should also use the same.
-I have used Artemis ODB as framework for a Java based game in the past and liked it a lot. Entity-Systems are much better introduced by any of the huge amount of articles out there (for example the classic on T=Machine but I feel they are especially well suited to Javascript/Typescript development.</description>
+      <description>Entity-Systems for typescript based games</description>
     </item>
     
     <item>
@@ -224,8 +211,7 @@ I have used Artemis ODB as framework for a Java based game in the past and liked
       <pubDate>Fri, 03 May 2019 00:00:00 +0000</pubDate>
       
       <guid>https://heltweg.org/posts/deploy-a-personal-blog-with-hugo-firebase-and-gitlab/</guid>
-      <description>Blog requirements I recently evaluated what how writing content and carving out a little personal space on the internet would look like for me and came up with a list of requirements:
- Own my content (No third party platforms as only distribution method. There was a time before medium and there will be a time after medium.) Easy to set up and maintain (I don&amp;rsquo;t want to set up and host databases or complicated CMS systems and when I come back to this in a month it should be easy to update.</description>
+      <description>Deploy a personal blog with Hugo, Firebase and Gitlab</description>
     </item>
     
     <item>
@@ -234,9 +220,7 @@ I have used Artemis ODB as framework for a Java based game in the past and liked
       <pubDate>Wed, 27 Sep 2017 11:30:03 +0000</pubDate>
       
       <guid>https://heltweg.org/projects/mealpreplist-dot-com-your-weekly-mealprep-made-easy/</guid>
-      <description>Meal prepping is the practice of preparing multiple meals at once and either freezing them or keeping them in the fridge to eat over the upcoming days. There is an active community on reddit (r/MealPrepSunday/) and various blogs online.
-Often mealprep containers are separated in three sections for a carb source, a protein source and vegetables.
-With mealpreplist I wanted to save my own, simple meal components for each of these sections and allow myself an easy way of combining them to a meal to prepare.</description>
+      <description>mealpreplist.com - Your weekly mealprep, made easy</description>
     </item>
     
     <item>
@@ -245,8 +229,7 @@ With mealpreplist I wanted to save my own, simple meal components for each of th
       <pubDate>Tue, 04 Oct 2016 11:30:03 +0000</pubDate>
       
       <guid>https://heltweg.org/projects/whatchr-dot-com-a-better-youtube-playlist-experience/</guid>
-      <description>Whatchr was born of a personal problem. I regularly watch let&amp;rsquo;s play content on youtube (following a group of content creators with their series), mainly following the channels of The Yogscast.
-Youtube&amp;rsquo;s focus is on either suggesting content it thinks you find interesting on your &amp;ldquo;Suggestions&amp;rdquo; or content divided in daily chunks in your &amp;ldquo;Feed&amp;rdquo;. There is no nice way to watch multiple series other than bookmarking playlists with watch positions.</description>
+      <description>Whatchr.com - a better youtube playlist experience</description>
     </item>
     
     <item>
@@ -255,9 +238,9 @@ Youtube&amp;rsquo;s focus is on either suggesting content it thinks you find int
       <pubDate>Fri, 06 Sep 2013 11:30:03 +0000</pubDate>
       
       <guid>https://heltweg.org/projects/frozzen/</guid>
-      <description>Gameplay 
-Screenshots   Login     Menu     Select a scenario     Select a party     Manage your party     Manage party member and test level     Gameplay   Old History        </description>
+      <description>Frozzen - a turn-based RPG, coming soon to browsers and mobile devices near you. Serious gaming with depth and a thrilling story in a dark fantasy world.</description>
     </item>
+    
     
   </channel>
 </rss>

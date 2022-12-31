@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>gamedev on Philip Heltweg</title>
     <link>https://heltweg.org/tags/gamedev/</link>
     <description>Recent content in gamedev on Philip Heltweg</description>
+    <image>
+      <url>https://heltweg.org/img/avatar2.jpeg</url>
+      <link>https://heltweg.org/img/avatar2.jpeg</link>
+    </image>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Thu, 06 Jun 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://heltweg.org/tags/gamedev/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -12,8 +16,7 @@
       <pubDate>Thu, 06 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>https://heltweg.org/posts/entity-systems-for-typescript-based-games/</guid>
-      <description>Entity-Systems for typescript based games For my latest game project Frozzen I want to explore how an external UI, build with Angular, would work for a browser based game. Since Angular is written in Typescript that means ideally the game should also use the same.
-I have used Artemis ODB as framework for a Java based game in the past and liked it a lot. Entity-Systems are much better introduced by any of the huge amount of articles out there (for example the classic on T=Machine but I feel they are especially well suited to Javascript/Typescript development.</description>
+      <description>Entity-Systems for typescript based games</description>
     </item>
     
     <item>
@@ -22,8 +25,7 @@ I have used Artemis ODB as framework for a Java based game in the past and liked
       <pubDate>Fri, 06 Sep 2013 11:30:03 +0000</pubDate>
       
       <guid>https://heltweg.org/projects/frozzen/</guid>
-      <description>Gameplay 
-Screenshots   Login     Menu     Select a scenario     Select a party     Manage your party     Manage party member and test level     Gameplay   Old History        </description>
+      <description>Frozzen - a turn-based RPG, coming soon to browsers and mobile devices near you. Serious gaming with depth and a thrilling story in a dark fantasy world.</description>
     </item>
     
   </channel>

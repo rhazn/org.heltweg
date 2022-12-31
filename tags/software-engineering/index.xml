@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>software engineering on Philip Heltweg</title>
     <link>https://heltweg.org/tags/software-engineering/</link>
     <description>Recent content in software engineering on Philip Heltweg</description>
+    <image>
+      <url>https://heltweg.org/img/avatar2.jpeg</url>
+      <link>https://heltweg.org/img/avatar2.jpeg</link>
+    </image>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Sat, 22 Jan 2022 11:30:03 +0000</lastBuildDate><atom:link href="https://heltweg.org/tags/software-engineering/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -24,8 +28,7 @@ Mayhem ensued, confused developers talked to each other about incompatible frame
       <pubDate>Thu, 03 Dec 2020 00:00:00 +0000</pubDate>
       
       <guid>https://heltweg.org/posts/wisdom-from-the-internet/</guid>
-      <description>Finding needles There has never been as much information easily accessible to anyone as right now. The ease of publishing your own writing leads to new problems: The question is no longer where do you find content about a topic but what content is good and worth your time?
-To help you find the needle in the biggest haystack ever, here is my personal list of good content that influenced me.</description>
+      <description>A list of various content I found and gathered over the years that influenced me at the time or gave me new ideas. Mainly focused on software engineering and generic life advice.</description>
     </item>
     
   </channel>

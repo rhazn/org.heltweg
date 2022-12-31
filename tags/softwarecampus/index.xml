@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>softwarecampus on Philip Heltweg</title>
     <link>https://heltweg.org/tags/softwarecampus/</link>
     <description>Recent content in softwarecampus on Philip Heltweg</description>
+    <image>
+      <url>https://heltweg.org/img/avatar2.jpeg</url>
+      <link>https://heltweg.org/img/avatar2.jpeg</link>
+    </image>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Mon, 22 Aug 2022 11:30:03 +0000</lastBuildDate><atom:link href="https://heltweg.org/tags/softwarecampus/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -12,7 +16,7 @@
       <pubDate>Mon, 22 Aug 2022 11:30:03 +0000</pubDate>
       
       <guid>https://heltweg.org/posts/swc-kickoff/</guid>
-      <description>At the start of July, I visited the Softwarecampus Kickoff Event. The Softwarecampus is a project targeting self-described &amp;ldquo;EntrepreNerds&amp;rdquo; and sponsoring research projects with an industry partner with up to 100k€. Having been to a few ice-breaker events with fellow nerds I anticipated an awkward day but I was pleasantly surprised. In the hope of being pleasantly surprised again in the future, I wanted to share some ways the Softwarecampus team made the event stand out to me.</description>
+      <description>How to run social events for nerds.</description>
     </item>
     
   </channel>

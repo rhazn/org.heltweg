@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>legacy-software on Philip Heltweg</title>
     <link>https://heltweg.org/tags/legacy-software/</link>
     <description>Recent content in legacy-software on Philip Heltweg</description>
+    <image>
+      <url>https://heltweg.org/img/avatar2.jpeg</url>
+      <link>https://heltweg.org/img/avatar2.jpeg</link>
+    </image>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Sun, 09 Jan 2022 11:30:03 +0000</lastBuildDate><atom:link href="https://heltweg.org/tags/legacy-software/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -12,8 +16,7 @@
       <pubDate>Sun, 09 Jan 2022 11:30:03 +0000</pubDate>
       
       <guid>https://heltweg.org/posts/who-wrote-this-shit/</guid>
-      <description>It is a beautiful rite of passage for a bright-eyed junior developer to join a team, take some tasks full of enthusiasm, and have the life and joy sucked out of them one sprint at a time. Soon enough, they sit in planning meetings, miserably complaining, accusingly asking who wrote that shit. Their transformation to a full team member is complete. They have become one of us.
-I was once that bright-eyed junior developer.</description>
+      <description>Trashing legacy software is fun. It creates camaraderie.</description>
     </item>
     
   </channel>

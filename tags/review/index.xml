@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>review on Philip Heltweg</title>
     <link>https://heltweg.org/tags/review/</link>
     <description>Recent content in review on Philip Heltweg</description>
+    <image>
+      <url>https://heltweg.org/img/avatar2.jpeg</url>
+      <link>https://heltweg.org/img/avatar2.jpeg</link>
+    </image>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Sat, 14 Mar 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://heltweg.org/tags/review/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -12,8 +16,7 @@
       <pubDate>Sat, 14 Mar 2020 00:00:00 +0000</pubDate>
       
       <guid>https://heltweg.org/posts/machine-learning-basics-machine-learning-by-stanford-university-review-and-notes/</guid>
-      <description>The popularity of machine learning, data science and related disciplines is exploding and with it the amount of courses, books, block posts etc you are exposed to. I recently finished the relatively old but highly rated course Machine Learning by Stanford University on Coursera and wanted to take the chance to offer my review and notes I took.
-The course Although the course is old enough to be referred to as &amp;ldquo;classic&amp;rdquo; by quite a few descriptions I have read it is timeless in the sense that most good introductions are.</description>
+      <description>Review of the Machine Learning by Stanford University course on Coursera as well as notes</description>
     </item>
     
   </channel>

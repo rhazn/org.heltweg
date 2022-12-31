@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>belief-change on Philip Heltweg</title>
     <link>https://heltweg.org/tags/belief-change/</link>
     <description>Recent content in belief-change on Philip Heltweg</description>
+    <image>
+      <url>https://heltweg.org/img/avatar2.jpeg</url>
+      <link>https://heltweg.org/img/avatar2.jpeg</link>
+    </image>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Sun, 07 Nov 2021 11:30:03 +0000</lastBuildDate><atom:link href="https://heltweg.org/tags/belief-change/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -41,9 +45,7 @@ Abstract The theory of iterated belief change investigates how epistemic states 
       <pubDate>Fri, 09 Apr 2021 11:30:03 +0000</pubDate>
       
       <guid>https://heltweg.org/posts/judges-aliens-and-total-preorders/</guid>
-      <description>I created this synopsis of some ideas from the paper &amp;ldquo;How to Revise a Total Preorder&amp;rdquo; by Booth and Meyer during the seminar on &amp;ldquo;Representation and processing of uncertain knowledge with logic-based methods&amp;rdquo; at the University of Hagen.
-The slides are from my final presentation of the topic (and might be more or less useless on their own).
-Abstract Adapting one’s world view in the light of new information is a central skill of intelligent agents.</description>
+      <description>Synopsis of some ideas from the paper &amp;#39;How to Revise a Total Preorder&amp;#39; by Booth and Meyer</description>
     </item>
     
   </channel>

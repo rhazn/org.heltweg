@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>youtube on Philip Heltweg</title>
     <link>https://heltweg.org/tags/youtube/</link>
     <description>Recent content in youtube on Philip Heltweg</description>
+    <image>
+      <url>https://heltweg.org/img/avatar2.jpeg</url>
+      <link>https://heltweg.org/img/avatar2.jpeg</link>
+    </image>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Sat, 12 Dec 2020 11:30:03 +0000</lastBuildDate><atom:link href="https://heltweg.org/tags/youtube/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -12,8 +16,7 @@
       <pubDate>Sat, 12 Dec 2020 11:30:03 +0000</pubDate>
       
       <guid>https://heltweg.org/projects/spaeher/</guid>
-      <description>A social media analytics tool, powered by a Java/PostgreSQL/Kubernetes backend and a React frontend.
-  Landingpage     Case Study     Index     New Report     Report Example     Report Example     Report Example     Comments by Word     Comments by Sentiment   </description>
+      <description>spaeher.app - sentiment analytics for youtube</description>
     </item>
     
     <item>
@@ -22,8 +25,7 @@
       <pubDate>Tue, 04 Oct 2016 11:30:03 +0000</pubDate>
       
       <guid>https://heltweg.org/projects/whatchr-dot-com-a-better-youtube-playlist-experience/</guid>
-      <description>Whatchr was born of a personal problem. I regularly watch let&amp;rsquo;s play content on youtube (following a group of content creators with their series), mainly following the channels of The Yogscast.
-Youtube&amp;rsquo;s focus is on either suggesting content it thinks you find interesting on your &amp;ldquo;Suggestions&amp;rdquo; or content divided in daily chunks in your &amp;ldquo;Feed&amp;rdquo;. There is no nice way to watch multiple series other than bookmarking playlists with watch positions.</description>
+      <description>Whatchr.com - a better youtube playlist experience</description>
     </item>
     
   </channel>

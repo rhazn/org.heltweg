@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>traefik on Philip Heltweg</title>
     <link>https://heltweg.org/tags/traefik/</link>
     <description>Recent content in traefik on Philip Heltweg</description>
+    <image>
+      <url>https://heltweg.org/img/avatar2.jpeg</url>
+      <link>https://heltweg.org/img/avatar2.jpeg</link>
+    </image>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Thu, 15 Aug 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://heltweg.org/tags/traefik/index.xml" rel="self" type="application/rss+xml" />
     <item>
@@ -12,8 +16,7 @@
       <pubDate>Thu, 15 Aug 2019 00:00:00 +0000</pubDate>
       
       <guid>https://heltweg.org/posts/kubernetes-for-sideprojects-hardware-is-dead/</guid>
-      <description>Why invest in a personal cloud It has never been easier to host your personal side projects. Tools like surge.sh or Heroku make it painless to run your code. And if all else fails the old reliable &amp;ldquo;drag and drop files to a ftp&amp;rdquo; is always there - so why invest time into setting up your own personal cloud with kubernetes?
-My goal for technology is typically to find a setup that gets boring to work with because I know it well and can focus on delivering new functionality.</description>
+      <description>Kubernetes for sideprojects: Hardware is dead</description>
     </item>
     
   </channel>
