@@ -2,10 +2,6 @@ baseURL: "https://heltweg.org"
 title: Philip Heltweg
 paginate: 10
 theme: PaperMod
-markup:
-    goldmark:
-        renderer:
-            unsafe: true
 
 enableRobotsTXT: true
 buildDrafts: false
@@ -26,18 +22,27 @@ params:
     description: "work in progress person"
     author: Philip Heltweg
     # author: ["Me", "You"] # multiple authors
-    images: ["/img/avatar2.jpeg"]
+    images: ["/img/avatar2.jpeg"] # <link or path of image for opengraph, twitter-cards>
 
+    DateFormat: "January 2, 2006"
     defaultTheme: auto # dark, light
     disableThemeToggle: false
 
-    ShowReadingTime: true
     ShowShareButtons: true
+    ShowPostNavLinks: true
+    ShowBreadCrumbs: true
+    ShowCodeCopyButtons: true
+    ShowWordCount: true
+    ShowRssButtonInSectionTermList: true
+    UseHugoToc: true
     disableSpecial1stPost: false
-    comments: false
+    disableScrollToTop: false
+    comments: true
     hidemeta: false
-    showtoc: false
-    tocopen: false
+    hideSummary: false
+    showtoc: true
+    tocopen: true
+    ShowReadingTime: true
 
     assets:
         # disableHLJS: true # to disable highlight.js
@@ -53,33 +58,28 @@ params:
         icon: /img/favicon/apple-touch-icon.png
         iconHeight: 35
 
-    # profile-mode
-    profileMode:
-        enabled: true # needs to be explicitly set
-        title: Philip Heltweg
-        subtitle: "work in progress person <br /> phd student at https://oss.cs.fau.de"
-        imageUrl: "/img/avatar2.jpeg"
-        imageWidth: 240
-        imageHeight: 240
-        imageTitle: Philip Heltweg
-        buttons:
-            - name: Posts
-              url: posts
-            - name: Projects
-              url: projects
-            - name: CV
-              url: /files/cv_philip_heltweg.pdf
-
-    # home-info mode
     homeInfoParams:
-        Title: "Hi there \U0001F44B"
-        Content: Welcome to my blog
+        Title: Hi, I am Philip 👋
+        Content: |
+            <img src="/img/avatar2.jpeg" alt="Philip Heltweg" height="120" width="120" style="display: inline-table;border-radius: 50%;">
+            
+            work in progress person
+
+            phd student at https://oss.cs.fau.de
 
     socialIcons:
-        - name: twitter
-          url: "https://twitter.com/pheltweg"
         - name: email
           url: "mailto:philip@heltweg.org"
+        - name: github
+          url: "https://github.com/rhazn"
+        - name: mastodon
+          url: "https://mas.to/@rhazn"
+        - name: twitter
+          url: "https://twitter.com/rhanarion"
+        - name: discord
+          url: "https://discordapp.com/users/148739214660468736"
+        - name: cv
+          url: "/files/cv_philip_heltweg.pdf"
 
     #analytics:
     #    google:
@@ -95,27 +95,37 @@ params:
     fuseOpts:
         isCaseSensitive: false
         shouldSort: true
+        includeMatches: true
         location: 0
         distance: 1000
-        threshold: 0.4
-        minMatchCharLength: 0
+        threshold: 0.3
+        minMatchCharLength: 3
         keys: ["title", "permalink", "summary", "content"]
-#menu:
-#    main:
-#        - identifier: categories
-#          name: categories
-#          url: /categories/
-#          weight: 10
-#        - identifier: tags
-#          name: tags
-#          url: /tags/
-#          weight: 20
-#        - identifier: example
-#          name: example.org
-#          url: https://example.org
-#          weight: 30
+menu:
+    main:
+        - identifier: blog
+          name: Blog
+          url: /posts/
+          weight: 10
+        - identifier: projects
+          name: Projects
+          url: /projects
+          weight: 20
+        - identifier: search
+          name: Search
+          url: /search/
+          weight: 30
+        - identifier: cv
+          name: CV
+          url: /files/cv_philip_heltweg.pdf
+          weight: 40
 
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
+#pygmentsUseClasses: true
+markup:
+    goldmark:
+        renderer:
+            unsafe: true
 # pygmentsUseClasses: true
 # markup:
 #     highlight:
@@ -124,3 +134,10 @@ params:
 #         guessSyntax: true
 #         lineNos: true
 #         style: monokai
+
+# for search
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON # is necessary
