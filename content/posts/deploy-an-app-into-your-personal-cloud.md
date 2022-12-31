@@ -83,8 +83,6 @@ rules:
         servicePort: web
 ```
 
-{{< freelance >}}
-
 # Updating the traefik config
 Updating the traefik config is important so traefik requests a new HTTPS certificate for the app from Let's encrypt. You will need to add this line to the traefik toml file that is described here ([Run a personal cloud with Traefik, Let's encrypt and Zookeeper](https://heltweg.org/posts/run-a-personal-cloud-with-traefik-lets-encrypt-and-zookeeper/)):
 

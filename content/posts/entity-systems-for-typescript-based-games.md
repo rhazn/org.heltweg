@@ -24,8 +24,6 @@ I have used [Artemis ODB](https://github.com/junkdog/artemis-odb) as framework f
 
 If you work with a strict separation of logic into systems and data only into components there is a very natural way to serialize components, JSON. Whole levels can be expressed as an array of JSON data that is used to set up components. That is why I prefer a very basic but strict implementation like artemis over similar frameworks like PhaserJS.
 
-{{< freelance >}}
-
 ![Frozzen is a turn based strategy game written in Typescript and artemists](/img/posts/entity-systems-for-typescript-based-games/frozzenscreen.png#center)
 
 I started my development with artemists, a Typescript port of artemis by darkoverlordofdata. Unfortunately the code is a bit outdated and does not use import/export and can not be directly imported for newer Typescript versions (since it extends the built-in Array).

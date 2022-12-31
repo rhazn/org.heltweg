@@ -27,8 +27,6 @@ Make sure to read that post first for an overview and permission setup.
 
 You can easily set up a deploy step using google's own cloud SDK docker images. Note the service account with the permissions to change the kubernetes setup is saved as "GCLOUD_K8S_KEY" variable here.
 
-{{< freelance >}}
-
 This job changes the image of my deployment for the app. You will need to change the last line in the script to whatever change you want to make to your kubernetes setup on deploy.
 
 ```yml

@@ -33,8 +33,6 @@ Docker and Kubernetes check most of these boxes. Kubernetes has de-facto won the
 
 A further important point that separates kubernetes from similar offerings is that you can 100% forget about hardware while still being free to use standard technology. That means you do not need to maintain a set of servers if you use a managed kubernetes offering (like you would need to with docker swarm) but you are still not locked into any provider (like you would be by using AWS Beanstalk, Firebase or Heroku).
 
-{{< freelance >}}
-
 # Why not...?
 My own personal journey has made me try out the following alternatives in the order they are written down here and I have abandoned them all.
 

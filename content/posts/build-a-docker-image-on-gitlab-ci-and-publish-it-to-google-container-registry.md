@@ -52,8 +52,6 @@ In general the permissions needed to interact with docker images in the containe
 
 # Publish a docker image with gitlab ci
 
-{{< freelance >}}
-
 To allow gitlab ci to use your service account you need to save the content of the json files as a base64 encoded variable in the backend. You can find the setting under "Settings" -> "CI /CD" -> "Variables". Be careful with this data since it is security relevant. The variables here will be available as environment variables during your jobs.
 
 ![The service account variables](/img/posts/build-a-docker-image-on-gitlab-ci-and-publish-it-to-google-container-registry/gitlab-ci-variables.png#center)

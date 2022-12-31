@@ -31,8 +31,6 @@ Setting up and configuring our own HTTP server also allows for fine tuning of ca
 # Building in docker
 For this setup we build the app using docker. That way the app is always built with the same node version and can be consistently reproduced, regardless of installed software on the local computer.
 
-{{< freelance >}}
-
 The project here is a react application based on create-react-app but it works similarly with any frontend framework:
 
 ```docker

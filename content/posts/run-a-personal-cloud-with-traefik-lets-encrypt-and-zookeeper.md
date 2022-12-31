@@ -28,8 +28,6 @@ Traefik has built-in support for automatically getting and renewing HTTPS certif
 
 Because I was using just one node for Traefik I chose to go with the easy setup of a local acme.json file that stores the certificate while the node is running.
 
-{{< freelance >}}
-
 # GKE Preemptible nodes, your own chaos monkey
 To save costs I chose to use "Preemtible VMs" as nodes to power my kubernetes cluster on GKE. According to google's docs: "Preemptible VMs are Google Compute Engine VM instances that last a maximum of 24 hours and provide no availability guarantees." This means the nodes in my kubernetes cluster randomly go down and are never up more than 24h. While this obviously is not a smart decision for a production setup I have chosen to embrace it and consider the nodes going down my own ["chaos monkey"](https://netflix.github.io/chaosmonkey/) that forces me to write resilient code.
 
@@ -308,8 +306,6 @@ spec:
       name: tls
   type: LoadBalancer
 ```
-
-{{< freelance >}}
 
 # Final result
 The final workloads with traefik and zookeeper

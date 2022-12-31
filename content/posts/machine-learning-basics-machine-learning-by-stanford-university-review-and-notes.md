@@ -20,8 +20,6 @@ Although the course is old enough to be referred to as "classic" by quite a few 
 
 Coursera offers video lectures, lecture notes (as pdf) and a short text summary for most of the 11 weeks of the course. Grading is done using short quizzes at the end of each topic as well as programming exercises in Octave or Mathlab. Forums are available to help with any questions and mentors are good at answering anything that comes up.
 
-{{< freelance >}}
-
 # The good
 
 The video lectures are really well done and the content seems excellent and very "grounded". It is definitely not a course trying to cash in on the hype surrounding ML.

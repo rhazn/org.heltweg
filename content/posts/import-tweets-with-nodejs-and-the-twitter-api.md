@@ -41,8 +41,6 @@ The reason for this is that some languages (Javascript being one of them) can no
 
 To work with tweet ids we need a way to handle bigger numbers and use the "id_str". [big.js](https://www.npmjs.com/package/big-js) provides that functionality and is used in all following code examples.
 
-{{< freelance >}}
-
 # Saving tweets
 
 Saving tweets in MongoDB is easy. Since we are using typescript we can rely on the excellent (Typegoose library)[https://github.com/typegoose/typegoose] to create models for tweets and interact with MongoDB:
@@ -155,8 +153,6 @@ A basic algorithm without any safeguards against failing that uses that logic an
 ```
 
 # The twitter service
-
-{{< freelance >}}
 
 The twitter service itself is just a minimalist wrapper around the twitter npm module:
 

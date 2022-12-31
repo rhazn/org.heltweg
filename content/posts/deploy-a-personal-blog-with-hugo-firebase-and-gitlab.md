@@ -66,8 +66,6 @@ firebase init
 
 Armed with the token that allows gitlab to deploy in your name as well as a configured firebase project we can add the last step to the gitlab-ci file - deployment.
 
-{{< freelance >}}
-
 You can see the full gitlab-ci.yml file here:
 ```yml
 stages:
