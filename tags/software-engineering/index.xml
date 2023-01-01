@@ -9,11 +9,11 @@
       <link>https://heltweg.org/img/avatar2.jpeg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 22 Jan 2022 11:30:03 +0000</lastBuildDate><atom:link href="https://heltweg.org/tags/software-engineering/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 22 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://heltweg.org/tags/software-engineering/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Choose names for Google, not people</title>
       <link>https://heltweg.org/posts/chose-names-for-google-not-people/</link>
-      <pubDate>Sat, 22 Jan 2022 11:30:03 +0000</pubDate>
+      <pubDate>Sat, 22 Jan 2022 00:00:00 +0000</pubDate>
       
       <guid>https://heltweg.org/posts/chose-names-for-google-not-people/</guid>
       <description>&amp;ldquo;There are only two hard things in Computer Science: cache invalidation and naming things.&amp;rdquo;
@@ -25,7 +25,7 @@ Mayhem ensued, confused developers talked to each other about incompatible frame
     <item>
       <title>Who wrote this shit?</title>
       <link>https://heltweg.org/posts/who-wrote-this-shit/</link>
-      <pubDate>Sun, 09 Jan 2022 11:30:03 +0000</pubDate>
+      <pubDate>Sun, 09 Jan 2022 00:00:00 +0000</pubDate>
       
       <guid>https://heltweg.org/posts/who-wrote-this-shit/</guid>
       <description>Trashing legacy software is fun. It creates camaraderie.</description>
@@ -79,7 +79,7 @@ Mayhem ensued, confused developers talked to each other about incompatible frame
     <item>
       <title>Build a docker image on gitlab ci and publish it to google container registry</title>
       <link>https://heltweg.org/posts/build-a-docker-image-on-gitlab-ci-and-publish-it-to-google-container-registry/</link>
-      <pubDate>Tue, 03 Sep 2019 11:30:03 +0000</pubDate>
+      <pubDate>Tue, 03 Sep 2019 00:00:00 +0000</pubDate>
       
       <guid>https://heltweg.org/posts/build-a-docker-image-on-gitlab-ci-and-publish-it-to-google-container-registry/</guid>
       <description>Build a docker image on gitlab ci and publish it to google container registry</description>

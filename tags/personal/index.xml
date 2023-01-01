@@ -9,11 +9,11 @@
       <link>https://heltweg.org/img/avatar2.jpeg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 22 Aug 2022 11:30:03 +0000</lastBuildDate><atom:link href="https://heltweg.org/tags/personal/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 22 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://heltweg.org/tags/personal/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Softwarecampus 2022 - How to run a kickoff event for nerds</title>
       <link>https://heltweg.org/posts/swc-kickoff/</link>
-      <pubDate>Mon, 22 Aug 2022 11:30:03 +0000</pubDate>
+      <pubDate>Mon, 22 Aug 2022 00:00:00 +0000</pubDate>
       
       <guid>https://heltweg.org/posts/swc-kickoff/</guid>
       <description>How to run social events for nerds.</description>
@@ -22,7 +22,7 @@
     <item>
       <title>Who wrote this shit?</title>
       <link>https://heltweg.org/posts/who-wrote-this-shit/</link>
-      <pubDate>Sun, 09 Jan 2022 11:30:03 +0000</pubDate>
+      <pubDate>Sun, 09 Jan 2022 00:00:00 +0000</pubDate>
       
       <guid>https://heltweg.org/posts/who-wrote-this-shit/</guid>
       <description>Trashing legacy software is fun. It creates camaraderie.</description>
@@ -31,7 +31,7 @@
     <item>
       <title>Master Thesis: Implementing a Structured Approach to Belief Revision by Deterministic Switching Between Total Preorders</title>
       <link>https://heltweg.org/posts/master-thesis/</link>
-      <pubDate>Sun, 07 Nov 2021 11:30:03 +0000</pubDate>
+      <pubDate>Sun, 07 Nov 2021 00:00:00 +0000</pubDate>
       
       <guid>https://heltweg.org/posts/master-thesis/</guid>
       <description>Abstract Belief change research investigates how agents adapt their knowledge with potentially conflicting information. A common formalization is by epistemic states, abstract entities often represented by faithful preorders. Operators describe how epistemic states change with new evidence and are classified by which postulates they satisfy. Different approaches have been suggested for the problem of iterated belief change. Recent work introduces uniform revision that revises an agent&amp;rsquo;s beliefs based on one static total preorder, therefore lowering representational costs.</description>
@@ -40,7 +40,7 @@
     <item>
       <title>How to kill a dragon</title>
       <link>https://heltweg.org/posts/how-to-kill-a-dragon/</link>
-      <pubDate>Mon, 15 Mar 2021 11:30:03 +0000</pubDate>
+      <pubDate>Mon, 15 Mar 2021 00:00:00 +0000</pubDate>
       
       <guid>https://heltweg.org/posts/how-to-kill-a-dragon/</guid>
       <description>How to slay a dragon.</description>

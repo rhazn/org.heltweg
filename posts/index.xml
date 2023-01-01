@@ -9,11 +9,11 @@
       <link>https://heltweg.org/img/avatar2.jpeg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 06 Oct 2022 08:30:03 +0000</lastBuildDate><atom:link href="https://heltweg.org/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 06 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://heltweg.org/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Challenges to Open Collaborative Data Engineering</title>
       <link>https://heltweg.org/posts/challenges-to-open-collaborative-data-engineering/</link>
-      <pubDate>Thu, 06 Oct 2022 08:30:03 +0000</pubDate>
+      <pubDate>Thu, 06 Oct 2022 00:00:00 +0000</pubDate>
       
       <guid>https://heltweg.org/posts/challenges-to-open-collaborative-data-engineering/</guid>
       <description>Our paper &amp;ldquo;Challenges to Open Collaborative Data Engineering&amp;rdquo; got accepted to the Hawaii International Conference on System Sciences 2023 (HICSS 56).
@@ -23,7 +23,7 @@ Abstract Open data is data that can be used, modified, and passed on, for free, 
     <item>
       <title>Softwarecampus 2022 - How to run a kickoff event for nerds</title>
       <link>https://heltweg.org/posts/swc-kickoff/</link>
-      <pubDate>Mon, 22 Aug 2022 11:30:03 +0000</pubDate>
+      <pubDate>Mon, 22 Aug 2022 00:00:00 +0000</pubDate>
       
       <guid>https://heltweg.org/posts/swc-kickoff/</guid>
       <description>How to run social events for nerds.</description>
@@ -32,7 +32,7 @@ Abstract Open data is data that can be used, modified, and passed on, for free, 
     <item>
       <title>Choose names for Google, not people</title>
       <link>https://heltweg.org/posts/chose-names-for-google-not-people/</link>
-      <pubDate>Sat, 22 Jan 2022 11:30:03 +0000</pubDate>
+      <pubDate>Sat, 22 Jan 2022 00:00:00 +0000</pubDate>
       
       <guid>https://heltweg.org/posts/chose-names-for-google-not-people/</guid>
       <description>&amp;ldquo;There are only two hard things in Computer Science: cache invalidation and naming things.&amp;rdquo;
@@ -44,7 +44,7 @@ Mayhem ensued, confused developers talked to each other about incompatible frame
     <item>
       <title>Who wrote this shit?</title>
       <link>https://heltweg.org/posts/who-wrote-this-shit/</link>
-      <pubDate>Sun, 09 Jan 2022 11:30:03 +0000</pubDate>
+      <pubDate>Sun, 09 Jan 2022 00:00:00 +0000</pubDate>
       
       <guid>https://heltweg.org/posts/who-wrote-this-shit/</guid>
       <description>Trashing legacy software is fun. It creates camaraderie.</description>
@@ -53,7 +53,7 @@ Mayhem ensued, confused developers talked to each other about incompatible frame
     <item>
       <title>Master Thesis: Implementing a Structured Approach to Belief Revision by Deterministic Switching Between Total Preorders</title>
       <link>https://heltweg.org/posts/master-thesis/</link>
-      <pubDate>Sun, 07 Nov 2021 11:30:03 +0000</pubDate>
+      <pubDate>Sun, 07 Nov 2021 00:00:00 +0000</pubDate>
       
       <guid>https://heltweg.org/posts/master-thesis/</guid>
       <description>Abstract Belief change research investigates how agents adapt their knowledge with potentially conflicting information. A common formalization is by epistemic states, abstract entities often represented by faithful preorders. Operators describe how epistemic states change with new evidence and are classified by which postulates they satisfy. Different approaches have been suggested for the problem of iterated belief change. Recent work introduces uniform revision that revises an agent&amp;rsquo;s beliefs based on one static total preorder, therefore lowering representational costs.</description>
@@ -62,7 +62,7 @@ Mayhem ensued, confused developers talked to each other about incompatible frame
     <item>
       <title>Certification of Iterated Belief Changes via Model Checking and its Implementation</title>
       <link>https://heltweg.org/posts/certification-of-iterated-belief-changes-via-model-checking-and-its-implementation/</link>
-      <pubDate>Wed, 27 Oct 2021 10:00:03 +0000</pubDate>
+      <pubDate>Wed, 27 Oct 2021 00:00:00 +0000</pubDate>
       
       <guid>https://heltweg.org/posts/certification-of-iterated-belief-changes-via-model-checking-and-its-implementation/</guid>
       <description>Note: An extended version of this paper has been published at the 7th Workshop on Formal and Cognitive Reasoning, you can find it here.
@@ -72,7 +72,7 @@ Our paper &amp;ldquo;Certification of Iterated Belief Changes via Model Checking
     <item>
       <title>On Using Model Checking for the Certification of Iterated Belief Changes</title>
       <link>https://heltweg.org/posts/on-using-model-checking-for-the-certification-of-iterated-belief-changes/</link>
-      <pubDate>Tue, 28 Sep 2021 11:30:03 +0000</pubDate>
+      <pubDate>Tue, 28 Sep 2021 00:00:00 +0000</pubDate>
       
       <guid>https://heltweg.org/posts/on-using-model-checking-for-the-certification-of-iterated-belief-changes/</guid>
       <description>Our paper &amp;ldquo;On Using Model Checking for the Certification of Iterated Belief Changes&amp;rdquo; got accepted to the 7th Workshop on Formal and Cognitive Reasoning (FCR-2021) at the 44th German Conference on Artificial Intelligence (KI-2021). During the workshop I held a short presentation of the results. You can find both the paper as well as the presentation slides here.
@@ -82,7 +82,7 @@ Abstract The theory of iterated belief change investigates how epistemic states 
     <item>
       <title>Of judges, aliens and total preorders</title>
       <link>https://heltweg.org/posts/judges-aliens-and-total-preorders/</link>
-      <pubDate>Fri, 09 Apr 2021 11:30:03 +0000</pubDate>
+      <pubDate>Fri, 09 Apr 2021 00:00:00 +0000</pubDate>
       
       <guid>https://heltweg.org/posts/judges-aliens-and-total-preorders/</guid>
       <description>Synopsis of some ideas from the paper &amp;#39;How to Revise a Total Preorder&amp;#39; by Booth and Meyer</description>
@@ -91,7 +91,7 @@ Abstract The theory of iterated belief change investigates how epistemic states 
     <item>
       <title>How to kill a dragon</title>
       <link>https://heltweg.org/posts/how-to-kill-a-dragon/</link>
-      <pubDate>Mon, 15 Mar 2021 11:30:03 +0000</pubDate>
+      <pubDate>Mon, 15 Mar 2021 00:00:00 +0000</pubDate>
       
       <guid>https://heltweg.org/posts/how-to-kill-a-dragon/</guid>
       <description>How to slay a dragon.</description>
@@ -136,7 +136,7 @@ Abstract The theory of iterated belief change investigates how epistemic states 
     <item>
       <title>Build a docker image on gitlab ci and publish it to google container registry</title>
       <link>https://heltweg.org/posts/build-a-docker-image-on-gitlab-ci-and-publish-it-to-google-container-registry/</link>
-      <pubDate>Tue, 03 Sep 2019 11:30:03 +0000</pubDate>
+      <pubDate>Tue, 03 Sep 2019 00:00:00 +0000</pubDate>
       
       <guid>https://heltweg.org/posts/build-a-docker-image-on-gitlab-ci-and-publish-it-to-google-container-registry/</guid>
       <description>Build a docker image on gitlab ci and publish it to google container registry</description>

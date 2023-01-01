@@ -9,11 +9,11 @@
       <link>https://heltweg.org/img/avatar2.jpeg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 06 Oct 2022 08:30:03 +0000</lastBuildDate><atom:link href="https://heltweg.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 06 Oct 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://heltweg.org/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>research</title>
       <link>https://heltweg.org/tags/research/</link>
-      <pubDate>Thu, 06 Oct 2022 08:30:03 +0000</pubDate>
+      <pubDate>Thu, 06 Oct 2022 00:00:00 +0000</pubDate>
       
       <guid>https://heltweg.org/tags/research/</guid>
       <description></description>
@@ -22,7 +22,7 @@
     <item>
       <title>personal</title>
       <link>https://heltweg.org/tags/personal/</link>
-      <pubDate>Mon, 22 Aug 2022 11:30:03 +0000</pubDate>
+      <pubDate>Mon, 22 Aug 2022 00:00:00 +0000</pubDate>
       
       <guid>https://heltweg.org/tags/personal/</guid>
       <description></description>
@@ -31,7 +31,7 @@
     <item>
       <title>software-engineering</title>
       <link>https://heltweg.org/tags/software-engineering/</link>
-      <pubDate>Sat, 22 Jan 2022 11:30:03 +0000</pubDate>
+      <pubDate>Sat, 22 Jan 2022 00:00:00 +0000</pubDate>
       
       <guid>https://heltweg.org/tags/software-engineering/</guid>
       <description></description>
