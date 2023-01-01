@@ -98,12 +98,30 @@ Abstract The theory of iterated belief change investigates how epistemic states 
     </item>
     
     <item>
+      <title>spaeher.app - sentiment analytics for youtube</title>
+      <link>https://heltweg.org/posts/spaeher/</link>
+      <pubDate>Sat, 12 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://heltweg.org/posts/spaeher/</guid>
+      <description>spaeher.app - sentiment analytics for youtube</description>
+    </item>
+    
+    <item>
       <title>Wisdom from the Internet, content that influenced how I think about software (and life).</title>
       <link>https://heltweg.org/posts/wisdom-from-the-internet/</link>
       <pubDate>Thu, 03 Dec 2020 00:00:00 +0000</pubDate>
       
       <guid>https://heltweg.org/posts/wisdom-from-the-internet/</guid>
       <description>A list of various content I found and gathered over the years that influenced me at the time or gave me new ideas. Mainly focused on software engineering and generic life advice.</description>
+    </item>
+    
+    <item>
+      <title>IYAGI - postcards from friends</title>
+      <link>https://heltweg.org/posts/iyagi/</link>
+      <pubDate>Mon, 30 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://heltweg.org/posts/iyagi/</guid>
+      <description>Iyagi - Write letters to penpals, practice a language and meet new people.</description>
     </item>
     
     <item>
@@ -194,6 +212,33 @@ Abstract The theory of iterated belief change investigates how epistemic states 
       
       <guid>https://heltweg.org/posts/deploy-a-personal-blog-with-hugo-firebase-and-gitlab/</guid>
       <description>Deploy a personal blog with Hugo, Firebase and Gitlab</description>
+    </item>
+    
+    <item>
+      <title>mealpreplist.com - Your weekly mealprep, made easy</title>
+      <link>https://heltweg.org/posts/mealpreplist-dot-com-your-weekly-mealprep-made-easy/</link>
+      <pubDate>Wed, 27 Sep 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://heltweg.org/posts/mealpreplist-dot-com-your-weekly-mealprep-made-easy/</guid>
+      <description>mealpreplist.com - Your weekly mealprep, made easy</description>
+    </item>
+    
+    <item>
+      <title>Whatchr.com - a better youtube playlist experience</title>
+      <link>https://heltweg.org/posts/whatchr-dot-com-a-better-youtube-playlist-experience/</link>
+      <pubDate>Tue, 04 Oct 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://heltweg.org/posts/whatchr-dot-com-a-better-youtube-playlist-experience/</guid>
+      <description>Whatchr.com - a better youtube playlist experience</description>
+    </item>
+    
+    <item>
+      <title>Frozzen - a turn-based RPG</title>
+      <link>https://heltweg.org/posts/frozzen/</link>
+      <pubDate>Fri, 06 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://heltweg.org/posts/frozzen/</guid>
+      <description>Frozzen - a turn-based RPG, coming soon to browsers and mobile devices near you. Serious gaming with depth and a thrilling story in a dark fantasy world.</description>
     </item>
     
   </channel>
