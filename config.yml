@@ -100,7 +100,7 @@ params:
 menu:
     main:
         - identifier: posts
-          name: Posts
+          name: All Posts
           url: /posts/
           weight: 10
         - identifier: search
