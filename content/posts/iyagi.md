@@ -1,28 +1,10 @@
 ---
 title: "IYAGI - postcards from friends"
-date: 2020-03-30T11:30:03+00:00
-# weight: 1
-# aliases: ["/first"]
+date: 2020-03-30
 tags: ["project", "software-engineering", "startup"]
 slug: "iyagi"
 author: "Philip Heltweg"
-# author: ["Me", "You"] # multiple authors
-showToc: false
-TocOpen: true
-draft: false
-hidemeta: false
-comments: false
 description: "Iyagi - Write letters to penpals, practice a language and meet new people."
-disableHLJS: false # to disable highlightjs
-disableShare: false
-searchHidden: true
-cover:
-    image: "" # image path/url
-    alt: "" # alt text
-    caption: "" # display caption under cover
-    relative: false # when using page bundles set this to true
-    hidden: true # only hide on current single page
-
 ---
 
 # Screenshots

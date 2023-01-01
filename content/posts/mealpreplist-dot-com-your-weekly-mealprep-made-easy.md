@@ -1,28 +1,10 @@
 ---
 title: "mealpreplist.com - Your weekly mealprep, made easy"
-date: 2017-09-27T11:30:03+00:00
-# weight: 1
-# aliases: ["/first"]
+date: 2017-09-27
 tags: ["project", "software-engineering", "startup"]
 slug: "mealpreplist-dot-com-your-weekly-mealprep-made-easy"
 author: "Philip Heltweg"
-# author: ["Me", "You"] # multiple authors
-showToc: true
-TocOpen: true
-draft: false
-hidemeta: false
-comments: false
 description: "mealpreplist.com - Your weekly mealprep, made easy"
-disableHLJS: false # to disable highlightjs
-disableShare: false
-searchHidden: true
-cover:
-    image: "" # image path/url
-    alt: "" # alt text
-    caption: "" # display caption under cover
-    relative: false # when using page bundles set this to true
-    hidden: true # only hide on current single page
-
 ---
 
 ![mealpreplist.com Landingpage](/img/projects/mealpreplist-dot-com-your-weekly-mealprep-made-easy/landing.png#center)

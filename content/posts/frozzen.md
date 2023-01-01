@@ -1,28 +1,10 @@
 ---
 title: "Frozzen - a turn-based RPG"
-date: 2013-09-06T11:30:03+00:00
-# weight: 1
-# aliases: ["/first"]
+date: 2013-09-06
 tags: ["project", "software-engineering", "startup"]
 slug: "frozzen"
 author: "Philip Heltweg"
-# author: ["Me", "You"] # multiple authors
-showToc: false
-TocOpen: true
-draft: false
-hidemeta: false
-comments: false
 description: "Frozzen - a turn-based RPG, coming soon to browsers and mobile devices near you. Serious gaming with depth and a thrilling story in a dark fantasy world."
-disableHLJS: false # to disable highlightjs
-disableShare: false
-searchHidden: true
-cover:
-    image: "" # image path/url
-    alt: "" # alt text
-    caption: "" # display caption under cover
-    relative: false # when using page bundles set this to true
-    hidden: true # only hide on current single page
-
 ---
 # Gameplay
 <video controls src="/img/projects/frozzen/gameplay.mp4"></video>

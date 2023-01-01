@@ -1,28 +1,10 @@
 ---
 title: "Whatchr.com - a better youtube playlist experience"
-date: 2016-10-04T11:30:03+00:00
-# weight: 1
-# aliases: ["/first"]
+date: 2016-10-04
 tags: ["project", "software-engineering", "startup"]
 slug: "whatchr-dot-com-a-better-youtube-playlist-experience"
 author: "Philip Heltweg"
-# author: ["Me", "You"] # multiple authors
-showToc: true
-TocOpen: true
-draft: false
-hidemeta: false
-comments: false
 description: "Whatchr.com - a better youtube playlist experience"
-disableHLJS: false # to disable highlightjs
-disableShare: false
-searchHidden: true
-cover:
-    image: "" # image path/url
-    alt: "" # alt text
-    caption: "" # display caption under cover
-    relative: false # when using page bundles set this to true
-    hidden: true # only hide on current single page
-
 ---
 
 Whatchr was born of a personal problem. I regularly watch let's play content on youtube (following a group of content creators with their series), mainly following the channels of [The Yogscast](http://yogscast.com/).

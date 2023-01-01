@@ -1,28 +1,10 @@
 ---
 title: "spaeher.app - sentiment analytics for youtube"
-date: 2020-12-12T11:30:03+00:00
-# weight: 1
-# aliases: ["/first"]
+date: 2020-12-12
 tags: ["project", "software-engineering", "startup"]
 slug: "spaeher"
 author: "Philip Heltweg"
-# author: ["Me", "You"] # multiple authors
-showToc: false
-TocOpen: true
-draft: false
-hidemeta: false
-comments: false
 description: "spaeher.app - sentiment analytics for youtube"
-disableHLJS: false # to disable highlightjs
-disableShare: false
-searchHidden: true
-cover:
-    image: "" # image path/url
-    alt: "" # alt text
-    caption: "" # display caption under cover
-    relative: false # when using page bundles set this to true
-    hidden: true # only hide on current single page
-
 ---
 A social media analytics tool, powered by a Java/PostgreSQL/Kubernetes backend and a React frontend.
 

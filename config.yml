@@ -99,14 +99,10 @@ params:
         keys: ["title", "permalink", "summary", "content"]
 menu:
     main:
-        - identifier: blog
-          name: Blog
+        - identifier: posts
+          name: Posts
           url: /posts/
           weight: 10
-        - identifier: projects
-          name: Projects
-          url: /projects
-          weight: 20
         - identifier: search
           name: Search
           url: /search/
