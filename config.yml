@@ -58,14 +58,9 @@ params:
         icon: /img/favicon/apple-touch-icon.png
         iconHeight: 35
 
-    homeInfoParams:
+    homeInfoParams: # Overwritten in layouts/partials/home_info.html
         Title: Hi, I am Philip 👋
-        Content: |
-            <img src="/img/avatar2.jpeg" alt="Philip Heltweg" height="120" width="120" style="display: inline-table;border-radius: 50%;">
-            
-            work in progress person
-
-            phd student at https://oss.cs.fau.de
+        Content: # Overwritten in layouts/partials/home_info.html
 
     socialIcons:
         - name: email

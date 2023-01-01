@@ -1,23 +1,12 @@
 ---
 title: "Build a progressive web app in docker with nginx to deploy to kubernetes or docker swarm"
 date: 2019-08-24
+tags: ["software-engineering"]
 draft: false
 slug: "build-a-progressive-web-app-in-docker-with-nginx-to-deploy-to-kubernetes-or-docker-swarm"
 description: "Build a progressive web app delivered by nginx with docker to deploy it to docker swarm or kubernetes."
 showToc: true
 TocOpen: true
-tags:
-    - spa
-    - pwa
-    - docker
-    - kubernetes
-    - lighthouse
-    - react
-    - create-react-app
-    - webworker
-    - single page application
-    - progressive web app
-    - personal-cloud
 ---
 
 With my personal cloud setup based on kubernetes done (you can read about it here: [https://heltweg.org/posts/run-a-personal-cloud-with-traefik-lets-encrypt-and-zookeeper/](https://heltweg.org/posts/run-a-personal-cloud-with-traefik-lets-encrypt-and-zookeeper/)) it is time to actually deploy the first project into it. 

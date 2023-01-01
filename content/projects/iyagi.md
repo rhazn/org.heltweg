@@ -3,7 +3,7 @@ title: "IYAGI - postcards from friends"
 date: 2020-03-30T11:30:03+00:00
 # weight: 1
 # aliases: ["/first"]
-tags: ["app", "react", "firebase"]
+tags: ["project", "software-engineering", "startup"]
 slug: "iyagi"
 author: "Philip Heltweg"
 # author: ["Me", "You"] # multiple authors

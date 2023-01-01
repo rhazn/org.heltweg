@@ -2,7 +2,7 @@
 title: "Softwarecampus 2022 - How to run a kickoff event for nerds"
 date: 2022-08-22T11:30:03+00:00
 slug: "swc-kickoff"
-tags: ["research", "softwarecampus"]
+tags: ["research", "personal"]
 author: "Philip Heltweg"
 showToc: false
 TocOpen: false

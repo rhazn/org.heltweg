@@ -3,7 +3,7 @@ title: "How to kill a dragon"
 date: 2021-03-15T11:30:03+00:00
 # weight: 1
 slug: "how-to-kill-a-dragon"
-tags: ["mmo", "personal"]
+tags: ["personal"]
 author: "Philip Heltweg"
 # author: ["Me", "You"] # multiple authors
 showToc: false

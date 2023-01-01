@@ -6,15 +6,7 @@ slug: "run-a-personal-cloud-with-traefik-lets-encrypt-and-zookeeper"
 description: "Run a personal Cloud with Traefik, Lets encrypt and Zookeeper"
 showToc: true
 TocOpen: true
-tags:
-    - kubernetes
-    - docker
-    - cloud
-    - gke
-    - gitlab
-    - google cloud
-    - devops
-    - personal-cloud
+tags: ["software-engineering"]
 ---
 # Kubernetes ingress with Traefik
 As mentioned in my [last blog post](/posts/kubernetes-for-sideprojects-hardware-is-dead) I want to focus on a provider neutral setup for my own cloud, using technology that is not bound to any cloud offering whenever possible.

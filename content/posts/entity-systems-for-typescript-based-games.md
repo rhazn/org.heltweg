@@ -6,12 +6,7 @@ slug: "entity-systems-for-typescript-based-games"
 description: "Entity-Systems for typescript based games"
 showToc: true
 TocOpen: true
-tags:
-    - ecs
-    - entity component system
-    - game development
-    - gamedev
-    - typescript
+tags: ["software-engineering"]
 ---
 
 # Entity-Systems for typescript based games

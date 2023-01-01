@@ -2,7 +2,7 @@
 title: "Choose names for Google, not people"
 date: 2022-01-22T11:30:03+00:00
 slug: "chose-names-for-google-not-people"
-tags: ["software engineering", "communication"] # todo: compress tags
+tags: ["software-engineering"]
 author: "Philip Heltweg"
 showToc: false
 TocOpen: false

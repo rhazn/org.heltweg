@@ -6,17 +6,7 @@ slug: "deploy-to-google-kubernetes-engine-using-gitlab-ci"
 description: "Deploy to google kubernetes engine using gitlab ci"
 showToc: true
 TocOpen: true
-tags:
-    - gitlab
-    - gitlab ci
-    - gke
-    - google kubernetes engine
-    - ci
-    - continuous integration
-    - continuous deployment
-    - kubernetes
-    - devops
-    - personal-cloud
+tags: ["software-engineering"]
 ---
 
 In a previous blogpost I showed how I build and publish docker images on gitlab ci ([Build a docker image on gitlab ci](https://heltweg.org/posts/build-a-docker-image-on-gitlab-ci-and-publish-it-to-google-container-registry/))

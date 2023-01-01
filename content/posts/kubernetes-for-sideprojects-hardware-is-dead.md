@@ -6,19 +6,7 @@ slug: "kubernetes-for-sideprojects-hardware-is-dead"
 description: "Kubernetes for sideprojects: Hardware is dead"
 showToc: true
 TocOpen: true
-tags:
-    - kubernetes
-    - docker
-    - cloud
-    - gke
-    - gitlab
-    - google cloud
-    - devops
-    - traefik
-    - infrastructure
-    - infrastructure in code
-    - container
-    - personal-cloud
+tags: ["software-engineering"]
 ---
 
 # Why invest in a personal cloud

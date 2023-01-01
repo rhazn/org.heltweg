@@ -6,11 +6,7 @@ slug: "wisdom-from-the-internet"
 description: "A list of various content I found and gathered over the years that influenced me at the time or gave me new ideas. Mainly focused on software engineering and generic life advice."
 showToc: true
 TocOpen: true
-tags:
-  - software engineering
-  - blogs
-  - list
-  - life coaching
+tags: ["software-engineering", "personal"]
 ---
 
 # Finding needles

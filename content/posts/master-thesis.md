@@ -3,7 +3,7 @@ title: "Master Thesis: Implementing a Structured Approach to Belief Revision by 
 date: 2021-11-07T11:30:03+00:00
 # weight: 1
 slug: "master-thesis"
-tags: ["research", "belief-change"]
+tags: ["research", "personal"]
 author: "Philip Heltweg"
 # author: ["Me", "You"] # multiple authors
 showToc: false

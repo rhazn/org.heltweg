@@ -2,7 +2,7 @@
 title: "Who wrote this shit?"
 date: 2022-01-09T11:30:03+00:00
 slug: "who-wrote-this-shit"
-tags: ["legacy-software", "communication"]
+tags: ["software-engineering", "personal"]
 author: "Philip Heltweg"
 showToc: false
 TocOpen: false

@@ -3,7 +3,7 @@ title: "Of judges, aliens and total preorders"
 date: 2021-04-09T11:30:03+00:00
 # weight: 1
 slug: "judges-aliens-and-total-preorders"
-tags: ["research", "belief-change"]
+tags: ["research"]
 author: "Philip Heltweg"
 # author: ["Me", "You"] # multiple authors
 showToc: false

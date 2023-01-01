@@ -5,12 +5,8 @@ draft: false
 slug: "deploy-a-personal-blog-with-hugo-firebase-and-gitlab"
 description: "Deploy a personal blog with Hugo, Firebase and Gitlab"
 showToc: true
+tags: ["software-engineering"]
 TocOpen: true
-tags:
-    - gohugo
-    - firebase
-    - gitlab
-    - continuous-deployment
 ---
 
 # Blog requirements

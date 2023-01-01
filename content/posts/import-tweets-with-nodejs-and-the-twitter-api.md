@@ -6,14 +6,7 @@ slug: "import-tweets-with-nodejs-and-the-twitter-api"
 description: "Work with the twitter api and nodejs, importing tweets for later use"
 showToc: true
 TocOpen: true
-tags:
-    - nodejs
-    - twitter
-    - api
-    - typescript
-    - javascript
-    - mongodb
-    - import
+tags: ["software-engineering"]
 ---
 
 # A tweet in the database is worth two in the API

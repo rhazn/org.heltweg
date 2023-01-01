@@ -6,10 +6,7 @@ slug: "machine-learning-basics-machine-learning-by-stanford-university-review-an
 description: "Review of the Machine Learning by Stanford University course on Coursera as well as notes"
 showToc: true
 TocOpen: true
-tags:
-  - machine-learning
-  - coursera
-  - review
+tags: ["research", "personal"]
 ---
 
 The popularity of machine learning, data science and related disciplines is exploding and with it the amount of courses, books, block posts etc you are exposed to. I recently finished the relatively old but highly rated course [Machine Learning by Stanford University](https://www.coursera.org/learn/machine-learning) on Coursera and wanted to take the chance to offer my review and notes I took.

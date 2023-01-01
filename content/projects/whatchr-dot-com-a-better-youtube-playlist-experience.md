@@ -3,7 +3,7 @@ title: "Whatchr.com - a better youtube playlist experience"
 date: 2016-10-04T11:30:03+00:00
 # weight: 1
 # aliases: ["/first"]
-tags: ["spa", "youtube", "angular"]
+tags: ["project", "software-engineering", "startup"]
 slug: "whatchr-dot-com-a-better-youtube-playlist-experience"
 author: "Philip Heltweg"
 # author: ["Me", "You"] # multiple authors

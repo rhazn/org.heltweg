@@ -6,20 +6,7 @@ slug: "deploy-an-app-into-your-personal-cloud"
 description: "Deploy an app into your personal cloud"
 showToc: true
 TocOpen: true
-tags:
-    - docker
-    - gitlab
-    - gitlab ci
-    - gcr
-    - google container registry
-    - google kubernetes engine
-    - gke
-    - ci
-    - continuous integration
-    - continuous deployment
-    - kubernetes
-    - devops
-    - personal-cloud
+tags: ["software-engineering"]
 ---
 
 As the final step in this long series of blogposts we are going to deploy a simple webapp in a docker container to my personal cloud. For context here is the personal cloud setup with Traefik/Let's Encrypt ([Run a personal cloud with Traefik, Let's encrypt and Zookeeper](https://heltweg.org/posts/run-a-personal-cloud-with-traefik-lets-encrypt-and-zookeeper/)).

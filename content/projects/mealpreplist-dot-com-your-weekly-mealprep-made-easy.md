@@ -3,7 +3,7 @@ title: "mealpreplist.com - Your weekly mealprep, made easy"
 date: 2017-09-27T11:30:03+00:00
 # weight: 1
 # aliases: ["/first"]
-tags: ["spa","mealprep", "react", "firebase"]
+tags: ["project", "software-engineering", "startup"]
 slug: "mealpreplist-dot-com-your-weekly-mealprep-made-easy"
 author: "Philip Heltweg"
 # author: ["Me", "You"] # multiple authors
