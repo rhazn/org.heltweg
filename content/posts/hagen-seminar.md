@@ -1,21 +1,10 @@
 ---
 title: "Of judges, aliens and total preorders"
-date: 2021-04-09T11:30:03+00:00
-# weight: 1
+date: 2021-04-09
 slug: "judges-aliens-and-total-preorders"
 tags: ["research"]
 author: "Philip Heltweg"
-# author: ["Me", "You"] # multiple authors
-showToc: false
-TocOpen: false
-draft: false
-hidemeta: false
-comments: false
 description: "Synopsis of some ideas from the paper 'How to Revise a Total Preorder' by Booth and Meyer"
-disableHLJS: false # to disable highlightjs
-disableShare: false
-searchHidden: false
-
 ---
 
 I created this synopsis of some ideas from the paper "How to Revise a Total Preorder" by Booth and Meyer during the seminar on "Representation and processing of uncertain knowledge with logic-based methods" at the University of Hagen.

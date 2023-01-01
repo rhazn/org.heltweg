@@ -1,11 +1,8 @@
 ---
 title: "Wisdom from the Internet, content that influenced how I think about software (and life)."
 date: 2020-12-03
-draft: false
 slug: "wisdom-from-the-internet"
 description: "A list of various content I found and gathered over the years that influenced me at the time or gave me new ideas. Mainly focused on software engineering and generic life advice."
-showToc: true
-TocOpen: true
 tags: ["software-engineering", "personal"]
 ---
 

@@ -1,21 +1,10 @@
 ---
 title: "Challenges to Open Collaborative Data Engineering"
-date: 2022-10-06T08:30:03+00:00
-# weight: 1
+date: 2022-10-06
 slug: "challenges-to-open-collaborative-data-engineering"
 tags: ["research"]
 author: "Philip Heltweg"
-# author: ["Me", "You"] # multiple authors
-showToc: false
-TocOpen: false
-draft: false
-hidemeta: false
-comments: false
 description: ""
-disableHLJS: false # to disable highlightjs
-disableShare: false
-searchHidden: false
-
 ---
 
 Our paper "Challenges to Open Collaborative Data Engineering" got accepted to the [Hawaii International Conference on System Sciences 2023 (HICSS 56)](https://hicss.hawaii.edu/).

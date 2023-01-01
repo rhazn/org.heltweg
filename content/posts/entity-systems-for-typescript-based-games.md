@@ -1,11 +1,8 @@
 ---
 title: "Entity-Systems for typescript based games"
 date: 2019-06-06
-draft: false
 slug: "entity-systems-for-typescript-based-games"
 description: "Entity-Systems for typescript based games"
-showToc: true
-TocOpen: true
 tags: ["software-engineering"]
 ---
 

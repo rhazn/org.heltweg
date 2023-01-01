@@ -1,11 +1,8 @@
 ---
 title: "Kubernetes for sideprojects: Hardware is dead"
 date: 2019-08-15
-draft: false
 slug: "kubernetes-for-sideprojects-hardware-is-dead"
 description: "Kubernetes for sideprojects: Hardware is dead"
-showToc: true
-TocOpen: true
 tags: ["software-engineering"]
 ---
 

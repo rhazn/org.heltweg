@@ -1,28 +1,10 @@
 ---
 title: "Build a docker image on gitlab ci and publish it to google container registry"
-date: 2019-09-03T11:30:03+00:00
+date: 2019-09-03
 slug: "build-a-docker-image-on-gitlab-ci-and-publish-it-to-google-container-registry"
-# weight: 1
-# aliases: ["/first"]
 tags: ["software-engineering"]
 author: "Philip Heltweg"
-# author: ["Me", "You"] # multiple authors
-showToc: true
-TocOpen: true
-draft: false
-hidemeta: false
-comments: false
 description: "Build a docker image on gitlab ci and publish it to google container registry"
-disableHLJS: false # to disable highlightjs
-disableShare: false
-searchHidden: true
-cover:
-    image: "" # image path/url
-    alt: "tagged images" # alt text
-    caption: "tagged images" # display caption under cover
-    relative: false # when using page bundles set this to true
-    hidden: true # only hide on current single page
-
 ---
 
 In previous blogposts I explained my concept of a personal cloud for my own projects ([Kubernetes for Sideprojects](https://heltweg.org/posts/kubernetes-for-sideprojects-hardware-is-dead/)) and how I set it up ([Run a personal cloud with Traefik, Let's encrypt and Zookeeper](https://heltweg.org/posts/run-a-personal-cloud-with-traefik-lets-encrypt-and-zookeeper/)). I also showed how I packaged a PWA project with docker ([Build a PWA in docker](https://heltweg.org/posts/build-a-progressive-web-app-in-docker-with-nginx-to-deploy-to-kubernetes-or-docker-swarm/)).

@@ -1,12 +1,9 @@
 ---
 title: "Deploy a personal blog with Hugo, Firebase and Gitlab"
 date: 2019-05-03
-draft: false
 slug: "deploy-a-personal-blog-with-hugo-firebase-and-gitlab"
 description: "Deploy a personal blog with Hugo, Firebase and Gitlab"
-showToc: true
 tags: ["software-engineering"]
-TocOpen: true
 ---
 
 # Blog requirements

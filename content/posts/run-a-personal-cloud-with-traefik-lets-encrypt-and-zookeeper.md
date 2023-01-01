@@ -1,11 +1,8 @@
 ---
 title: "Run a personal Cloud with Traefik, Lets encrypt and Zookeeper"
 date: 2019-08-16
-draft: false
 slug: "run-a-personal-cloud-with-traefik-lets-encrypt-and-zookeeper"
 description: "Run a personal Cloud with Traefik, Lets encrypt and Zookeeper"
-showToc: true
-TocOpen: true
 tags: ["software-engineering"]
 ---
 # Kubernetes ingress with Traefik

@@ -1,11 +1,8 @@
 ---
 title: "Deploy to google kubernetes engine using gitlab ci"
 date: 2019-09-03
-draft: false
 slug: "deploy-to-google-kubernetes-engine-using-gitlab-ci"
 description: "Deploy to google kubernetes engine using gitlab ci"
-showToc: true
-TocOpen: true
 tags: ["software-engineering"]
 ---
 

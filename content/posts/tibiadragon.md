@@ -1,27 +1,10 @@
 ---
 title: "How to kill a dragon"
-date: 2021-03-15T11:30:03+00:00
-# weight: 1
+date: 2021-03-15
 slug: "how-to-kill-a-dragon"
 tags: ["personal"]
 author: "Philip Heltweg"
-# author: ["Me", "You"] # multiple authors
-showToc: false
-TocOpen: false
-draft: false
-hidemeta: false
-comments: false
 description: "How to slay a dragon."
-disableHLJS: false # to disable highlightjs
-disableShare: false
-searchHidden: false
-cover:
-    image: "img/posts/tibiadragon/dragon.png" # image path/url
-    alt: "Dead dragon" # alt text
-    caption: "The beast is dead" # display caption under cover
-    relative: false # when using page bundles set this to true
-    hidden: true # only hide on current single page
-
 ---
 
 "You'll never forget your first dragon" used to be the promise of Tibia, a free 2D-MMO I played as a young teenager. I spend day after day playing Tibia, training skills with friends and exploring the world and still... never got to kill a dragon.

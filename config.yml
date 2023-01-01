@@ -34,10 +34,11 @@ params:
     ShowCodeCopyButtons: true
     ShowWordCount: true
     ShowRssButtonInSectionTermList: true
-    UseHugoToc: true
+    UseHugoToc: false
     disableSpecial1stPost: false
     disableScrollToTop: false
     comments: true
+    draft: false
     hidemeta: false
     hideSummary: false
     showtoc: true

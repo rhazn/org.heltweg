@@ -1,11 +1,8 @@
 ---
 title: "Deploy an app into your personal cloud"
 date: 2019-09-04
-draft: false
 slug: "deploy-an-app-into-your-personal-cloud"
 description: "Deploy an app into your personal cloud"
-showToc: true
-TocOpen: true
 tags: ["software-engineering"]
 ---
 

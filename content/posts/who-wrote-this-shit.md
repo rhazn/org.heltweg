@@ -1,12 +1,9 @@
 ---
 title: "Who wrote this shit?"
-date: 2022-01-09T11:30:03+00:00
+date: 2022-01-09
 slug: "who-wrote-this-shit"
 tags: ["software-engineering", "personal"]
 author: "Philip Heltweg"
-showToc: false
-TocOpen: false
-draft: false
 description: "Trashing legacy software is fun. It creates camaraderie."
 ---
 It is a beautiful rite of passage for a bright-eyed junior developer to join a team, take some tasks full of enthusiasm, and have the life and joy sucked out of them one sprint at a time. Soon enough, they sit in planning meetings, miserably complaining, accusingly asking who wrote that shit. 
