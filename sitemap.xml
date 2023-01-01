@@ -17,7 +17,7 @@
     <loc>https://heltweg.org/tags/</loc>
     <lastmod>2022-10-06T08:30:03+00:00</lastmod>
   </url><url>
-    <loc>https://heltweg.org/tags/softwarecampus/</loc>
+    <loc>https://heltweg.org/tags/personal/</loc>
     <lastmod>2022-08-22T11:30:03+00:00</lastmod>
   </url><url>
     <loc>https://heltweg.org/posts/swc-kickoff/</loc>
@@ -26,20 +26,11 @@
     <loc>https://heltweg.org/posts/chose-names-for-google-not-people/</loc>
     <lastmod>2022-01-22T11:30:03+00:00</lastmod>
   </url><url>
-    <loc>https://heltweg.org/tags/communication/</loc>
-    <lastmod>2022-01-22T11:30:03+00:00</lastmod>
-  </url><url>
     <loc>https://heltweg.org/tags/software-engineering/</loc>
     <lastmod>2022-01-22T11:30:03+00:00</lastmod>
   </url><url>
-    <loc>https://heltweg.org/tags/legacy-software/</loc>
-    <lastmod>2022-01-09T11:30:03+00:00</lastmod>
-  </url><url>
     <loc>https://heltweg.org/posts/who-wrote-this-shit/</loc>
     <lastmod>2022-01-09T11:30:03+00:00</lastmod>
-  </url><url>
-    <loc>https://heltweg.org/tags/belief-change/</loc>
-    <lastmod>2021-11-07T11:30:03+00:00</lastmod>
   </url><url>
     <loc>https://heltweg.org/posts/master-thesis/</loc>
     <lastmod>2021-11-07T11:30:03+00:00</lastmod>
@@ -56,130 +47,31 @@
     <loc>https://heltweg.org/posts/how-to-kill-a-dragon/</loc>
     <lastmod>2021-03-15T11:30:03+00:00</lastmod>
   </url><url>
-    <loc>https://heltweg.org/tags/mmo/</loc>
-    <lastmod>2021-03-15T11:30:03+00:00</lastmod>
-  </url><url>
-    <loc>https://heltweg.org/tags/personal/</loc>
-    <lastmod>2021-03-15T11:30:03+00:00</lastmod>
-  </url><url>
-    <loc>https://heltweg.org/tags/ai/</loc>
+    <loc>https://heltweg.org/tags/project/</loc>
     <lastmod>2020-12-12T11:30:03+00:00</lastmod>
   </url><url>
     <loc>https://heltweg.org/projects/</loc>
     <lastmod>2020-12-12T11:30:03+00:00</lastmod>
   </url><url>
-    <loc>https://heltweg.org/tags/react/</loc>
-    <lastmod>2020-12-12T11:30:03+00:00</lastmod>
-  </url><url>
-    <loc>https://heltweg.org/tags/sentiment-analytics/</loc>
-    <lastmod>2020-12-12T11:30:03+00:00</lastmod>
-  </url><url>
-    <loc>https://heltweg.org/tags/spa/</loc>
-    <lastmod>2020-12-12T11:30:03+00:00</lastmod>
-  </url><url>
     <loc>https://heltweg.org/projects/spaeher/</loc>
     <lastmod>2020-12-12T11:30:03+00:00</lastmod>
   </url><url>
-    <loc>https://heltweg.org/tags/youtube/</loc>
+    <loc>https://heltweg.org/tags/startup/</loc>
     <lastmod>2020-12-12T11:30:03+00:00</lastmod>
-  </url><url>
-    <loc>https://heltweg.org/tags/blogs/</loc>
-    <lastmod>2020-12-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://heltweg.org/tags/life-coaching/</loc>
-    <lastmod>2020-12-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://heltweg.org/tags/list/</loc>
-    <lastmod>2020-12-03T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://heltweg.org/posts/wisdom-from-the-internet/</loc>
     <lastmod>2020-12-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://heltweg.org/tags/app/</loc>
-    <lastmod>2020-03-30T11:30:03+00:00</lastmod>
-  </url><url>
-    <loc>https://heltweg.org/tags/firebase/</loc>
-    <lastmod>2020-03-30T11:30:03+00:00</lastmod>
-  </url><url>
     <loc>https://heltweg.org/projects/iyagi/</loc>
     <lastmod>2020-03-30T11:30:03+00:00</lastmod>
   </url><url>
-    <loc>https://heltweg.org/tags/coursera/</loc>
-    <lastmod>2020-03-14T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://heltweg.org/posts/machine-learning-basics-machine-learning-by-stanford-university-review-and-notes/</loc>
-    <lastmod>2020-03-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://heltweg.org/tags/machine-learning/</loc>
-    <lastmod>2020-03-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://heltweg.org/tags/review/</loc>
     <lastmod>2020-03-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://heltweg.org/posts/import-tweets-with-nodejs-and-the-twitter-api/</loc>
     <lastmod>2019-10-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://heltweg.org/tags/api/</loc>
-    <lastmod>2019-10-25T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://heltweg.org/tags/import/</loc>
-    <lastmod>2019-10-25T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://heltweg.org/tags/javascript/</loc>
-    <lastmod>2019-10-25T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://heltweg.org/tags/mongodb/</loc>
-    <lastmod>2019-10-25T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://heltweg.org/tags/nodejs/</loc>
-    <lastmod>2019-10-25T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://heltweg.org/tags/twitter/</loc>
-    <lastmod>2019-10-25T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://heltweg.org/tags/typescript/</loc>
-    <lastmod>2019-10-25T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://heltweg.org/tags/ci/</loc>
-    <lastmod>2019-09-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://heltweg.org/tags/continuous-deployment/</loc>
-    <lastmod>2019-09-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://heltweg.org/tags/continuous-integration/</loc>
-    <lastmod>2019-09-04T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://heltweg.org/posts/deploy-an-app-into-your-personal-cloud/</loc>
-    <lastmod>2019-09-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://heltweg.org/tags/devops/</loc>
-    <lastmod>2019-09-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://heltweg.org/tags/docker/</loc>
-    <lastmod>2019-09-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://heltweg.org/tags/gcr/</loc>
-    <lastmod>2019-09-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://heltweg.org/tags/gitlab/</loc>
-    <lastmod>2019-09-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://heltweg.org/tags/gitlab-ci/</loc>
-    <lastmod>2019-09-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://heltweg.org/tags/gke/</loc>
-    <lastmod>2019-09-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://heltweg.org/tags/google-container-registry/</loc>
-    <lastmod>2019-09-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://heltweg.org/tags/google-kubernetes-engine/</loc>
-    <lastmod>2019-09-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://heltweg.org/tags/kubernetes/</loc>
-    <lastmod>2019-09-04T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://heltweg.org/tags/personal-cloud/</loc>
     <lastmod>2019-09-04T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://heltweg.org/posts/build-a-docker-image-on-gitlab-ci-and-publish-it-to-google-container-registry/</loc>
@@ -191,77 +83,20 @@
     <loc>https://heltweg.org/posts/build-a-progressive-web-app-in-docker-with-nginx-to-deploy-to-kubernetes-or-docker-swarm/</loc>
     <lastmod>2019-08-24T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://heltweg.org/tags/create-react-app/</loc>
-    <lastmod>2019-08-24T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://heltweg.org/tags/lighthouse/</loc>
-    <lastmod>2019-08-24T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://heltweg.org/tags/progressive-web-app/</loc>
-    <lastmod>2019-08-24T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://heltweg.org/tags/pwa/</loc>
-    <lastmod>2019-08-24T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://heltweg.org/tags/single-page-application/</loc>
-    <lastmod>2019-08-24T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://heltweg.org/tags/webworker/</loc>
-    <lastmod>2019-08-24T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://heltweg.org/tags/cloud/</loc>
-    <lastmod>2019-08-16T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://heltweg.org/tags/google-cloud/</loc>
-    <lastmod>2019-08-16T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://heltweg.org/posts/run-a-personal-cloud-with-traefik-lets-encrypt-and-zookeeper/</loc>
     <lastmod>2019-08-16T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://heltweg.org/tags/container/</loc>
-    <lastmod>2019-08-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://heltweg.org/tags/infrastructure/</loc>
-    <lastmod>2019-08-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://heltweg.org/tags/infrastructure-in-code/</loc>
-    <lastmod>2019-08-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://heltweg.org/posts/kubernetes-for-sideprojects-hardware-is-dead/</loc>
     <lastmod>2019-08-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://heltweg.org/tags/traefik/</loc>
-    <lastmod>2019-08-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://heltweg.org/tags/ecs/</loc>
-    <lastmod>2019-06-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://heltweg.org/tags/entity-component-system/</loc>
-    <lastmod>2019-06-06T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://heltweg.org/posts/entity-systems-for-typescript-based-games/</loc>
-    <lastmod>2019-06-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://heltweg.org/tags/game-development/</loc>
-    <lastmod>2019-06-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://heltweg.org/tags/gamedev/</loc>
     <lastmod>2019-06-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://heltweg.org/posts/deploy-a-personal-blog-with-hugo-firebase-and-gitlab/</loc>
     <lastmod>2019-05-03T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://heltweg.org/tags/gohugo/</loc>
-    <lastmod>2019-05-03T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://heltweg.org/tags/mealprep/</loc>
-    <lastmod>2017-09-27T11:30:03+00:00</lastmod>
-  </url><url>
     <loc>https://heltweg.org/projects/mealpreplist-dot-com-your-weekly-mealprep-made-easy/</loc>
     <lastmod>2017-09-27T11:30:03+00:00</lastmod>
-  </url><url>
-    <loc>https://heltweg.org/tags/angular/</loc>
-    <lastmod>2016-10-04T11:30:03+00:00</lastmod>
   </url><url>
     <loc>https://heltweg.org/projects/whatchr-dot-com-a-better-youtube-playlist-experience/</loc>
     <lastmod>2016-10-04T11:30:03+00:00</lastmod>

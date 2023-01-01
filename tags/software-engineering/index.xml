@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>software engineering on Philip Heltweg</title>
+    <title>software-engineering on Philip Heltweg</title>
     <link>https://heltweg.org/tags/software-engineering/</link>
-    <description>Recent content in software engineering on Philip Heltweg</description>
+    <description>Recent content in software-engineering on Philip Heltweg</description>
     <image>
       <url>https://heltweg.org/img/avatar2.jpeg</url>
       <link>https://heltweg.org/img/avatar2.jpeg</link>
@@ -23,12 +23,147 @@ Mayhem ensued, confused developers talked to each other about incompatible frame
     </item>
     
     <item>
+      <title>Who wrote this shit?</title>
+      <link>https://heltweg.org/posts/who-wrote-this-shit/</link>
+      <pubDate>Sun, 09 Jan 2022 11:30:03 +0000</pubDate>
+      
+      <guid>https://heltweg.org/posts/who-wrote-this-shit/</guid>
+      <description>Trashing legacy software is fun. It creates camaraderie.</description>
+    </item>
+    
+    <item>
+      <title>spaeher.app - sentiment analytics for youtube</title>
+      <link>https://heltweg.org/projects/spaeher/</link>
+      <pubDate>Sat, 12 Dec 2020 11:30:03 +0000</pubDate>
+      
+      <guid>https://heltweg.org/projects/spaeher/</guid>
+      <description>spaeher.app - sentiment analytics for youtube</description>
+    </item>
+    
+    <item>
       <title>Wisdom from the Internet, content that influenced how I think about software (and life).</title>
       <link>https://heltweg.org/posts/wisdom-from-the-internet/</link>
       <pubDate>Thu, 03 Dec 2020 00:00:00 +0000</pubDate>
       
       <guid>https://heltweg.org/posts/wisdom-from-the-internet/</guid>
       <description>A list of various content I found and gathered over the years that influenced me at the time or gave me new ideas. Mainly focused on software engineering and generic life advice.</description>
+    </item>
+    
+    <item>
+      <title>IYAGI - postcards from friends</title>
+      <link>https://heltweg.org/projects/iyagi/</link>
+      <pubDate>Mon, 30 Mar 2020 11:30:03 +0000</pubDate>
+      
+      <guid>https://heltweg.org/projects/iyagi/</guid>
+      <description>Iyagi - Write letters to penpals, practice a language and meet new people.</description>
+    </item>
+    
+    <item>
+      <title>Analyzing twitter: Import tweets with NodeJS and the twitter API</title>
+      <link>https://heltweg.org/posts/import-tweets-with-nodejs-and-the-twitter-api/</link>
+      <pubDate>Fri, 25 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://heltweg.org/posts/import-tweets-with-nodejs-and-the-twitter-api/</guid>
+      <description>Work with the twitter api and nodejs, importing tweets for later use</description>
+    </item>
+    
+    <item>
+      <title>Deploy an app into your personal cloud</title>
+      <link>https://heltweg.org/posts/deploy-an-app-into-your-personal-cloud/</link>
+      <pubDate>Wed, 04 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://heltweg.org/posts/deploy-an-app-into-your-personal-cloud/</guid>
+      <description>Deploy an app into your personal cloud</description>
+    </item>
+    
+    <item>
+      <title>Build a docker image on gitlab ci and publish it to google container registry</title>
+      <link>https://heltweg.org/posts/build-a-docker-image-on-gitlab-ci-and-publish-it-to-google-container-registry/</link>
+      <pubDate>Tue, 03 Sep 2019 11:30:03 +0000</pubDate>
+      
+      <guid>https://heltweg.org/posts/build-a-docker-image-on-gitlab-ci-and-publish-it-to-google-container-registry/</guid>
+      <description>Build a docker image on gitlab ci and publish it to google container registry</description>
+    </item>
+    
+    <item>
+      <title>Deploy to google kubernetes engine using gitlab ci</title>
+      <link>https://heltweg.org/posts/deploy-to-google-kubernetes-engine-using-gitlab-ci/</link>
+      <pubDate>Tue, 03 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://heltweg.org/posts/deploy-to-google-kubernetes-engine-using-gitlab-ci/</guid>
+      <description>Deploy to google kubernetes engine using gitlab ci</description>
+    </item>
+    
+    <item>
+      <title>Build a progressive web app in docker with nginx to deploy to kubernetes or docker swarm</title>
+      <link>https://heltweg.org/posts/build-a-progressive-web-app-in-docker-with-nginx-to-deploy-to-kubernetes-or-docker-swarm/</link>
+      <pubDate>Sat, 24 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://heltweg.org/posts/build-a-progressive-web-app-in-docker-with-nginx-to-deploy-to-kubernetes-or-docker-swarm/</guid>
+      <description>Build a progressive web app delivered by nginx with docker to deploy it to docker swarm or kubernetes.</description>
+    </item>
+    
+    <item>
+      <title>Run a personal Cloud with Traefik, Lets encrypt and Zookeeper</title>
+      <link>https://heltweg.org/posts/run-a-personal-cloud-with-traefik-lets-encrypt-and-zookeeper/</link>
+      <pubDate>Fri, 16 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://heltweg.org/posts/run-a-personal-cloud-with-traefik-lets-encrypt-and-zookeeper/</guid>
+      <description>Run a personal Cloud with Traefik, Lets encrypt and Zookeeper</description>
+    </item>
+    
+    <item>
+      <title>Kubernetes for sideprojects: Hardware is dead</title>
+      <link>https://heltweg.org/posts/kubernetes-for-sideprojects-hardware-is-dead/</link>
+      <pubDate>Thu, 15 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://heltweg.org/posts/kubernetes-for-sideprojects-hardware-is-dead/</guid>
+      <description>Kubernetes for sideprojects: Hardware is dead</description>
+    </item>
+    
+    <item>
+      <title>Entity-Systems for typescript based games</title>
+      <link>https://heltweg.org/posts/entity-systems-for-typescript-based-games/</link>
+      <pubDate>Thu, 06 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://heltweg.org/posts/entity-systems-for-typescript-based-games/</guid>
+      <description>Entity-Systems for typescript based games</description>
+    </item>
+    
+    <item>
+      <title>Deploy a personal blog with Hugo, Firebase and Gitlab</title>
+      <link>https://heltweg.org/posts/deploy-a-personal-blog-with-hugo-firebase-and-gitlab/</link>
+      <pubDate>Fri, 03 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://heltweg.org/posts/deploy-a-personal-blog-with-hugo-firebase-and-gitlab/</guid>
+      <description>Deploy a personal blog with Hugo, Firebase and Gitlab</description>
+    </item>
+    
+    <item>
+      <title>mealpreplist.com - Your weekly mealprep, made easy</title>
+      <link>https://heltweg.org/projects/mealpreplist-dot-com-your-weekly-mealprep-made-easy/</link>
+      <pubDate>Wed, 27 Sep 2017 11:30:03 +0000</pubDate>
+      
+      <guid>https://heltweg.org/projects/mealpreplist-dot-com-your-weekly-mealprep-made-easy/</guid>
+      <description>mealpreplist.com - Your weekly mealprep, made easy</description>
+    </item>
+    
+    <item>
+      <title>Whatchr.com - a better youtube playlist experience</title>
+      <link>https://heltweg.org/projects/whatchr-dot-com-a-better-youtube-playlist-experience/</link>
+      <pubDate>Tue, 04 Oct 2016 11:30:03 +0000</pubDate>
+      
+      <guid>https://heltweg.org/projects/whatchr-dot-com-a-better-youtube-playlist-experience/</guid>
+      <description>Whatchr.com - a better youtube playlist experience</description>
+    </item>
+    
+    <item>
+      <title>Frozzen - a turn-based RPG</title>
+      <link>https://heltweg.org/projects/frozzen/</link>
+      <pubDate>Fri, 06 Sep 2013 11:30:03 +0000</pubDate>
+      
+      <guid>https://heltweg.org/projects/frozzen/</guid>
+      <description>Frozzen - a turn-based RPG, coming soon to browsers and mobile devices near you. Serious gaming with depth and a thrilling story in a dark fantasy world.</description>
     </item>
     
   </channel>
