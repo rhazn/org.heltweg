@@ -1,5 +1,5 @@
 ---
-title: "Write an Exposé for your Thesis"
+title: "Write an exposé for your thesis"
 date: 2023-02-13
 slug: "thesis-expose-project-outline"
 tags: ["research"]
