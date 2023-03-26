@@ -74,6 +74,10 @@ params:
           url: "https://twitter.com/rhanarion"
         - name: discord
           url: "https://discordapp.com/users/148739214660468736"
+        - name: telegram
+          url: "https://t.me/rhanarion"
+        - name: linkedin
+          url: "https://www.linkedin.com/in/pheltweg"
         - name: cv
           url: "/files/cv_philip_heltweg.pdf"
 
