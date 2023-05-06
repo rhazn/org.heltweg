@@ -9,7 +9,16 @@
       <link>https://heltweg.org/img/avatar2.jpeg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 13 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://heltweg.org/tags/research/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 06 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://heltweg.org/tags/research/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AI-powered local interview transcription with Whisper</title>
+      <link>https://heltweg.org/posts/whisper-ai-local-transcribe/</link>
+      <pubDate>Sat, 06 May 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://heltweg.org/posts/whisper-ai-local-transcribe/</guid>
+      <description>Transcribing interviews is tedious, let AI do the work.</description>
+    </item>
+    
     <item>
       <title>Write an exposé for your thesis</title>
       <link>https://heltweg.org/posts/thesis-expose-project-outline/</link>
