@@ -7,6 +7,8 @@ author: "Philip Heltweg"
 description: "Transcribing interviews is tedious, let AI do the work."
 ---
 
+# The problem
+
 Interviews are great. You can learn a lot about a topic by talking to experts. If you are working on a product, talking to users is common advice. If you are a researcher, qualitative surveys using interviews are great fun.
 
 Transcribing interviews, however, sucks
