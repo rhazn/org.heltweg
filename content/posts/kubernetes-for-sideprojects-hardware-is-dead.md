@@ -31,7 +31,7 @@ My own personal journey has made me try out the following alternatives in the or
     - Services are the hammer that makes very problem look like a nail. Instead of picking the best technology for a job you will start trying to shoehorn your problems to be solved by what is available.
 3. Docker Swarm
     - I really liked it, very close to kubernetes but considerably easier
-    - Sadly still forces you to manage your own servers to set up the swarm cluster, I could not find a "managed docker swarm" solution (if you know one, <a href="mailto:pheltweg@gmail.com">let me know</a>!)
+    - Sadly still forces you to manage your own servers to set up the swarm cluster, I could not find a "managed docker swarm" solution (if you know one, <a href="mailto:philip@heltweg.org">let me know</a>!)
 
 # The value of infrastructure as code
 By choosing kubernetes you also commit to keeping your infrastructure in code which has a plethora of benefits:
