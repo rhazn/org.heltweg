@@ -3,7 +3,9 @@
 
 git commit and deploy from github
 
-https://github.com/adityatelange/hugo-PaperMod/wiki/Installation
+## Theme
+- currently Papermod v7
+- https://github.com/adityatelange/hugo-PaperMod/wiki/Installation
 
 ## Generate bibliography
 - install bibtex2html `brew install bibtex2html`
