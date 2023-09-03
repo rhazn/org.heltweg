@@ -5,10 +5,12 @@
     <link>https://heltweg.org/posts/</link>
     <description>Recent content in Posts on Philip Heltweg</description>
     <image>
+      <title>Philip Heltweg</title>
       <url>https://heltweg.org/img/avatar2.jpeg</url>
       <link>https://heltweg.org/img/avatar2.jpeg</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
     <lastBuildDate>Sat, 06 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://heltweg.org/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AI-powered local interview transcription with Whisper</title>
@@ -54,7 +56,7 @@ Abstract Open data is data that can be used, modified, and passed on, for free, 
       
       <guid>https://heltweg.org/posts/chose-names-for-google-not-people/</guid>
       <description>&amp;ldquo;There are only two hard things in Computer Science: cache invalidation and naming things.&amp;rdquo;
- - Phil Karlton
+- Phil Karlton
 AngularJS was released in 2010 and revolutionized modern frontend development. In 2016, the AngularJS team published a new framework, written in TypeScript and incompatible with AngularJS. They also made the baffling choice to call this framework Angular 2.
 Mayhem ensued, confused developers talked to each other about incompatible frameworks. The excellent community documentation AngularJS had built in the form of blogs and StackOverflow answers became an active hindrance for people trying to learn Angular.</description>
     </item>
