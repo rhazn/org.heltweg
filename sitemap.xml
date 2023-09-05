@@ -2,19 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://heltweg.org/posts/whisper-ai-local-transcribe/</loc>
-    <lastmod>2023-05-06T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://heltweg.org/</loc>
+    <lastmod>2023-09-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://heltweg.org/tags/project/</loc>
+    <lastmod>2023-09-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://heltweg.org/projects/</loc>
+    <lastmod>2023-09-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://heltweg.org/tags/software-engineering/</loc>
+    <lastmod>2023-09-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://heltweg.org/tags/startup/</loc>
+    <lastmod>2023-09-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://heltweg.org/tags/</loc>
+    <lastmod>2023-09-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://heltweg.org/projects/wanderlist/planning/</loc>
+    <lastmod>2023-09-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://heltweg.org/tags/wip/</loc>
+    <lastmod>2023-09-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://heltweg.org/posts/whisper-ai-local-transcribe/</loc>
     <lastmod>2023-05-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://heltweg.org/posts/</loc>
     <lastmod>2023-05-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://heltweg.org/tags/research/</loc>
-    <lastmod>2023-05-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://heltweg.org/tags/</loc>
     <lastmod>2023-05-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://heltweg.org/posts/thesis-expose-project-outline/</loc>
@@ -30,9 +48,6 @@
     <lastmod>2022-08-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://heltweg.org/posts/chose-names-for-google-not-people/</loc>
-    <lastmod>2022-01-22T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://heltweg.org/tags/software-engineering/</loc>
     <lastmod>2022-01-22T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://heltweg.org/posts/who-wrote-this-shit/</loc>
@@ -53,13 +68,7 @@
     <loc>https://heltweg.org/posts/how-to-kill-a-dragon/</loc>
     <lastmod>2021-03-15T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://heltweg.org/tags/project/</loc>
-    <lastmod>2020-12-12T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://heltweg.org/posts/spaeher/</loc>
-    <lastmod>2020-12-12T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://heltweg.org/tags/startup/</loc>
     <lastmod>2020-12-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://heltweg.org/posts/wisdom-from-the-internet/</loc>

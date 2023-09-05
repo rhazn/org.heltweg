@@ -11,7 +11,16 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 22 Jan 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://heltweg.org/tags/software-engineering/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 05 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://heltweg.org/tags/software-engineering/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Wanderlist - Planning</title>
+      <link>https://heltweg.org/projects/wanderlist/planning/</link>
+      <pubDate>Tue, 05 Sep 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://heltweg.org/projects/wanderlist/planning/</guid>
+      <description>Wanderlist - Planning</description>
+    </item>
+    
     <item>
       <title>Choose names for Google, not people</title>
       <link>https://heltweg.org/posts/chose-names-for-google-not-people/</link>
