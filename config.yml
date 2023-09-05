@@ -10,7 +10,6 @@ buildExpired: false
 
 permalinks:
     posts: /posts/:slug
-    projects: /projects/:slug
 
 minify:
     disableXML: true
@@ -23,6 +22,11 @@ params:
     author: Philip Heltweg
     # author: ["Me", "You"] # multiple authors
     images: ["/img/avatar2.jpeg"] # <link or path of image for opengraph, twitter-cards>
+
+    # sections to show on homepage
+    mainSections:
+    - projects
+    - posts
 
     DateFormat: "January 2, 2006"
     defaultTheme: auto # dark, light
