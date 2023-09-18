@@ -33,3 +33,8 @@ Finally, let us add the boring screens we can actually start working on. We will
 
 # Up next
 Next up, we need to actually write some scaffolding code to get the app running and show some coming soon screens :).
+
+[Next post: Setup](/projects/wanderlist/setup)
+
+# Read the series
+[Project Wanderlist](/projects/wanderlist/)
