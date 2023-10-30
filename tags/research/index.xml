@@ -11,7 +11,17 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 06 May 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://heltweg.org/tags/research/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 30 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://heltweg.org/tags/research/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A Systematic Analysis of Problems in Open Collaborative Data Engineering</title>
+      <link>https://heltweg.org/posts/a-systematic-analysis-of-problems-in-open-collaborative-data-engineering/</link>
+      <pubDate>Mon, 30 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://heltweg.org/posts/a-systematic-analysis-of-problems-in-open-collaborative-data-engineering/</guid>
+      <description>Our paper &amp;ldquo;A Systematic Analysis of Problems in Open Collaborative Data Engineering&amp;rdquo; got accepted to the ACM Transactions on Social Computing (ACM-TSC).
+Abstract Collaborative workflows are common in open-source software development. They reduce individual costs and improve the quality of work results. Open data shares many characteristics with open-source software as it can be used, modified, and redistributed by anyone, for free. However, in contrast to open-source software engineering, collaborative data engineering on open data lacks a shared understanding of processes, methods, and tools.</description>
+    </item>
+    
     <item>
       <title>AI-powered local interview transcription with Whisper</title>
       <link>https://heltweg.org/posts/whisper-ai-local-transcribe/</link>
