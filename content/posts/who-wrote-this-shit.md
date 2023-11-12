@@ -5,6 +5,7 @@ slug: "who-wrote-this-shit"
 tags: ["software-engineering", "personal"]
 author: "Philip Heltweg"
 description: "Trashing legacy software is fun. It creates camaraderie."
+showToc: false
 ---
 It is a beautiful rite of passage for a bright-eyed junior developer to join a team, take some tasks full of enthusiasm, and have the life and joy sucked out of them one sprint at a time. Soon enough, they sit in planning meetings, miserably complaining, accusingly asking who wrote that shit. 
 Their transformation to a full team member is complete. They have become one of us.

@@ -4,6 +4,7 @@ date: 2020-09-15T11:30:03+00:00
 tags: ["first"]
 draft: true
 searchHidden: false
+showToc: false
 cover:
     image: "<image path/url>" # image path/url
     alt: "<alt text>" # alt text

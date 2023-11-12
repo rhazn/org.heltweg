@@ -5,6 +5,7 @@ slug: "swc-kickoff"
 tags: ["research", "personal"]
 author: "Philip Heltweg"
 description: "How to run social events for nerds."
+showToc: false
 ---
 
 At the start of July, I visited the [Softwarecampus Kickoff Event](https://softwarecampus.de/aktuelles/sommer-ist-kickoff-zeit/). The Softwarecampus is a project targeting self-described "EntrepreNerds" and sponsoring research projects with an industry partner with up to 100k€.

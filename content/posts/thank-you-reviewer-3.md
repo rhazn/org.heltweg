@@ -5,6 +5,7 @@ slug: "thank-you-reviewer-3"
 tags: ["research", "software-engineering", "personal"]
 author: "Philip Heltweg"
 description: "Be friendly. Be like reviewer 3."
+showToc: false
 ---
 
 I have heard PhD students are typically harsher reviewers for academic manuscripts than established researchers. They look for reasons to reject a paper, while more experienced reviewers look for reasons to accept. I lack the experience to say how true this is, but it makes intuitive sense to me.
