@@ -17,7 +17,7 @@ This article presents a systematic literature review of collaboration processes,
 We find an ecosystem with heterogeneous participants and no standardized processes, methods, and tools. Participants face a variety of technical and social challenges during their work. Our work provides a structured overview of collaboration systems in open collaborative data engineering, enabling further research. Additionally, we contribute preliminary guidelines for successful open collaborative data engineering projects and recommendations to increase its adoption for open data ecosystems.
 
 # Downloads
-[Paper local copy](/files/acm-tsc-2023/acm-tsc-2023.pdf)
+[Paper local copy](/files/acm-tsc-2023/heltweg-2023-tsc.pdf)
 
 [Paper at ACM-TSC](https://doi.org/10.1145/3629040)
 
