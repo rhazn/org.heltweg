@@ -11,7 +11,17 @@
     </image>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 12 Nov 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://heltweg.org/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 19 Jan 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://heltweg.org/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Talk: Not all those who wander are lost</title>
+      <link>https://heltweg.org/posts/talk-not-all-those-who-wander-are-lost/</link>
+      <pubDate>Fri, 19 Jan 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://heltweg.org/posts/talk-not-all-those-who-wander-are-lost/</guid>
+      <description>The following slides where created for my Talk &amp;ldquo;Not all those who wander are lost — Lessons from five years of learning and working remotely&amp;rdquo; for the Alumni Organisation of the Software Campus. They lose a lot of context without the actual talk but maybe they are of some interest.
+Abstract After COVID, many knowledge workers have some experience with remote work. With more and more jobs going back to pre-pandemic setups, it is a good time to look back and reflect on what worked, what did not work and which best-practices support remote working while mitigating its downsides.</description>
+    </item>
+    
     <item>
       <title>Thank you reviewer 3</title>
       <link>https://heltweg.org/posts/thank-you-reviewer-3/</link>
